@@ -575,7 +575,7 @@
     
     <entry>
       <title><![CDATA[APIO && CTSC 完结]]></title>
-      <url>https://www.nekomio.com/2018/05/14/150/</url>
+      <url>https://www.nekomio.com/2018/05/15/150/</url>
       <content type="html"><![CDATA[<h3 id="结束了"><a href="#结束了" class="headerlink" title="结束了"></a>结束了</h3><p>从来到北京到今天，已经过去了快 10 天了。<br>我也是需要总结一下这几天。  </p>
 <p>先从考试来说吧，这几次考试教会了我很多，因为我都死在了 T1 上。<br>CTSC 中 Day1 没有去想本身很简单的第一题。而是花费了太多的时间在其他两题上，使我没有得到我有能力拿到的分数。<br>而 APIO 更是如此， 不过这次恰恰相反。 因为我花费了太多的时间在 T1 上， T2 和 T3 都没有去想，甚至都没有仔细看一下部分分， 导致 T3 这道最好拿分的一道题没有拿更多的分。  </p>
 <p>这两次的问题， 主要是出在对题目难度的把控上。<br>虽然通读了题面， 但是我却并没有对哪道题好得分， 哪道题不好得分有清晰的认识， 我可以确定，这是考试经验不足和题量少的缘故。  </p>
@@ -1685,7 +1685,7 @@
     
     <entry>
       <title><![CDATA[UOJ182 【UR #12】a^-1 + b problem]]></title>
-      <url>https://www.nekomio.com/2018/02/28/132/</url>
+      <url>https://www.nekomio.com/2018/03/01/132/</url>
       <content type="html"><![CDATA[<p>在你的帮助下，跳蚤国王终于打开了最后一间房间的大门。然而，picks 博士和他的猴子们早已通过地道逃跑了。万幸的是，因为阿姆斯特朗回旋加速喷气式阿姆斯特朗炮本身太过笨重，无法从地道中运走，所以还被静静的停放在房间的正中央。<br>拥有了征服世界的力量，跳蚤国王感觉非常一颗赛艇。为了试验这个传说中的武器的威力，跳蚤国王让士兵们把炮口对准空无一人的实验室开炮。<br>然而，事情总是没有这么顺利。片刻之后，一个士兵匆匆跑到跳蚤国王身前：“报！picks 博士给它设置了保险！但是我们根本不知道解除方法！”<br>经过研究，跳蚤国王发现，picks 博士所设置的保险措施可以简化为这样一个问题：<br>首先炮身的屏幕上显示了 $n$ 个数，接着在模 $998244353(7\times 17 \times 2^{23}+1$，一个质数) 意义下，给出了 $m$ 条指令，每一条指令都是下列两种之一：  </p>
 <ol>
 <li>给<strong>所有</strong>数加上某一个数。  </li>
@@ -1913,7 +1913,7 @@
     
     <entry>
       <title><![CDATA[BZOJ3771: Triple]]></title>
-      <url>https://www.nekomio.com/2018/02/25/128/</url>
+      <url>https://www.nekomio.com/2018/02/26/128/</url>
       <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>我们讲一个悲伤的故事。<br>从前有一个贫穷的樵夫在河边砍柴。<br>这时候河里出现了一个水神，夺过了他的斧头，说：<br>“这把斧头，是不是你的？”<br>樵夫一看：“是啊是啊！”<br>水神把斧头扔在一边，又拿起一个东西问：<br>“这把斧头，是不是你的？”<br>樵夫看不清楚，但又怕真的是自己的斧头，只好又答：“是啊是啊！”<br>水神又把手上的东西扔在一边，拿起第三个东西问：<br>“这把斧头，是不是你的？”<br>樵夫还是看不清楚，但是他觉得再这样下去他就没法砍柴了。<br>于是他又一次答：“是啊是啊！真的是！”<br>水神看着他，哈哈大笑道：<br>“你看看你现在的样子，真是丑陋！”<br>之后就消失了。<br>樵夫觉得很坑爹，他今天不仅没有砍到柴，还丢了一把斧头给那个水神。<br>于是他准备回家换一把斧头。<br>回家之后他才发现真正坑爹的事情才刚开始。<br>水神拿着的的确是他的斧头。<br>但是不一定是他拿出去的那把，还有可能是水神不知道怎么偷偷从他家里拿走的。<br>换句话说，水神可能拿走了他的一把，两把或者三把斧头。<br>樵夫觉得今天真是倒霉透了，但不管怎么样日子还得过。<br>他想统计他的损失。<br>樵夫的每一把斧头都有一个价值，不同斧头的价值不同。总损失就是丢掉的斧头价值和。<br>他想对于每个可能的总损失，计算有几种可能的方案。<br>注意：如果水神拿走了两把斧头a和b，(a,b)和(b,a)视为一种方案。拿走三把斧头时，(a,b,c),(b,c,a),(c,a,b),(c,b,a),(b,a,c),(a,c,b)视为一种方案。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行是整数N，表示有N把斧头。<br>接下来n行升序输入N个数字Ai，表示每把斧头的价值。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>若干行，按升序对于所有可能的总损失输出一行x y，x为损失值，y为方案数。</p>
@@ -1946,7 +1946,7 @@
     
     <entry>
       <title><![CDATA[BZOJ3509: [CodeChef] COUNTARI]]></title>
-      <url>https://www.nekomio.com/2018/02/25/127/</url>
+      <url>https://www.nekomio.com/2018/02/26/127/</url>
       <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个长度为N的数组A[]，求有多少对i, j, k（1&lt;=i&lt;j&lt;k&lt;=N）满足A[k]-A[j]=A[j]-A[i]。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个整数N（N&lt;=10^5）。<br>接下来一行N个数A[i]（A[i]&lt;=30000）。</p>
 <h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>一行一个整数。</p>
@@ -2119,7 +2119,7 @@
     
     <entry>
       <title><![CDATA[上下界网络流笔记]]></title>
-      <url>https://www.nekomio.com/2018/01/15/122/</url>
+      <url>https://www.nekomio.com/2018/01/16/122/</url>
       <content type="html"><![CDATA[<h3 id="无源汇可行流"><a href="#无源汇可行流" class="headerlink" title="无源汇可行流"></a>无源汇可行流</h3><p>将上下界的网络流转化为普通网络流。  </p>
 <p>建图:</p>
 <ul>
@@ -2260,9 +2260,9 @@
         
         <tags>
             
-            <tag> 概率DP </tag>
-            
             <tag> 状压DP </tag>
+            
+            <tag> 概率DP </tag>
             
         </tags>
         
@@ -3562,7 +3562,7 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     
     <entry>
       <title><![CDATA[BZOJ 4173 数学]]></title>
-      <url>https://www.nekomio.com/2017/08/12/92/</url>
+      <url>https://www.nekomio.com/2017/08/13/92/</url>
       <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p><img src="https://i.loli.net/2017/08/13/598f8195c1e7e.jpg" alt="ff.jpg"></p>
 <a id="more"></a>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入文件的第一行输入两个正整数 。 </p>
@@ -4735,6 +4735,38 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     </entry>
     
     <entry>
+      <title><![CDATA[[BZOJ 4832] [Lydsy2017年4月月赛]抵制克苏恩]]></title>
+      <url>https://www.nekomio.com/2017/08/03/59/</url>
+      <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>小Q同学现在沉迷炉石传说不能自拔。他发现一张名为克苏恩的牌很不公平。如果你不玩炉石传说，不必担心，小Q<br>同学会告诉你所有相关的细节。炉石传说是这样的一个游戏，每个玩家拥有一个 30 点血量的英雄，并且可以用牌<br>召唤至多 7 个随从帮助玩家攻击对手，其中每个随从也拥有自己的血量和攻击力。小Q同学有很多次游戏失败都是<br>因为对手使用了克苏恩这张牌，所以他想找到一些方法来抵御克苏恩。他去求助职业炉石传说玩家椎名真白，真白</p>
+<a id="more"></a>
+<p>告诉他使用奴隶主这张牌就可以啦。如果你不明白我上面在说什么，不必担心，小Q同学会告诉你他想让你做什么<br>。现在小Q同学会给出克苏恩的攻击力是 K ，表示克苏恩会攻击 K 次，每次会从对方场上的英雄和随从中随机选<br>择一个并对其产生 1 点伤害。现在对方有一名克苏恩，你有一些奴隶主作为随从，每名奴隶主的血量是给定的。<br>如果克苏恩攻击了你的一名奴隶主，那么这名奴隶主的血量会减少 1 点，当其血量小于等于 0 时会死亡，如果受<br>到攻击后不死亡，并且你的随从数量没有达到 7 ，这名奴隶主会召唤一个拥有 3 点血量的新奴隶主作为你的随从<br>；如果克苏恩攻击了你的英雄，你的英雄会记录受到 1 点伤害。你应该注意到了，每当克苏恩进行一次攻击，你<br>场上的随从可能发生很大的变化。小Q同学为你假设了克苏恩的攻击力，你场上分别有 1 点、 2 点、 3 点血量的<br>奴隶主数量，你可以计算出你的英雄受到的总伤害的期望值是多少吗？</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入包含多局游戏。<br>第一行包含一个整数 T (T&lt;100) ，表示游戏的局数。<br>每局游戏仅占一行，包含四个非负整数 K, A, B 和 C ，表示克苏恩的攻击力是 K ，你有 A 个 1 点血量的奴隶<br>主， B 个 2 点血量的奴隶主， C 个 3 点血量的奴隶主。<br>保证 K 是小于 50 的正数， A+B+C 不超过 7 。</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每局游戏，输出一个数字表示总伤害的期望值，保留两位小数。</p>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><blockquote>
+<p>1<br>1 1 1 1  </p>
+</blockquote>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><blockquote>
+<p>0.25</p>
+</blockquote>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>简单的基础概率DP</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">double</span> f[<span class="number">55</span>][<span class="number">8</span>][<span class="number">8</span>][<span class="number">8</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T, a, b, c, k;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">    <span class="keyword">while</span> (T--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;k, &amp;a, &amp;b, &amp;c);</span><br><span class="line">        <span class="built_in">memset</span>(f, <span class="number">0</span>, <span class="keyword">sizeof</span>(f));</span><br><span class="line">        f[<span class="number">1</span>][a][b][c] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">double</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= k; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">7</span>; j++)</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">0</span>; l &lt;= <span class="number">7</span>; l++)</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> m = <span class="number">0</span>; m &lt;= <span class="number">7</span>; m++)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="keyword">if</span> (l + j + m &lt;= <span class="number">7</span>)</span><br><span class="line">                        &#123;</span><br><span class="line">                            <span class="keyword">if</span> (j &gt; <span class="number">0</span>)</span><br><span class="line">                                f[i + <span class="number">1</span>][j - <span class="number">1</span>][l][m] += f[i][j][l][m] * j * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                            <span class="keyword">if</span> (l &gt; <span class="number">0</span>)</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="keyword">if</span> (l + j + m &lt;= <span class="number">6</span>)</span><br><span class="line">                                    f[i + <span class="number">1</span>][j + <span class="number">1</span>][l - <span class="number">1</span>][m + <span class="number">1</span>] += f[i][j][l][m] * l * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                                <span class="keyword">else</span></span><br><span class="line">                                    f[i + <span class="number">1</span>][j + <span class="number">1</span>][l - <span class="number">1</span>][m] += f[i][j][l][m] * l * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                            &#125;</span><br><span class="line">                            <span class="keyword">if</span> (m &gt; <span class="number">0</span>)</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="keyword">if</span> (l + j + m &lt;= <span class="number">6</span>)</span><br><span class="line">                                    f[i + <span class="number">1</span>][j][l + <span class="number">1</span>][m] += f[i][j][l][m] * m * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                                <span class="keyword">else</span></span><br><span class="line">                                    f[i + <span class="number">1</span>][j][l + <span class="number">1</span>][m - <span class="number">1</span>] += f[i][j][l][m] * m * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                            &#125;</span><br><span class="line">                            f[i + <span class="number">1</span>][j][l][m] += f[i][j][l][m] * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                            ans += f[i][j][l][m] * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.2lf\n"</span>, ans);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//while (1)</span></span><br><span class="line">        ;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> 题解 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 概率DP </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[[BZOJ 3829][POI2014] FarmCraft]]></title>
       <url>https://www.nekomio.com/2017/08/03/60/</url>
       <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>In a village called Byteville, there are   houses connected with N-1 roads. For each pair of houses, there is a unique way to get from one to another. The houses are numbered from 1 to  . The house no. 1 belongs to the village administrator Byteasar. As part of enabling modern technologies for rural areas framework,   computers have been delivered to Byteasar’s house. Every house is to be supplied with a computer, and it is Byteasar’s task to distribute them. The citizens of Byteville have already agreed to play the most recent version of FarmCraft (the game) as soon as they have their computers.</p>
@@ -4769,40 +4801,8 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     </entry>
     
     <entry>
-      <title><![CDATA[[BZOJ 4832] [Lydsy2017年4月月赛]抵制克苏恩]]></title>
-      <url>https://www.nekomio.com/2017/08/03/59/</url>
-      <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>小Q同学现在沉迷炉石传说不能自拔。他发现一张名为克苏恩的牌很不公平。如果你不玩炉石传说，不必担心，小Q<br>同学会告诉你所有相关的细节。炉石传说是这样的一个游戏，每个玩家拥有一个 30 点血量的英雄，并且可以用牌<br>召唤至多 7 个随从帮助玩家攻击对手，其中每个随从也拥有自己的血量和攻击力。小Q同学有很多次游戏失败都是<br>因为对手使用了克苏恩这张牌，所以他想找到一些方法来抵御克苏恩。他去求助职业炉石传说玩家椎名真白，真白</p>
-<a id="more"></a>
-<p>告诉他使用奴隶主这张牌就可以啦。如果你不明白我上面在说什么，不必担心，小Q同学会告诉你他想让你做什么<br>。现在小Q同学会给出克苏恩的攻击力是 K ，表示克苏恩会攻击 K 次，每次会从对方场上的英雄和随从中随机选<br>择一个并对其产生 1 点伤害。现在对方有一名克苏恩，你有一些奴隶主作为随从，每名奴隶主的血量是给定的。<br>如果克苏恩攻击了你的一名奴隶主，那么这名奴隶主的血量会减少 1 点，当其血量小于等于 0 时会死亡，如果受<br>到攻击后不死亡，并且你的随从数量没有达到 7 ，这名奴隶主会召唤一个拥有 3 点血量的新奴隶主作为你的随从<br>；如果克苏恩攻击了你的英雄，你的英雄会记录受到 1 点伤害。你应该注意到了，每当克苏恩进行一次攻击，你<br>场上的随从可能发生很大的变化。小Q同学为你假设了克苏恩的攻击力，你场上分别有 1 点、 2 点、 3 点血量的<br>奴隶主数量，你可以计算出你的英雄受到的总伤害的期望值是多少吗？</p>
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>输入包含多局游戏。<br>第一行包含一个整数 T (T&lt;100) ，表示游戏的局数。<br>每局游戏仅占一行，包含四个非负整数 K, A, B 和 C ，表示克苏恩的攻击力是 K ，你有 A 个 1 点血量的奴隶<br>主， B 个 2 点血量的奴隶主， C 个 3 点血量的奴隶主。<br>保证 K 是小于 50 的正数， A+B+C 不超过 7 。</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>对于每局游戏，输出一个数字表示总伤害的期望值，保留两位小数。</p>
-<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><blockquote>
-<p>1<br>1 1 1 1  </p>
-</blockquote>
-<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><blockquote>
-<p>0.25</p>
-</blockquote>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>简单的基础概率DP</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">double</span> f[<span class="number">55</span>][<span class="number">8</span>][<span class="number">8</span>][<span class="number">8</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> T, a, b, c, k;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;T);</span><br><span class="line">    <span class="keyword">while</span> (T--)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d"</span>, &amp;k, &amp;a, &amp;b, &amp;c);</span><br><span class="line">        <span class="built_in">memset</span>(f, <span class="number">0</span>, <span class="keyword">sizeof</span>(f));</span><br><span class="line">        f[<span class="number">1</span>][a][b][c] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">double</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= k; i++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">7</span>; j++)</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">0</span>; l &lt;= <span class="number">7</span>; l++)</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> m = <span class="number">0</span>; m &lt;= <span class="number">7</span>; m++)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="keyword">if</span> (l + j + m &lt;= <span class="number">7</span>)</span><br><span class="line">                        &#123;</span><br><span class="line">                            <span class="keyword">if</span> (j &gt; <span class="number">0</span>)</span><br><span class="line">                                f[i + <span class="number">1</span>][j - <span class="number">1</span>][l][m] += f[i][j][l][m] * j * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                            <span class="keyword">if</span> (l &gt; <span class="number">0</span>)</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="keyword">if</span> (l + j + m &lt;= <span class="number">6</span>)</span><br><span class="line">                                    f[i + <span class="number">1</span>][j + <span class="number">1</span>][l - <span class="number">1</span>][m + <span class="number">1</span>] += f[i][j][l][m] * l * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                                <span class="keyword">else</span></span><br><span class="line">                                    f[i + <span class="number">1</span>][j + <span class="number">1</span>][l - <span class="number">1</span>][m] += f[i][j][l][m] * l * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                            &#125;</span><br><span class="line">                            <span class="keyword">if</span> (m &gt; <span class="number">0</span>)</span><br><span class="line">                            &#123;</span><br><span class="line">                                <span class="keyword">if</span> (l + j + m &lt;= <span class="number">6</span>)</span><br><span class="line">                                    f[i + <span class="number">1</span>][j][l + <span class="number">1</span>][m] += f[i][j][l][m] * m * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                                <span class="keyword">else</span></span><br><span class="line">                                    f[i + <span class="number">1</span>][j][l + <span class="number">1</span>][m - <span class="number">1</span>] += f[i][j][l][m] * m * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                            &#125;</span><br><span class="line">                            f[i + <span class="number">1</span>][j][l][m] += f[i][j][l][m] * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                            ans += f[i][j][l][m] * <span class="number">1.0</span> / (l + j + m + <span class="number">1</span>);</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%.2lf\n"</span>, ans);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//while (1)</span></span><br><span class="line">        ;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-        <categories>
-            
-            <category> 题解 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 概率DP </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[[NOIP2015] 斗地主]]></title>
-      <url>https://www.nekomio.com/2017/08/02/58/</url>
+      <url>https://www.nekomio.com/2017/08/03/58/</url>
       <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>牛牛最近迷上了一种叫斗地主的扑克游戏。斗地主是一种使用黑桃、红心、梅花、方片的A到K加上大小王的共54张牌来进行的扑克牌游戏。在斗地主中，牌的大小关系根据牌的数码表示如下：3&lt;4&lt;5&lt;6&lt;7&lt;8&lt;9&lt;10&lt;J&lt;Q&lt;K&lt;A&lt;2&lt;小王&lt;大王，而花色并不对牌的大小产生影响。每一局游戏中，一副手牌由n张牌组成。游戏者每次可以根据规定的牌型进行出牌，首先打光自己的手牌一方取得游戏的胜利。现在，牛牛只想知道，对于自己的若干组手牌，分别最少需要多少次出牌可以将它们打光。请你帮他解决这个问题。需要注意的是，本题中游戏者每次可以出手的牌型与一般的斗地主相似而略有不同。具体规则如下： </p>
 <a id="more"></a>
 
@@ -4837,7 +4837,7 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     
     <entry>
       <title><![CDATA[[BZOJ 1409] Password]]></title>
-      <url>https://www.nekomio.com/2017/08/02/57/</url>
+      <url>https://www.nekomio.com/2017/08/03/57/</url>
       <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Rivest是密码学专家。近日他正在研究一种数列E = {E[1],E[2],……,E[n]}，<br>且E[1] = E[2] = p（p为一个质数），E[i] = E[i-2]*E[i-1] （若2&lt;i&lt;=n）。  </p>
 <a id="more"></a>
 <p>例如{2,2,4,8,32,256,8192,……}就是p = 2的数列。在此基础上他又设计了一种加密算法，该算法可以通过一个密钥q (q &lt; p)将一个正整数n加密成另外一个正整数d，计算公式为：d = E[n] mod q。现在Rivest想对一组数据进行加密，但他对程序设计不太感兴趣，请你帮助他设计一个数据加密程序。</p>
@@ -4873,7 +4873,7 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     
     <entry>
       <title><![CDATA[BZOJ 2588 [Spoj 10628] Count on a tree]]></title>
-      <url>https://www.nekomio.com/2017/08/02/56/</url>
+      <url>https://www.nekomio.com/2017/08/03/56/</url>
       <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一棵N个节点的树，每个点有一个权值，对于M个询问(u,v,k)，你需要回答u xor lastans和v这两个节点间第K小的点权。其中lastans是上一个询问的答案，初始为0，即第一个询问的u是明文。</p>
 <a id="more"></a>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行两个整数N,M。<br>第二行有N个整数，其中第i个整数表示点i的权值。<br>后面N-1行每行两个整数(x,y)，表示点x到点y有一条边。<br>最后M行每行两个整数(u,v,k)，表示一组询问。</p>
@@ -4906,7 +4906,7 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     
     <entry>
       <title><![CDATA[BZOJ 1901 [Zju2112] Dynamic Rankings]]></title>
-      <url>https://www.nekomio.com/2017/08/02/55/</url>
+      <url>https://www.nekomio.com/2017/08/03/55/</url>
       <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个含有n个数的序列a[1],a[2],a[3]……a[n]，程序必须回答这样的询问：对于给定的i,j,k，在a[i],a[i+1<br>],a[i+2]……a[j]中第k小的数是多少(1≤k≤j-i+1)，并且，你可以改变一些a[i]的值，改变后，程序还能针对改<br>变后的a继续回答上面的问题。</p>
 <a id="more"></a>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一行一个数字N，代表测试组数<br>对于每组数据第一行有两个正整数n(1≤n≤10000)，m(1≤m≤10000)。<br>分别表示序列的长度和指令的个数。<br>第二行有n个数，表示a[1],a[2]……a[n]，这些数都小于10^9。<br>接下来的m行描述每条指令<br>每行的格式是下面两种格式中的一种。<br>Q i j k 或者 C i t<br>Q i j k （i,j,k是数字，1≤i≤j≤n, 1≤k≤j-i+1）<br>表示询问指令，询问a[i]，a[i+1]……a[j]中第k小的数。<br>C i t (1≤i≤n，0≤t≤10^9)表示把a[i]改变成为t</p>
@@ -5096,42 +5096,6 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     </entry>
     
     <entry>
-      <title><![CDATA[[网络流24题] 餐巾]]></title>
-      <url>https://www.nekomio.com/2017/07/30/49/</url>
-      <content type="html"><![CDATA[<h3 id="【问题描述】"><a href="#【问题描述】" class="headerlink" title="【问题描述】"></a>【问题描述】</h3><p> 一个餐厅在相继的N天里，第i天需要Ri块餐巾(i=l，2，…，N)。餐厅可以从三种途径获得餐巾。</p>
-<ol>
-<li>购买新的餐巾，每块需p分；  </li>
-<li>把用过的餐巾送到快洗部，洗一块需m天，费用需f分(f&lt;p)。如m=l时，第一天送到快洗部的餐巾第二天就可以使用了，送慢洗的情况也如此。   <a id="more"></a></li>
-<li>把餐巾送到慢洗部，洗一块需n天(n&gt;m)，费用需s分(s&lt;f)。在每天结束时，餐厅必须决定多少块用过的餐巾送到快洗部，多少块送慢洗部。在每天开始时，餐厅必须决定是否购买新餐巾及多少，使洗好的和新购的餐巾之和满足当天的需求量Ri，并使N天总的费用最小。  </li>
-</ol>
-<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>输入文件共 3 行，第 1 行为总天数；第 2 行为每天所需的餐巾块数；第 3 行为每块餐巾的新购费用 p ，快洗所需天数 m ，快洗所需费用 f ，慢洗所需天数 n ，慢洗所需费用 s 。</p>
-<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>一行，最小的费用</p>
-<h3 id="【样例】"><a href="#【样例】" class="headerlink" title="【样例】"></a>【样例】</h3><h3 id="napkin-in"><a href="#napkin-in" class="headerlink" title="napkin.in"></a>napkin.in</h3><blockquote>
-<p>3<br>3 2 4<br>10 1 6 2 3  </p>
-</blockquote>
-<h3 id="napkin-out"><a href="#napkin-out" class="headerlink" title="napkin.out"></a>napkin.out</h3><blockquote>
-<p>64  </p>
-</blockquote>
-<h3 id="【数据规模】"><a href="#【数据规模】" class="headerlink" title="【数据规模】"></a>【数据规模】</h3><p>n&lt;=200,Ri&lt;=50  </p>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>将天拆点<br>由源点向天的第一个点连边<br>然后由天的第二个点向汇点连边<br>流量都为Ri  费用为零<br>由源点向天的第二个点连流量为正无穷 费用为p的边<br>然后由前一天的剩下的向后一天连边<br>由前一天洗过的向能用的那一天连边<br>然后跑最小费用最大流就好了  </p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Mincost</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  <span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> first[<span class="number">20005</span>], p;</span><br><span class="line">    Mincost()</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(first, <span class="number">-1</span>, <span class="keyword">sizeof</span>(first));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">edge</span></span></span><br><span class="line"><span class="class">    &#123;</span></span><br><span class="line">      <span class="keyword">public</span>:</span><br><span class="line">        <span class="keyword">int</span> END, S, next, cap, cost;</span><br><span class="line">    &#125; v[<span class="number">100005</span>];</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> f, <span class="keyword">int</span> c)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        v[p].END = b, v[p].next = first[a], v[p].S = a, v[p].cap = f, v[p].cost = c, first[a] = p++;</span><br><span class="line">        v[p].END = a, v[p].next = first[b], v[p].S = b, v[p].cap = <span class="number">0</span>, v[p].cost = -c, first[b] = p++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> dis[<span class="number">20005</span>], pre[<span class="number">20005</span>];</span><br><span class="line">    <span class="keyword">bool</span> vis[<span class="number">20005</span>];</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">spfa</span><span class="params">(<span class="keyword">int</span> S, <span class="keyword">int</span> E)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="built_in">memset</span>(dis, <span class="number">0x3f</span>, <span class="keyword">sizeof</span>(dis));</span><br><span class="line">        <span class="built_in">memset</span>(pre, <span class="number">-1</span>, <span class="keyword">sizeof</span>(pre));</span><br><span class="line">        <span class="built_in">memset</span>(vis, <span class="number">0</span>, <span class="keyword">sizeof</span>(vis));</span><br><span class="line">        <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; Q;</span><br><span class="line">        Q.push(S);</span><br><span class="line">        vis[S] = <span class="number">1</span>;</span><br><span class="line">        dis[S] = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (!Q.empty())</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> u = Q.front();</span><br><span class="line">            Q.pop();</span><br><span class="line">            vis[u] = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = first[u]; i != <span class="number">-1</span>; i = v[i].next)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (!v[i].cap)</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span> (dis[v[i].END] &gt; dis[u] + v[i].cost)</span><br><span class="line">                &#123;</span><br><span class="line">                    dis[v[i].END] = dis[u] + v[i].cost;</span><br><span class="line">                    pre[v[i].END] = i;</span><br><span class="line">                    <span class="keyword">if</span> (!vis[v[i].END])</span><br><span class="line">                    &#123;</span><br><span class="line">                        vis[v[i].END] = <span class="number">1</span>;</span><br><span class="line">                        Q.push(v[i].END);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dis[E] != <span class="number">0x3f3f3f3f</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">MinCost</span><span class="params">(<span class="keyword">int</span> S, <span class="keyword">int</span> T)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>, flow;</span><br><span class="line">        <span class="keyword">while</span> (spfa(S, T))</span><br><span class="line">        &#123;</span><br><span class="line">            flow = INF;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = pre[T]; i != <span class="number">-1</span>; i = pre[v[i].S])</span><br><span class="line">                flow = min(flow, v[i].cap);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = pre[T]; i != <span class="number">-1</span>; i = pre[v[i].S])</span><br><span class="line">                v[i].cap -= flow, v[i ^ <span class="number">1</span>].cap += flow;</span><br><span class="line">            ans += dis[T] * flow;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125; Min;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">205</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    freopen(<span class="string">"napkin.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"napkin.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</span><br><span class="line">    <span class="keyword">int</span> n, p, m, f, c, s;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, a + i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d%d"</span>, &amp;p, &amp;m, &amp;f, &amp;c, &amp;s);</span><br><span class="line">    <span class="keyword">int</span> S = <span class="number">0</span>, T = n * <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        Min.add(S, i, a[i], <span class="number">0</span>);</span><br><span class="line">        Min.add(n + i, T, a[i], <span class="number">0</span>);</span><br><span class="line">        Min.add(S, i + n, INF, p);</span><br><span class="line">        <span class="comment">//Min.add(i, i + n, a[i], 0);</span></span><br><span class="line">        <span class="keyword">if</span> (i + <span class="number">1</span> &lt;= n)</span><br><span class="line">            Min.add(i, i + <span class="number">1</span>, INF, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">if</span> (i + m &lt;= n)</span><br><span class="line">            Min.add(i, i + n + m, INF, f);</span><br><span class="line">        <span class="keyword">if</span> (i + c &lt;= n)</span><br><span class="line">            Min.add(i, i + n + c, INF, s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>, Min.MinCost(S, T));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      
-        <categories>
-            
-            <category> 题解 </category>
-            
-        </categories>
-        
-        
-        <tags>
-            
-            <tag> 费用流 </tag>
-            
-        </tags>
-        
-    </entry>
-    
-    <entry>
       <title><![CDATA[vijos 天神下凡]]></title>
       <url>https://www.nekomio.com/2017/07/30/48/</url>
       <content type="html"><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>Czy找到宝藏获得屠龙宝刀和神秘秘籍！现在他要去找经常ntr他的Jmars报仇……</p>
@@ -5168,8 +5132,44 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     </entry>
     
     <entry>
+      <title><![CDATA[[网络流24题] 餐巾]]></title>
+      <url>https://www.nekomio.com/2017/07/30/49/</url>
+      <content type="html"><![CDATA[<h3 id="【问题描述】"><a href="#【问题描述】" class="headerlink" title="【问题描述】"></a>【问题描述】</h3><p> 一个餐厅在相继的N天里，第i天需要Ri块餐巾(i=l，2，…，N)。餐厅可以从三种途径获得餐巾。</p>
+<ol>
+<li>购买新的餐巾，每块需p分；  </li>
+<li>把用过的餐巾送到快洗部，洗一块需m天，费用需f分(f&lt;p)。如m=l时，第一天送到快洗部的餐巾第二天就可以使用了，送慢洗的情况也如此。   <a id="more"></a></li>
+<li>把餐巾送到慢洗部，洗一块需n天(n&gt;m)，费用需s分(s&lt;f)。在每天结束时，餐厅必须决定多少块用过的餐巾送到快洗部，多少块送慢洗部。在每天开始时，餐厅必须决定是否购买新餐巾及多少，使洗好的和新购的餐巾之和满足当天的需求量Ri，并使N天总的费用最小。  </li>
+</ol>
+<h3 id="【输入】"><a href="#【输入】" class="headerlink" title="【输入】"></a>【输入】</h3><p>输入文件共 3 行，第 1 行为总天数；第 2 行为每天所需的餐巾块数；第 3 行为每块餐巾的新购费用 p ，快洗所需天数 m ，快洗所需费用 f ，慢洗所需天数 n ，慢洗所需费用 s 。</p>
+<h3 id="【输出】"><a href="#【输出】" class="headerlink" title="【输出】"></a>【输出】</h3><p>一行，最小的费用</p>
+<h3 id="【样例】"><a href="#【样例】" class="headerlink" title="【样例】"></a>【样例】</h3><h3 id="napkin-in"><a href="#napkin-in" class="headerlink" title="napkin.in"></a>napkin.in</h3><blockquote>
+<p>3<br>3 2 4<br>10 1 6 2 3  </p>
+</blockquote>
+<h3 id="napkin-out"><a href="#napkin-out" class="headerlink" title="napkin.out"></a>napkin.out</h3><blockquote>
+<p>64  </p>
+</blockquote>
+<h3 id="【数据规模】"><a href="#【数据规模】" class="headerlink" title="【数据规模】"></a>【数据规模】</h3><p>n&lt;=200,Ri&lt;=50  </p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>将天拆点<br>由源点向天的第一个点连边<br>然后由天的第二个点向汇点连边<br>流量都为Ri  费用为零<br>由源点向天的第二个点连流量为正无穷 费用为p的边<br>然后由前一天的剩下的向后一天连边<br>由前一天洗过的向能用的那一天连边<br>然后跑最小费用最大流就好了  </p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> INF = <span class="number">0x3f3f3f3f</span>;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Mincost</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">  <span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">int</span> first[<span class="number">20005</span>], p;</span><br><span class="line">    Mincost()</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(first, <span class="number">-1</span>, <span class="keyword">sizeof</span>(first));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">edge</span></span></span><br><span class="line"><span class="class">    &#123;</span></span><br><span class="line">      <span class="keyword">public</span>:</span><br><span class="line">        <span class="keyword">int</span> END, S, next, cap, cost;</span><br><span class="line">    &#125; v[<span class="number">100005</span>];</span><br><span class="line"> </span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> a, <span class="keyword">int</span> b, <span class="keyword">int</span> f, <span class="keyword">int</span> c)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        v[p].END = b, v[p].next = first[a], v[p].S = a, v[p].cap = f, v[p].cost = c, first[a] = p++;</span><br><span class="line">        v[p].END = a, v[p].next = first[b], v[p].S = b, v[p].cap = <span class="number">0</span>, v[p].cost = -c, first[b] = p++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">int</span> dis[<span class="number">20005</span>], pre[<span class="number">20005</span>];</span><br><span class="line">    <span class="keyword">bool</span> vis[<span class="number">20005</span>];</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">spfa</span><span class="params">(<span class="keyword">int</span> S, <span class="keyword">int</span> E)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="built_in">memset</span>(dis, <span class="number">0x3f</span>, <span class="keyword">sizeof</span>(dis));</span><br><span class="line">        <span class="built_in">memset</span>(pre, <span class="number">-1</span>, <span class="keyword">sizeof</span>(pre));</span><br><span class="line">        <span class="built_in">memset</span>(vis, <span class="number">0</span>, <span class="keyword">sizeof</span>(vis));</span><br><span class="line">        <span class="built_in">queue</span>&lt;<span class="keyword">int</span>&gt; Q;</span><br><span class="line">        Q.push(S);</span><br><span class="line">        vis[S] = <span class="number">1</span>;</span><br><span class="line">        dis[S] = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (!Q.empty())</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> u = Q.front();</span><br><span class="line">            Q.pop();</span><br><span class="line">            vis[u] = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = first[u]; i != <span class="number">-1</span>; i = v[i].next)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (!v[i].cap)</span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                <span class="keyword">if</span> (dis[v[i].END] &gt; dis[u] + v[i].cost)</span><br><span class="line">                &#123;</span><br><span class="line">                    dis[v[i].END] = dis[u] + v[i].cost;</span><br><span class="line">                    pre[v[i].END] = i;</span><br><span class="line">                    <span class="keyword">if</span> (!vis[v[i].END])</span><br><span class="line">                    &#123;</span><br><span class="line">                        vis[v[i].END] = <span class="number">1</span>;</span><br><span class="line">                        Q.push(v[i].END);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dis[E] != <span class="number">0x3f3f3f3f</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">MinCost</span><span class="params">(<span class="keyword">int</span> S, <span class="keyword">int</span> T)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> ans = <span class="number">0</span>, flow;</span><br><span class="line">        <span class="keyword">while</span> (spfa(S, T))</span><br><span class="line">        &#123;</span><br><span class="line">            flow = INF;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = pre[T]; i != <span class="number">-1</span>; i = pre[v[i].S])</span><br><span class="line">                flow = min(flow, v[i].cap);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = pre[T]; i != <span class="number">-1</span>; i = pre[v[i].S])</span><br><span class="line">                v[i].cap -= flow, v[i ^ <span class="number">1</span>].cap += flow;</span><br><span class="line">            ans += dis[T] * flow;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125; Min;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">205</span>];</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> <span class="keyword">const</span> *argv[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    freopen(<span class="string">"napkin.in"</span>,<span class="string">"r"</span>,<span class="built_in">stdin</span>);</span><br><span class="line">    freopen(<span class="string">"napkin.out"</span>,<span class="string">"w"</span>,<span class="built_in">stdout</span>);</span><br><span class="line">    <span class="keyword">int</span> n, p, m, f, c, s;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, a + i);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d%d%d%d"</span>, &amp;p, &amp;m, &amp;f, &amp;c, &amp;s);</span><br><span class="line">    <span class="keyword">int</span> S = <span class="number">0</span>, T = n * <span class="number">3</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        Min.add(S, i, a[i], <span class="number">0</span>);</span><br><span class="line">        Min.add(n + i, T, a[i], <span class="number">0</span>);</span><br><span class="line">        Min.add(S, i + n, INF, p);</span><br><span class="line">        <span class="comment">//Min.add(i, i + n, a[i], 0);</span></span><br><span class="line">        <span class="keyword">if</span> (i + <span class="number">1</span> &lt;= n)</span><br><span class="line">            Min.add(i, i + <span class="number">1</span>, INF, <span class="number">0</span>);</span><br><span class="line">        <span class="keyword">if</span> (i + m &lt;= n)</span><br><span class="line">            Min.add(i, i + n + m, INF, f);</span><br><span class="line">        <span class="keyword">if</span> (i + c &lt;= n)</span><br><span class="line">            Min.add(i, i + n + c, INF, s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"%d"</span>, Min.MinCost(S, T));</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+        <categories>
+            
+            <category> 题解 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 费用流 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[vijos 藏宝图]]></title>
-      <url>https://www.nekomio.com/2017/07/29/47/</url>
+      <url>https://www.nekomio.com/2017/07/30/47/</url>
       <content type="html"><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>Czy爬上黑红树，到达了一个奇怪的地方……</p>
 <p>Czy发现了一张奇怪的藏宝图。图上有n个点，m条无向边。已经标出了图中两两之间距离dist。但是czy知道，只有当图刚好又是一颗树的时候，这张藏宝图才是真的。如果藏宝图是真的，那么经过点x的边的边权平均数最大的那个x是藏着宝物的地方。请计算这是不是真的藏宝图，如果是真的藏宝之处在哪里。</p>
 <a id="more"></a>
@@ -5209,7 +5209,7 @@ EBBAA</code></pre><h3 id="样例输出"><a href="#样例输出" class="headerlin
     
     <entry>
       <title><![CDATA[vijos 黑红树]]></title>
-      <url>https://www.nekomio.com/2017/07/29/46/</url>
+      <url>https://www.nekomio.com/2017/07/30/46/</url>
       <content type="html"><![CDATA[<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>Mz们在czy的生日送他一个黑红树种子……czy种下种子，结果种子很快就长得飞快，它的枝干伸入空中看不见了……</p>
 <p>Czy发现黑红树具有一些独特的性质。</p>
 <ol>
@@ -6882,7 +6882,7 @@ priority_queue&lt;<span class="keyword">long</span> <span class="keyword">long</
     
     <entry>
       <title><![CDATA[网络流24题 太空飞行计划]]></title>
-      <url>https://www.nekomio.com/2017/06/13/8/</url>
+      <url>https://www.nekomio.com/2017/06/14/8/</url>
       <content type="html"><![CDATA[<h3 id="【问题描述】"><a href="#【问题描述】" class="headerlink" title="【问题描述】"></a>【问题描述】</h3><p>W 教授正在为国家航天中心计划一系列的太空飞行。每次太空飞行可进行一系列商业性实验而获取利润。现已确定了一个可供选择的实验集合E={E1,E2,…,Em}，和进行这些实验需要使用的全部仪器的集合I={ I1, I2,…,In }。实验Ej 需要用到的仪器是I的子集Rj∈I。配置仪器Ik 的费用为ck 美元。实验Ej 的赞助商已同意为该实验结果支付pj 美元。W教授的任务是找出一个有效算法，确定在一次太空飞行中要进行哪些实验并因此而配置哪些仪器才能使太空飞行的净收益最大。这里净收益是指进行实验所获得的全部收入与配置仪器的全部费用的差额。</p>
 <a id="more"></a> 
 <h3 id="【编程任务】"><a href="#【编程任务】" class="headerlink" title="【编程任务】"></a>【编程任务】</h3><p>对于给定的实验和仪器配置情况，编程找出净收益最大的试验计划。</p>
@@ -7459,6 +7459,51 @@ No</code></pre><h2 id="题解"><a href="#题解" class="headerlink" title="题�
     </entry>
     
     <entry>
+      <title><![CDATA[书签]]></title>
+      <url>https://www.nekomio.com/bookmark.html</url>
+      <content type="html"><![CDATA[<script src=/js/crypto-js.js></script>
+<script>
+function doDecrypt (pwd, onError) {
+	console.log('in doDecrypt');
+	const txt = document.getElementById('enc_content').innerHTML;
+	let plantext;
+	try {
+		const bytes = CryptoJS.AES.decrypt(txt, pwd);
+		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+	} catch(err) {
+		if(onError) {
+			onError(err);
+		}
+		return;
+	}
+	document.getElementById('enc_content').innerHTML = plaintext;
+	document.getElementById('enc_content').style.display = 'block';
+	document.getElementById('enc_passwd').style.display = 'none';
+	if(typeof MathJax !== 'undefined') {
+		MathJax.Hub.Queue(
+			['resetEquationNumbers', MathJax.InputJax.TeX],
+			['PreProcess', MathJax.Hub],
+			['Reprocess', MathJax.Hub]
+		);
+	}
+}
+</script>
+<div id="enc_content" style="display:none">U2FsdGVkX19ey1J4pU8RQQz5vLzvO7lAbo2CjrSLqaivoUDgUjzW5jlFeZaboE87x00t38sDtHpA9AJ/kcKkBTF37bXGrgiQeRmK5PZEKL76ivmq6/faoIHMtbjsPbmHW5C0TCB+bWlAP2tmzgskvWpAYFiWUDFNexh4tq9rQuBAXqjg6jmuXeavQpa4r7ToGqeF3nwVwzD+/U70HxsI9obIp2BK/LgQwwMZNq0drgppOvgpHOLTSzL8whUjLwxzNmYEbzTUxGudIwOA+cFe5QhJB2hCYnd9MCS/imJ9n2I=</div>
+<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
+<script>
+var onError = function(error) {
+	document.getElementById("enc_error").innerHTML = "password error!"
+};
+function decrypt() {
+var passwd = document.getElementById("enc_pwd_input").value;
+console.log(passwd);
+doDecrypt(passwd, onError);
+}
+</script>
+</div>]]></content>
+    </entry>
+    
+    <entry>
       <title></title>
       <url>https://www.nekomio.com/Markdown.html</url>
       <content type="html"><![CDATA[<!DOCTYPE html>
@@ -7493,51 +7538,6 @@ No</code></pre><h2 id="题解"><a href="#题解" class="headerlink" title="题�
     </entry>
     
     <entry>
-      <title><![CDATA[书签]]></title>
-      <url>https://www.nekomio.com/bookmark.html</url>
-      <content type="html"><![CDATA[<script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX1+ewSZdQErH5Tg8vbQMiAhz6LIvTekdvDaFyPoFpa4PKiBzHuaxZpRwxRl6BzPOl5eCYuR4+sQxl+BsWnpvxTXWbpA7brcYpGZiN5kVlmX98SLmhLDXHs+RJzxujQzqe7YgITCrLu+sjPg5K23nYGAFBjPo18ALYREBXDm5UKEKV+C0BEeQycCPWFpKP7wn97C3sl5myn7yHPJimSIV9O0/yryzuTEB3zwrMTpHXsAD1YSes55+PoO24/lbteh7gEw3TJluvU6e8iKrA4nbFtdJSkpjOf6NnRI=</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[links]]></title>
       <url>https://www.nekomio.com/links.html</url>
       <content type="html"></content>
@@ -7552,6 +7552,12 @@ doDecrypt(passwd, onError);
     <entry>
       <title><![CDATA[tags]]></title>
       <url>https://www.nekomio.com/tags.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[timeline]]></title>
+      <url>https://www.nekomio.com/timeline/index.html</url>
       <content type="html"></content>
     </entry>
     
@@ -8135,683 +8141,6 @@ var animation={
 	}
 }
 </script>
-</html>]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>https://www.nekomio.com/start.html</url>
-      <content type="html"><![CDATA[<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head><meta name="generator" content="Hexo 3.9.0">
-	<meta content="en-us" http-equiv="Content-Language">
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	<meta name="viewport" content="width=device-width, initial-scale=0.9">
-	<meta name="referrer" content="no-referrer">
-	<title>主页</title>
-</head>
-
-<style>
-	<div id="yiyan"style="
-width: 500px;
-	background-color:rgba(255, 255, 255, 0);
-	">
-<br /><br /><br />
-	/*下方这句不动它，翻译开始*/
-
-	* {
-		padding: 0;
-		margin: 0;
-	}
-
-
-	/*翻译
-主页整体样式 
-文本对齐︰ 中心;
-背景色︰ #f1f6ee  使用夜间默认时修改为#000000即可
-}
-*/
-	body {
-		text-align: center;
-		/*可换上面的图片地址*/
-		background-size: 100% !important;
-		background-repeat: no-repeat;
-		background-color: #ffffff;
-		/*可删上面的固定句语*/
-	}
-
-
-
-
-	/*翻译
-搜索栏字体样式 
-宽度︰ 90%;
-高度︰ 40px;
-背景颜色︰ 透明;
-边境︰ 无;
-大纲︰ 0;
-字体大小︰ 18px;
-字体颜色: #000000;
-填充︰ 0 20px;
-边界半径︰ 50px
-}*/
-
-	#search_input {
-		width: 90%;
-		height: 40px;
-		background-color: transparent;
-		border: none;
-		outline: 0;
-		font-size: 16px;
-		color: #A593E0;
-		padding: 0 10px;
-		border-radius: 50px
-	}
-
-	/*翻译
-搜索框边距 
-下边距︰ 30px;
-上边距︰ 20px;
-*/
-
-	.search_part {
-		margin-bottom: 5px;
-		margin-top: 15px;
-	}
-
-	/*翻译
-跨度样式
-显示︰ 阻止;
-溢出︰ 隐藏;
-左填充︰ 5px;
-垂直对齐︰ 居中;
-*/
-
-	.search_bar span {
-		display: block;
-		font-size: 12px;
-		overflow: hidden;
-		padding-left: 2px;
-		margin-right: 42px;
-		vertical-align: middle;
-	}
-
-	.search_bar span i {
-		display: none;
-		float: right;
-		width: 35px;
-		height: 40px;
-		background-size: 16px;
-	}
-
-	.search_bar .si {
-		margin: 0 38px 0 10px;
-	}
-
-	/*搜索建议条*/
-	#suggest {
-		position: absolute;
-		left: -1px;
-		right: -1px;
-		top: 40px;
-		border: 1px solid #ccc;
-		background: #fff;
-		line-height: 40px;
-	}
-
-	#suggest li {
-		border-bottom: 1px solid #ccc;
-		text-align: left;
-		padding-left: 16px;
-	}
-
-	#suggest li:active {
-		background: #F0F0F0;
-	}
-
-	#suggest li b {
-		float: right;
-		width: 44px;
-		height: 40px;
-		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAI5JREFUSEtjZCACLF261J6RkbELpPT///9l0dHRB4nQRlgJ0ODny5Yt+w/CIDZhHUSqgBkKo4nURljZqMHwMBohQQFK/ECvnkT3LgX8kyAzGZATPwWGgTMPSiYCGvyEWgYiGfyEAcjxoKaroWZ5EM52QBUjJLkRExajQUH7Qgg5E4HYxMQLUWpgmYiUxA8AOdLMz+iDKvIAAAAASUVORK5CYII=) no-repeat scroll center center #fff;
-		background-size: 11px;
-	}
-
-	#suggest .close {
-		text-align: right;
-		font-size: 14px;
-		color: #888;
-		padding-right: 12px;
-	}
-
-	/*翻译
-搜索栏框架样式 {
-框阴影︰ 0 0 18px rgba(70,70,40,.255);括号里的颜色为Rgb默认，可进入http://rgb.phpddt.com/查询
--webkit 动画︰ fadeIn 2.5;
-动画︰ fadeIn 2.5;
-背景色︰ rgba(255,255,255,.100);
-边界半径︰ 50px;
-显示︰ 表;
-垂直对齐︰ 居中;
-宽度︰ 80%;根据你喜欢的宽度调整，目前我为了对齐图标使用80%
-高度︰ 40px;
-最大宽度︰ 400px;
-边距︰ 10px 默认布局;
-}
-*/
-
-	.search_bar {
-		box-shadow: 0 0 5px rgba(70, 70, 40, .255);
-		-webkit-animation: fadeIn 2.5s;
-		animation: fadeIn 2.5s;
-		background-color: rgba(255, 255, 255, 1);
-		border-radius: 3px;
-		display: table;
-		vertical-align: middle;
-		width: 85%;
-		height: 20px;
-		max-width: 400px;
-		margin: 10px auto;
-		position: relative;
-		z-index: 10;
-	}
-
-	/*翻译
-搜索栏搜索目标确认图标样式，目前为米奇
-轮廓边框︰ 0;
-高度︰ 40px;
-浮标位置︰ 右;
-颜色: #000;
-字体大小︰ 16px;
-字体粗细︰ 700;
-边境︰ 无;
-背景颜色︰ 透明;
-填充︰ 0 13px 0 13px
-*/
-
-	#search_submit {
-		outline: 0;
-		height: 40px;
-		float: right;
-		color: #4a4266;
-		font-size: 18px;
-		font-weight: 500;
-		border: none;
-		background-color: transparent;
-		padding: 0 13px 0 13px
-	}
-
-
-	/*翻译
-书签图标排版目录样式 
-宽度︰ 100%;
-文本对齐︰ 中心;
-填充顶部︰ 15px;
-填充底部︰ 15px;
-*/
-
-	#content {
-		width: 100%;
-		text-align: center;
-		padding-top: 0px;
-		padding-bottom: 0px;
-	}
-
-
-	/*翻译
-书签框架样式
--webkit 动画︰ fadeInDown 1s;
-动画︰ fadeInDown 1s;
-位置︰ 相对应;
-显示︰ 显示在内部;
-宽度︰ 75px;
-边境︰ 0;
-*/
-
-	.box {
-		-webkit-animation: fadeInDown 1s;
-		animation: fadeInDown 1s;
-		position: relative;
-		display: inline-block;
-		width: 70px;
-		border: 0;
-	}
-
-
-	/*翻译
-书签图标样式
-宽度︰ 100%;
-高度︰ 100%;
-位置︰ 不受限制;
-左︰ 0;
-顶︰ 0;
-*/
-
-	.box a {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
-
-	/*翻译
-书签字体样式
-颜色: #232323;使用夜间模式时修改为#eee或者#f2eada即可
-高度︰ 1.5em;
-线的高度︰ 1.5em;
-宽度︰ 72px;
-字体大小︰ 0.75em;
-白色空间︰ nowrap;
-溢出︰ 隐藏;
-边距︰ 默认布局;
--webkit 边框顶部右半径︰ 5px;
--webkit 边框底部右半径︰ 5px;
-文本溢出︰ 省略;
--o 文本溢出︰ 省略;
-气相色谱-质谱-文本-溢出︰ 省略;
-填充顶部︰ 3px;
-填充底部︰ 8px;
-*/
-
-	.url {
-		color: #4a4266;
-		height: 1.5em;
-		line-height: 1.5em;
-		width: 72px;
-		font-size: 0.75em;
-		white-space: nowrap;
-		overflow: hidden;
-		margin: auto;
-		-webkit-border-top-right-radius: 5px;
-		-webkit-border-bottom-right-radius: 5px;
-		text-overflow: ellipsis;
-		-o-text-overflow: ellipsis;
-		-ms-text-overflow: ellipsis;
-		padding-top: 0px;
-		padding-bottom: 8px;
-	}
-
-	/*翻译
-字体样式 
-宽度︰ 3em;
-高度︰ 3em;
-最大宽度︰ 72px;
-*/
-
-	.icon {
-		width: 3em;
-		height: 3em;
-		max-width: 72px;
-	}
-
-	#app-items {
-		width: 100%;
-		max-width: 400px;
-		margin: 0px auto;
-		text-align: center;
-		background-color: #fff;
-		padding-top: 0px;
-		padding-bottom: 15px;
-	}
-
-	.title {
-		background-color: #ffffff;
-		font-size: 16px;
-		height: 30px;
-		line-height: 30px;
-		padding: 0 10px 0 20px;
-		color: #4a4266;
-
-	}
-
-	#yiyan {
-		width: 100%;
-		max-width: 400px;
-		margin: 0px auto;
-		text-align: center;
-		background-color: #fff;
-		padding-top: 0px;
-		padding-bottom: 15px;
-	}
-
-	.shuxing {
-		color: #4a4266;
-		font-size: 12px;
-		height: 30px;
-		line-height: 20px;
-		padding: 0 10px 0 20px;
-	}
-
-
-	@-webkit-keyframes flipInX {
-		0% {
-			-webkit-transform: perspective(400px) rotateX(90deg);
-			transform: perspective(400px) rotateX(90deg);
-			opacity: 0
-		}
-
-		40% {
-			-webkit-transform: perspective(400px) rotateX(-10deg);
-			transform: perspective(400px) rotateX(-10deg)
-		}
-
-		70% {
-			-webkit-transform: perspective(400px) rotateX(10deg);
-			transform: perspective(400px) rotateX(10deg)
-		}
-
-		100% {
-			-webkit-transform: perspective(400px) rotateX(0);
-			transform: perspective(400px) rotateX(0);
-			opacity: 1
-		}
-	}
-
-	@keyframes flipInX {
-		0% {
-			-webkit-transform: perspective(400px) rotateX(90deg);
-			-ms-transform: perspective(400px) rotateX(90deg);
-			transform: perspective(400px) rotateX(90deg);
-			opacity: 0
-		}
-
-		40% {
-			-webkit-transform: perspective(400px) rotateX(-10deg);
-			-ms-transform: perspective(400px) rotateX(-10deg);
-			transform: perspective(400px) rotateX(-10deg)
-		}
-
-		70% {
-			-webkit-transform: perspective(400px) rotateX(10deg);
-			-ms-transform: perspective(400px) rotateX(10deg);
-			transform: perspective(400px) rotateX(10deg)
-		}
-
-		100% {
-			-webkit-transform: perspective(400px) rotateX(0);
-			-ms-transform: perspective(400px) rotateX(0);
-			transform: perspective(400px) rotateX(0);
-			opacity: 1
-		}
-	}
-
-	@-webkit-keyframes fadeIn {
-		0% {
-			opacity: 0
-		}
-
-		100% {
-			opacity: 1
-		}
-	}
-
-	@keyframes fadeIn {
-		0% {
-			opacity: 0
-		}
-
-		100% {
-			opacity: 1
-		}
-	}
-
-	@-webkit-keyframes fadeInDown {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateY(-20px);
-			transform: translateY(-20px)
-		}
-
-		100% {
-			opacity: 1;
-			-webkit-transform: translateY(0);
-			transform: translateY(0)
-		}
-	}
-
-	@keyframes fadeInDown {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateY(-20px);
-			-ms-transform: translateY(-20px);
-			transform: translateY(-20px)
-		}
-
-		100% {
-			opacity: 1;
-			-webkit-transform: translateY(0);
-			-ms-transform: translateY(0);
-			transform: translateY(0)
-		}
-	}
-</style>
-
-<body>
-	<div id="content">
-		<br>
-		<div class="search_part">
-			<br><br><br><br>
-			<img class="smaller" src="https://wx3.sinaimg.cn/large/da6ac54fgy1ftvsol0ytmg20oh0b4npe.gif" width="33%">
-			<form id="search_form" onsubmit="return search()" class="search_bar">
-				<input type="submit" id="search_submit" value="☯">
-				<span><i id="clear" onclick="clear_seach()"></i>
-					<div class="si"><input class="search" type="text" value onkeyup="get_suggest()" onfocus="get_suggest()" onpaste="get_suggest()" autocomplete="off" id="search_input" placeholder="✎...  偷得浮生半日闲～"></div>
-				</span>
-				<div id="suggest" style="display:none">
-					<ul id="suglist"></ul>
-					<div class="close" onclick="close_sug()">| 收起</div>
-				</div>
-			</form>
-		</div>
-		<br>
-		<!--
-<div style="text-align:center;"</div>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=210 src="http://music.163.com/outchain/player?type=0&id=692469559&auto=1&height=230"></iframe>-->
-
-		<div class="box">
-			<a href="https://www.google.com" target="_blank" rel="noopener"></a>
-			<p><img class="icon" src="img/Google.svg"></p>
-			<p class="url">Google</p>
-		</div>
-
-		<div class="box">
-			<a href="history://" target="_blank" rel="noopener"></a>
-			<p><img class="icon" src="img/lishi.png"></p>
-			<p class="url">足迹</p>
-		</div>
-
-		<div class="box">
-			<a href="https://www.moe123.net/sites#(" target="_blank" rel="noopener"></a>
-			<p><img class="icon" src="img/Wikipedia.png"></p>
-			<p class="url">导航</p>
-		</div>
-
-		<div class="box">
-			<a href="folder://" target="_blank" rel="noopener"></a>
-			<p><img class="icon" src="img/shuqian.png"></p>
-			<p class="url">书签</p>
-		</div>
-
-		<br>
-		<font color="#303030">
-			<font size="6">―·❀·―</font>
-			<table width="32" border="0"></table></font>
-        <br>
-	</div>
-
-	<!--
-如若要添加可复制一段
-<div class="box">
-<a href="地址"></a>
-<p><img class="icon" src="img/icon6.png" ></p>
-<p class="url">书签名称</p>
-</div>
-其中链接在href中如href="地址"建议填写folder://自己创建的文件夹地址，这样创建一次不必再修改
-图标文件放置在img文件夹中定义如src="img/icon6.png"
-显示的标题在<p class="url">书签名称</p>之间定义如<p class="url">酷安</p>
-下方window.location.href =主页搜索引擎地址，目前为自用Pc版百度内部搜索，加上浏览器的顶部搜索即为双搜索，使用更方便
-
--->
-	<br>
-	<script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script>
-	<span id="lwlhitokoto">
-		<script>lwlhitokoto()</script>
-	</span>
-	<!--<div id="yiyan" style="
-width: 500px;
-background-color:rgba(255, 255, 255, 0);
-">
-<br />
-<br />
-<script src="hitokoto.js"></script>
-<script>
-var num=Math.random();
-if(num>=0.6){
-var url="https://hitoapi.cc/sp/"
-var ajax = new XMLHttpRequest();
-ajax.onreadystatechange=function()
-  {
-  if (ajax.readyState==4 && ajax.status==200)
-    {
-   var hit = JSON.parse(ajax.responseText);
-    document.getElementById("yiyan").innerHTML="<br />"+hit.text+"<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——"+hit.author;
-    }
-  }
-ajax.open('GET',url, true);
-ajax.send();
-}
-
-else{
-    var count=Math.floor(Math.random()*hit.length);
-    var ran=hit[count];
-   var text=ran.hitokoto;
-   var author=ran.source;
-   /*var ajax = new XMLHttpRequest();
-ajax.onreadystatechange=function()
-  {
-  if (ajax.readyState==4)
-    {
-    alert(ajax.status);
-    alert(ajax.responseText);
-   var hit = JSON.parse(ajax.responseText);
-   var ran=hit(Math.random(hit.length-2)+lit.length);
-   var text=ran.hitokoto;
-   var author=ran.source;
-   document.getElementById("yiyan").innerHTML="<br />"+text+"<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——"+author;
-   }
-  }
-  ajax.open('GET','customHitokotoB.json', true);
-  ajax.send();
-  */
-   document.getElementById("yiyan").innerHTML="<br />"+text+"<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——"+author;
-}
-</script>
-<br>-->
-
-
-
-	<div>
-	<div class="lwlhitokoto">
-		<script type="text/javascript" src="https://api.yum6.cn/djt/index.php?encode=js"></script>
-		<span></span>
-		<p>
-			<script>
-				binduyan();
-			</script>
-		</p>
-	</div>
-	</div>
-	<script type="text/javascript">
-		var last_kw = '';
-        var max_sug_len = 1; //搜索建议最短触发长度
-
-        var url = location.search.replace("?", "");
-        /*获取搜索建议
-		采用的神马搜索的服务
-		*/
-		function get_suggest() {
-			var kw = document.getElementById('search_input').value;
-			var clear = document.getElementById('clear');
-			if (kw) clear.style.display = 'block';
-			else clear.style.display = 'none';
-			if (kw == last_kw) return;
-			last_kw = kw;
-			if (!kw || kw.length < max_sug_len) {
-				close_sug();
-				return;
-			}
-			var script = document.createElement('script');
-			script.type = 'text/javascript';
-			script.src = 'https://sugs.m.sm.cn/web?t=w&uc_param_str=dnnwnt&scheme=http&fr=android&bid=1&q=' + encodeURIComponent(kw) + '&_=' + new Date().getTime() + '&callback=jsonp3';
-			var head = document.querySelector('head');
-			script.onload = function () {
-				head.removeChild(script);
-			};
-			head.appendChild(script);
-		}
-		function jsonp3(res) {
-			var suggest = document.getElementById('suggest');
-			if (!res.r || !res.r.length) {
-				suggest.style.display = 'none';
-				return;
-			}
-			var html = '';
-			res.r.forEach(function (v) {
-				html += '<li>' + v.w + '<b></b></li>';
-			});
-			document.getElementById('suglist').innerHTML = html;
-			suggest.style.display = 'block';
-		}
-		function close_sug() {
-			last_kw = '';
-			document.getElementById('suggest').style.display = 'none';
-		}
-		function move_input() {
-			document.body.scrollTop = document.getElementById('search_form').offsetTop - 2;
-		}
-		function clear_seach() {
-			var input = document.getElementById('search_input');
-			input.value = '';
-			document.getElementById('clear').style.display = 'none';
-			close_sug();
-			input.focus();
-		}
-		function search() {
-            if (document.getElementById("search_input").value != "") {
-                if (url.toLowerCase() == "baidu") {
-                    window.location.href = "https://m.baidu.com/s?ie=utf-8&rn=30&rsv_enter=0&wd=" + encodeURIComponent(document.getElementById("search_input").value) + "&from=smor&safe=1&snum=1";
-                } else if (url.toLowerCase() == "google") {
-                    window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(document.getElementById("search_input").value);
-                } else if (url.toLowerCase() == "duckduckgo") {
-                    window.location.href = "https://duckduckgo.com/?q=" + encodeURIComponent(document.getElementById("search_input").value);
-                } else if (url.toLowerCase() == "bing") {
-                    window.location.href = "https://cn.bing.com/search?q=" + encodeURIComponent(document.getElementById("search_input").value);
-                } else if (url.toLowerCase() == "mirror") {
-                    window.location.href = "https://zjcqoo.github.io/-----https://www.google.com/search?q=" + encodeURIComponent(document.getElementById("search_input").value);
-                } else {
-                    window.location.href = "https://m.baidu.com/s?ie=utf-8&rn=30&rsv_enter=0&wd=" + encodeURIComponent(document.getElementById("search_input").value) + "&from=smor&safe=1&snum=1";
-                }
-                document.getElementById("search_input").value = "";
-			} return false;
-		}
-
-		document.getElementById('suglist').addEventListener('click', function (e) {
-			var input = document.getElementById('search_input');
-			if (e.target.tagName == 'B') {
-				input.value = e.target.parentNode.firstChild.textContent;
-				input.focus();
-			} else if (e.target.tagName == 'LI') {
-				input.value = e.target.firstChild.textContent;
-				close_sug();
-				search();
-			}
-		});
-		window.addEventListener('resize', move_input);
-	</script>
-</body>
-
 </html>]]></content>
     </entry>
     
@@ -9494,9 +8823,680 @@ ajax.onreadystatechange=function()
     </entry>
     
     <entry>
-      <title><![CDATA[timeline]]></title>
-      <url>https://www.nekomio.com/timeline/index.html</url>
-      <content type="html"></content>
+      <title></title>
+      <url>https://www.nekomio.com/start.html</url>
+      <content type="html"><![CDATA[<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head><meta name="generator" content="Hexo 3.9.0">
+	<meta content="en-us" http-equiv="Content-Language">
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="referrer" content="no-referrer">
+	<title>主页</title>
+</head>
+
+<style>
+	<div id="yiyan"style="
+width: 500px;
+	background-color:rgba(255, 255, 255, 0);
+	">
+<br /><br /><br />
+	/*下方这句不动它，翻译开始*/
+
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+
+	/*翻译
+主页整体样式 
+文本对齐︰ 中心;
+背景色︰ #f1f6ee  使用夜间默认时修改为#000000即可
+}
+*/
+	body {
+		text-align: center;
+		/*可换上面的图片地址*/
+		background-size: 100% !important;
+		background-repeat: no-repeat;
+		background-color: #ffffff;
+		/*可删上面的固定句语*/
+	}
+
+
+
+
+	/*翻译
+搜索栏字体样式 
+宽度︰ 90%;
+高度︰ 40px;
+背景颜色︰ 透明;
+边境︰ 无;
+大纲︰ 0;
+字体大小︰ 18px;
+字体颜色: #000000;
+填充︰ 0 20px;
+边界半径︰ 50px
+}*/
+
+	#search_input {
+		width: 90%;
+		height: 40px;
+		background-color: transparent;
+		border: none;
+		outline: 0;
+		font-size: 16px;
+		color: #A593E0;
+		padding: 0 10px;
+		border-radius: 50px
+	}
+
+	/*翻译
+搜索框边距 
+下边距︰ 30px;
+上边距︰ 20px;
+*/
+
+	.search_part {
+		margin-bottom: 5px;
+		margin-top: 15px;
+	}
+
+	/*翻译
+跨度样式
+显示︰ 阻止;
+溢出︰ 隐藏;
+左填充︰ 5px;
+垂直对齐︰ 居中;
+*/
+
+	.search_bar span {
+		display: block;
+		font-size: 12px;
+		overflow: hidden;
+		padding-left: 2px;
+		margin-right: 42px;
+		vertical-align: middle;
+	}
+
+	.search_bar span i {
+		display: none;
+		float: right;
+		width: 35px;
+		height: 40px;
+		background-size: 16px;
+	}
+
+	.search_bar .si {
+		margin: 0 38px 0 10px;
+	}
+
+	/*搜索建议条*/
+	#suggest {
+		position: absolute;
+		left: -1px;
+		right: -1px;
+		top: 40px;
+		border: 1px solid #ccc;
+		background: #fff;
+		line-height: 40px;
+	}
+
+	#suggest li {
+		border-bottom: 1px solid #ccc;
+		text-align: left;
+		padding-left: 16px;
+	}
+
+	#suggest li:active {
+		background: #F0F0F0;
+	}
+
+	#suggest li b {
+		float: right;
+		width: 44px;
+		height: 40px;
+		background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAI5JREFUSEtjZCACLF261J6RkbELpPT///9l0dHRB4nQRlgJ0ODny5Yt+w/CIDZhHUSqgBkKo4nURljZqMHwMBohQQFK/ECvnkT3LgX8kyAzGZATPwWGgTMPSiYCGvyEWgYiGfyEAcjxoKaroWZ5EM52QBUjJLkRExajQUH7Qgg5E4HYxMQLUWpgmYiUxA8AOdLMz+iDKvIAAAAASUVORK5CYII=) no-repeat scroll center center #fff;
+		background-size: 11px;
+	}
+
+	#suggest .close {
+		text-align: right;
+		font-size: 14px;
+		color: #888;
+		padding-right: 12px;
+	}
+
+	/*翻译
+搜索栏框架样式 {
+框阴影︰ 0 0 18px rgba(70,70,40,.255);括号里的颜色为Rgb默认，可进入http://rgb.phpddt.com/查询
+-webkit 动画︰ fadeIn 2.5;
+动画︰ fadeIn 2.5;
+背景色︰ rgba(255,255,255,.100);
+边界半径︰ 50px;
+显示︰ 表;
+垂直对齐︰ 居中;
+宽度︰ 80%;根据你喜欢的宽度调整，目前我为了对齐图标使用80%
+高度︰ 40px;
+最大宽度︰ 400px;
+边距︰ 10px 默认布局;
+}
+*/
+
+	.search_bar {
+		box-shadow: 0 0 5px rgba(70, 70, 40, .255);
+		-webkit-animation: fadeIn 2.5s;
+		animation: fadeIn 2.5s;
+		background-color: rgba(255, 255, 255, 1);
+		border-radius: 3px;
+		display: table;
+		vertical-align: middle;
+		width: 85%;
+		height: 20px;
+		max-width: 400px;
+		margin: 10px auto;
+		position: relative;
+		z-index: 10;
+	}
+
+	/*翻译
+搜索栏搜索目标确认图标样式，目前为米奇
+轮廓边框︰ 0;
+高度︰ 40px;
+浮标位置︰ 右;
+颜色: #000;
+字体大小︰ 16px;
+字体粗细︰ 700;
+边境︰ 无;
+背景颜色︰ 透明;
+填充︰ 0 13px 0 13px
+*/
+
+	#search_submit {
+		outline: 0;
+		height: 40px;
+		float: right;
+		color: #4a4266;
+		font-size: 18px;
+		font-weight: 500;
+		border: none;
+		background-color: transparent;
+		padding: 0 13px 0 13px
+	}
+
+
+	/*翻译
+书签图标排版目录样式 
+宽度︰ 100%;
+文本对齐︰ 中心;
+填充顶部︰ 15px;
+填充底部︰ 15px;
+*/
+
+	#content {
+		width: 100%;
+		text-align: center;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+
+
+	/*翻译
+书签框架样式
+-webkit 动画︰ fadeInDown 1s;
+动画︰ fadeInDown 1s;
+位置︰ 相对应;
+显示︰ 显示在内部;
+宽度︰ 75px;
+边境︰ 0;
+*/
+
+	.box {
+		-webkit-animation: fadeInDown 1s;
+		animation: fadeInDown 1s;
+		position: relative;
+		display: inline-block;
+		width: 70px;
+		border: 0;
+	}
+
+
+	/*翻译
+书签图标样式
+宽度︰ 100%;
+高度︰ 100%;
+位置︰ 不受限制;
+左︰ 0;
+顶︰ 0;
+*/
+
+	.box a {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	/*翻译
+书签字体样式
+颜色: #232323;使用夜间模式时修改为#eee或者#f2eada即可
+高度︰ 1.5em;
+线的高度︰ 1.5em;
+宽度︰ 72px;
+字体大小︰ 0.75em;
+白色空间︰ nowrap;
+溢出︰ 隐藏;
+边距︰ 默认布局;
+-webkit 边框顶部右半径︰ 5px;
+-webkit 边框底部右半径︰ 5px;
+文本溢出︰ 省略;
+-o 文本溢出︰ 省略;
+气相色谱-质谱-文本-溢出︰ 省略;
+填充顶部︰ 3px;
+填充底部︰ 8px;
+*/
+
+	.url {
+		color: #4a4266;
+		height: 1.5em;
+		line-height: 1.5em;
+		width: 72px;
+		font-size: 0.75em;
+		white-space: nowrap;
+		overflow: hidden;
+		margin: auto;
+		-webkit-border-top-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		-ms-text-overflow: ellipsis;
+		padding-top: 0px;
+		padding-bottom: 8px;
+	}
+
+	/*翻译
+字体样式 
+宽度︰ 3em;
+高度︰ 3em;
+最大宽度︰ 72px;
+*/
+
+	.icon {
+		width: 3em;
+		height: 3em;
+		max-width: 72px;
+	}
+
+	#app-items {
+		width: 100%;
+		max-width: 400px;
+		margin: 0px auto;
+		text-align: center;
+		background-color: #fff;
+		padding-top: 0px;
+		padding-bottom: 15px;
+	}
+
+	.title {
+		background-color: #ffffff;
+		font-size: 16px;
+		height: 30px;
+		line-height: 30px;
+		padding: 0 10px 0 20px;
+		color: #4a4266;
+
+	}
+
+	#yiyan {
+		width: 100%;
+		max-width: 400px;
+		margin: 0px auto;
+		text-align: center;
+		background-color: #fff;
+		padding-top: 0px;
+		padding-bottom: 15px;
+	}
+
+	.shuxing {
+		color: #4a4266;
+		font-size: 12px;
+		height: 30px;
+		line-height: 20px;
+		padding: 0 10px 0 20px;
+	}
+
+
+	@-webkit-keyframes flipInX {
+		0% {
+			-webkit-transform: perspective(400px) rotateX(90deg);
+			transform: perspective(400px) rotateX(90deg);
+			opacity: 0
+		}
+
+		40% {
+			-webkit-transform: perspective(400px) rotateX(-10deg);
+			transform: perspective(400px) rotateX(-10deg)
+		}
+
+		70% {
+			-webkit-transform: perspective(400px) rotateX(10deg);
+			transform: perspective(400px) rotateX(10deg)
+		}
+
+		100% {
+			-webkit-transform: perspective(400px) rotateX(0);
+			transform: perspective(400px) rotateX(0);
+			opacity: 1
+		}
+	}
+
+	@keyframes flipInX {
+		0% {
+			-webkit-transform: perspective(400px) rotateX(90deg);
+			-ms-transform: perspective(400px) rotateX(90deg);
+			transform: perspective(400px) rotateX(90deg);
+			opacity: 0
+		}
+
+		40% {
+			-webkit-transform: perspective(400px) rotateX(-10deg);
+			-ms-transform: perspective(400px) rotateX(-10deg);
+			transform: perspective(400px) rotateX(-10deg)
+		}
+
+		70% {
+			-webkit-transform: perspective(400px) rotateX(10deg);
+			-ms-transform: perspective(400px) rotateX(10deg);
+			transform: perspective(400px) rotateX(10deg)
+		}
+
+		100% {
+			-webkit-transform: perspective(400px) rotateX(0);
+			-ms-transform: perspective(400px) rotateX(0);
+			transform: perspective(400px) rotateX(0);
+			opacity: 1
+		}
+	}
+
+	@-webkit-keyframes fadeIn {
+		0% {
+			opacity: 0
+		}
+
+		100% {
+			opacity: 1
+		}
+	}
+
+	@keyframes fadeIn {
+		0% {
+			opacity: 0
+		}
+
+		100% {
+			opacity: 1
+		}
+	}
+
+	@-webkit-keyframes fadeInDown {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateY(-20px);
+			transform: translateY(-20px)
+		}
+
+		100% {
+			opacity: 1;
+			-webkit-transform: translateY(0);
+			transform: translateY(0)
+		}
+	}
+
+	@keyframes fadeInDown {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateY(-20px);
+			-ms-transform: translateY(-20px);
+			transform: translateY(-20px)
+		}
+
+		100% {
+			opacity: 1;
+			-webkit-transform: translateY(0);
+			-ms-transform: translateY(0);
+			transform: translateY(0)
+		}
+	}
+</style>
+
+<body>
+	<div id="content">
+		<br>
+		<div class="search_part">
+			<br><br><br><br>
+			<img class="smaller" src="https://wx3.sinaimg.cn/large/da6ac54fgy1ftvsol0ytmg20oh0b4npe.gif" width="33%">
+			<form id="search_form" onsubmit="return search()" class="search_bar">
+				<input type="submit" id="search_submit" value="☯">
+				<span><i id="clear" onclick="clear_seach()"></i>
+					<div class="si"><input class="search" type="text" value onkeyup="get_suggest()" onfocus="get_suggest()" onpaste="get_suggest()" autocomplete="off" id="search_input" placeholder="✎...  偷得浮生半日闲～"></div>
+				</span>
+				<div id="suggest" style="display:none">
+					<ul id="suglist"></ul>
+					<div class="close" onclick="close_sug()">| 收起</div>
+				</div>
+			</form>
+		</div>
+		<br>
+		<!--
+<div style="text-align:center;"</div>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=400 height=210 src="http://music.163.com/outchain/player?type=0&id=692469559&auto=1&height=230"></iframe>-->
+
+		<div class="box">
+			<a href="https://www.google.com" target="_blank" rel="noopener"></a>
+			<p><img class="icon" src="img/Google.svg"></p>
+			<p class="url">Google</p>
+		</div>
+
+		<div class="box">
+			<a href="history://" target="_blank" rel="noopener"></a>
+			<p><img class="icon" src="img/lishi.png"></p>
+			<p class="url">足迹</p>
+		</div>
+
+		<div class="box">
+			<a href="https://www.moe123.net/sites#(" target="_blank" rel="noopener"></a>
+			<p><img class="icon" src="img/Wikipedia.png"></p>
+			<p class="url">导航</p>
+		</div>
+
+		<div class="box">
+			<a href="folder://" target="_blank" rel="noopener"></a>
+			<p><img class="icon" src="img/shuqian.png"></p>
+			<p class="url">书签</p>
+		</div>
+
+		<br>
+		<font color="#303030">
+			<font size="6">―·❀·―</font>
+			<table width="32" border="0"></table></font>
+        <br>
+	</div>
+
+	<!--
+如若要添加可复制一段
+<div class="box">
+<a href="地址"></a>
+<p><img class="icon" src="img/icon6.png" ></p>
+<p class="url">书签名称</p>
+</div>
+其中链接在href中如href="地址"建议填写folder://自己创建的文件夹地址，这样创建一次不必再修改
+图标文件放置在img文件夹中定义如src="img/icon6.png"
+显示的标题在<p class="url">书签名称</p>之间定义如<p class="url">酷安</p>
+下方window.location.href =主页搜索引擎地址，目前为自用Pc版百度内部搜索，加上浏览器的顶部搜索即为双搜索，使用更方便
+
+-->
+	<br>
+	<script type="text/javascript" src="https://api.lwl12.com/hitokoto/v1?encode=js&charset=utf-8"></script>
+	<span id="lwlhitokoto">
+		<script>lwlhitokoto()</script>
+	</span>
+	<!--<div id="yiyan" style="
+width: 500px;
+background-color:rgba(255, 255, 255, 0);
+">
+<br />
+<br />
+<script src="hitokoto.js"></script>
+<script>
+var num=Math.random();
+if(num>=0.6){
+var url="https://hitoapi.cc/sp/"
+var ajax = new XMLHttpRequest();
+ajax.onreadystatechange=function()
+  {
+  if (ajax.readyState==4 && ajax.status==200)
+    {
+   var hit = JSON.parse(ajax.responseText);
+    document.getElementById("yiyan").innerHTML="<br />"+hit.text+"<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——"+hit.author;
+    }
+  }
+ajax.open('GET',url, true);
+ajax.send();
+}
+
+else{
+    var count=Math.floor(Math.random()*hit.length);
+    var ran=hit[count];
+   var text=ran.hitokoto;
+   var author=ran.source;
+   /*var ajax = new XMLHttpRequest();
+ajax.onreadystatechange=function()
+  {
+  if (ajax.readyState==4)
+    {
+    alert(ajax.status);
+    alert(ajax.responseText);
+   var hit = JSON.parse(ajax.responseText);
+   var ran=hit(Math.random(hit.length-2)+lit.length);
+   var text=ran.hitokoto;
+   var author=ran.source;
+   document.getElementById("yiyan").innerHTML="<br />"+text+"<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——"+author;
+   }
+  }
+  ajax.open('GET','customHitokotoB.json', true);
+  ajax.send();
+  */
+   document.getElementById("yiyan").innerHTML="<br />"+text+"<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——"+author;
+}
+</script>
+<br>-->
+
+
+
+	<div>
+	<div class="lwlhitokoto">
+		<script type="text/javascript" src="https://api.yum6.cn/djt/index.php?encode=js"></script>
+		<span></span>
+		<p>
+			<script>
+				binduyan();
+			</script>
+		</p>
+	</div>
+	</div>
+	<script type="text/javascript">
+		var last_kw = '';
+        var max_sug_len = 1; //搜索建议最短触发长度
+
+        var url = location.search.replace("?", "");
+        /*获取搜索建议
+		采用的神马搜索的服务
+		*/
+		function get_suggest() {
+			var kw = document.getElementById('search_input').value;
+			var clear = document.getElementById('clear');
+			if (kw) clear.style.display = 'block';
+			else clear.style.display = 'none';
+			if (kw == last_kw) return;
+			last_kw = kw;
+			if (!kw || kw.length < max_sug_len) {
+				close_sug();
+				return;
+			}
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.src = 'https://sugs.m.sm.cn/web?t=w&uc_param_str=dnnwnt&scheme=http&fr=android&bid=1&q=' + encodeURIComponent(kw) + '&_=' + new Date().getTime() + '&callback=jsonp3';
+			var head = document.querySelector('head');
+			script.onload = function () {
+				head.removeChild(script);
+			};
+			head.appendChild(script);
+		}
+		function jsonp3(res) {
+			var suggest = document.getElementById('suggest');
+			if (!res.r || !res.r.length) {
+				suggest.style.display = 'none';
+				return;
+			}
+			var html = '';
+			res.r.forEach(function (v) {
+				html += '<li>' + v.w + '<b></b></li>';
+			});
+			document.getElementById('suglist').innerHTML = html;
+			suggest.style.display = 'block';
+		}
+		function close_sug() {
+			last_kw = '';
+			document.getElementById('suggest').style.display = 'none';
+		}
+		function move_input() {
+			document.body.scrollTop = document.getElementById('search_form').offsetTop - 2;
+		}
+		function clear_seach() {
+			var input = document.getElementById('search_input');
+			input.value = '';
+			document.getElementById('clear').style.display = 'none';
+			close_sug();
+			input.focus();
+		}
+		function search() {
+            if (document.getElementById("search_input").value != "") {
+                if (url.toLowerCase() == "baidu") {
+                    window.location.href = "https://m.baidu.com/s?ie=utf-8&rn=30&rsv_enter=0&wd=" + encodeURIComponent(document.getElementById("search_input").value) + "&from=smor&safe=1&snum=1";
+                } else if (url.toLowerCase() == "google") {
+                    window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(document.getElementById("search_input").value);
+                } else if (url.toLowerCase() == "duckduckgo") {
+                    window.location.href = "https://duckduckgo.com/?q=" + encodeURIComponent(document.getElementById("search_input").value);
+                } else if (url.toLowerCase() == "bing") {
+                    window.location.href = "https://cn.bing.com/search?q=" + encodeURIComponent(document.getElementById("search_input").value);
+                } else if (url.toLowerCase() == "mirror") {
+                    window.location.href = "https://zjcqoo.github.io/-----https://www.google.com/search?q=" + encodeURIComponent(document.getElementById("search_input").value);
+                } else {
+                    window.location.href = "https://m.baidu.com/s?ie=utf-8&rn=30&rsv_enter=0&wd=" + encodeURIComponent(document.getElementById("search_input").value) + "&from=smor&safe=1&snum=1";
+                }
+                document.getElementById("search_input").value = "";
+			} return false;
+		}
+
+		document.getElementById('suglist').addEventListener('click', function (e) {
+			var input = document.getElementById('search_input');
+			if (e.target.tagName == 'B') {
+				input.value = e.target.parentNode.firstChild.textContent;
+				input.focus();
+			} else if (e.target.tagName == 'LI') {
+				input.value = e.target.firstChild.textContent;
+				close_sug();
+				search();
+			}
+		});
+		window.addEventListener('resize', move_input);
+	</script>
+</body>
+
+</html>]]></content>
     </entry>
     
     <entry>
