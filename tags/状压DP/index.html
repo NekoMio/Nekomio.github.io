@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--
+        © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+        Version: 1.3.3
+    -->
+    <script>
+window.lsVersion = "1.3.3",
+window.oldVersion = [
+    
+        
+            "0.2.0","0.0.1","0.1.0","1.0.0","1.0.1","1.1.0","1.1.1","1.2.0","1.3.0","1.3.2"
+        
+    
+]
+</script>
+
+    <!-- ### DNS Prefetch ### -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="//cdn1.lncld.net">
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+
+    <!-- ### Preload ### -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+<!-- Title -->
+<title>标签: 状压DP | NekoMio&#39;s Blog</title>
+
+<!-- favicon -->
+<!-- Favicons -->
+
+    <link rel="icon" type="image/ico" href="/null.png">
+
+
+
+
+
+
+<!-- Android Chrome Color -->
+
+
+
+<meta name="format-detection" content="telephone=no">
+
+<!-- Description -->
+<meta name="description" content="NekoMio 的博客 爱这个世界">
+
+<!-- Keywords -->
+<meta name="keywords" content>
+
+<!-- Disable Fucking Bloody Baidu Tranformation -->
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- ### Import File ### -->
+    
+        <!-- spectre.css -->
+
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css">
+
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style>
+
+<!-- style.css -->
+
+    <link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+    
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <!-- ### RSS ### -->
+    
+    
+        <link rel="alternate" type="application/rss+xml" href="/rss2.xml">
+    
+
+
+    <!-- ### WebApp ### -->
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="NekoMio&#39;s Blog">
+<meta name="msapplication-starturl" content="https://www.nekomio.com">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NekoMio&#39;s Blog">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Manifest Import -->
+
+<!-- Open Search -->
+
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="标签: 状压DP | NekoMio&#39;s Blog">
+<meta property="og:site_name" content="NekoMio&#39;s Blog">
+
+<meta property="og:locale" content="zh-CN">
+
+<meta property="og:url" content="https://www.nekomio.com/tags/状压DP/">
+<meta property="og:image" content="https://www.nekomio.com/null.png">
+
+<meta property="og:description" content="NekoMio 的博客 爱这个世界">
+
+<meta name="twitter:card" content="summary">
+
+
+    <meta property="og:type" content="blog">
+
+
+
+
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://www.nekomio.com/tags/状压DP/">
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+            <link href="/js/KaTex/katex.min.css" rel="stylesheet">
+        
+            <style>::-webkit-scrollbar{  width: 5px;  height: 8px;  background-color: #B9B9B9;}::-webkit-scrollbar-track{  border-radius: 10px;  background-color: #B9B9B9;}::-webkit-scrollbar-thumb{  border-radius: 10px;  background-color: #FFB6B9; }</style>
+        
+
+
+</head>
+
+    <body>
+        
+
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">NekoMio&#39;s Blog</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                美しいものが起こることを常に信じている
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+        <a href="/search.html" class="navbar-link">搜索</a>
+    
+    
+        <a href="/links.html" class="navbar-link">Friends</a>
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=NekoMio's Blog&url=https://www.nekomio.com&pic=https://www.nekomio.com/null.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=NekoMio's Blog&url=https://www.nekomio.com&via=NekoMio" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nekomio.com&title=undefined" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=NekoMio's Blog&title=undefined&summary=NekoMio 的博客 爱这个世界&pics=https://www.nekomio.com/null.png&url=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://www.nekomio.com&text=undefined" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABiElEQVR42u3aQW7DMAxEUd//0s02bUTOMDXskfG9KRrI9gvAiBSl4yfgOkCAALEF4miuXzf8+Vzd5zwXRC5iGTTF52rMO0LdAyIbsQqsVYCtgnX1v3ouiL0R1Yure0E8HzFNUiCegegSUTUpqYA8LYuCuBzhBtj072nVNohLEU4x2wXgtDj+alUO4lJEF0juS6qx8nkgtkB8JBljAlMT33hBDCICUYFWwCrQxk0WEJGIScFbAScLIRD5iEkAdhOa+iJWAgMRgZCNjKbAVV+gSnIgshHVIAfkjB//OkDcjlAPmjbV3aAGkYtQi9lJ4uqCdvTrAHE7ohvsHOb4pikLIhvRFaYK4TRVyveAiEZUE5M6zKEWPKMEBiIKoYpUtVk/2dwHkY1wN+LcJqnTdAeRjbA21lXBOjjY0xa6IGIQ/2msq6Zpu0AGEY2wFisiMFXCG50aALEFwilmuibJKYEJIgLRNVKcQrdEgohGTDbwFapryoPYAzFugopDwmrRAyIbcecFAgSIaMQLmeOZmdKMGAQAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <!-- # Title # -->
+            <h2 class="page-title">标签 : 状压DP</h2>
+            <!-- # Post List # -->
+            <div class="post-stream-container">
+                
+                    
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/10/30/119/" rel="bookmark">BZOJ3925 状压DP+概率DP</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+转载自 CooookB...
+    <a href="/2017/10/30/119/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-10-30</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/10/21/114/" rel="bookmark">BZOJ 2064 分裂 状压DP</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        Description背景： 和久必分，分久...
+    <a href="/2017/10/21/114/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-10-21</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/08/15/100/" rel="bookmark">[Haoi2016]字符合并</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        题目描述有一个长度为 n 的 01 串，你可以每次将相邻的 k 个字符合并，得到一个新的字符并获得一定分数。得到的新字符和分数由这 k 个字符确定。你需要求出你能获得的最大分数。
+    <a href="/2017/08/15/100/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-08-15</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/08/06/69/" rel="bookmark">[GDOI2014] 拯救莫莉斯</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        问题描述莫莉斯·乔是圣域里一个叱咤风云的人物，他凭借着自身超强的经济头脑，牢牢控制了圣域的石油市场。
+圣域的地图可以看成是一个n*m的矩阵。每个整数坐标点(x , y)表示一座城市（1&lt;=x&lt;= n, 1&lt;=y&lt;=m）。两座城市间相邻的定义为：对于城市$(A_x, A_y)$和城市$(B_x, B_y)$，满足$(A_x - B_x)^2 + (A_y - B_y)^2 = 1$。由于圣域的石油贸易总量很大，莫莉斯意识到不能让每笔石油订购单都从同一个油库里发货。为了提高效率，莫莉斯·乔决定在其中一些城市里建造油库，最终使得每一个城市X都满足下列条件之一：
+    <a href="/2017/08/06/69/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-08-06</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/07/03/27/" rel="bookmark">Codeforces 743E Vladik and cards</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        题目描述Vladik在回家的路上无聊，决定玩下面的游戏：他拿了n张牌在他面前排成一个序列，每张牌上都有一个不超过8的正整数，他决定找到满足以下条件的牌的最长子序列：
+
+在这个序列中,[1,8]每个数字出现的次数之差的绝对值不超过1;
+
+相同的数字必须连续，输出最长子序列的长度。例如，子序列[1, 1, 2, 2]满足第2个条件，但是子序列 [1, 2, 2, 1]就不满足(注意，子序列[1, 1, 2, 2]不满足第一个条件)。
+    <a href="/2017/07/03/27/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-07-03</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+            </div>
+        </main>
+        
+
+    </div>
+</div>
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span data-year></span>
+        <a class="footer-copyright-a" href="https://www.nekomio.com">NekoMio&#39;s Blog</a>
+    </p>
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+        
+            <a href="http://www.beian.miit.gov.cn" rel="nofollow noopener noreferrer">京ICP备19044785号-1</a>
+        
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+            
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+        
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+        
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+
+
+    /* Copyright */
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.querySelector('span[data-year]')
+    
+        copyrightSince = 2017;
+        if (copyrightSince === copyrightNow) {
+            copyrightContent.textContent = copyrightNow
+        } else {
+            copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow
+        }
+    
+
+
+
+/* Cnosole Log */
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+</script>
+
+<!-- vanilla-lazyload -->
+
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+
+
+    <!-- Busuanzi -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+
+
+
+<!-- gallery.js -->
+
+
+<!-- Comment -->
+
+    
+
+
+<!-- ### Custom Footer ### -->
+
+            <script src="/js/selector.js"></script><script src="/js/KaTex/katex.min.js"></script><script src="/js/KaTex/contrib/auto-render.js"></script>
+        
+
+    </body>
+
+</html>

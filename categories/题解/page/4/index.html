@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <!--
+        © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+        Version: 1.3.3
+    -->
+    <script>
+window.lsVersion = "1.3.3",
+window.oldVersion = [
+    
+        
+            "0.2.0","0.0.1","0.1.0","1.0.0","1.0.1","1.1.0","1.1.1","1.2.0","1.3.0","1.3.2"
+        
+    
+]
+</script>
+
+    <!-- ### DNS Prefetch ### -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="//cdn1.lncld.net">
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+
+    <!-- ### Preload ### -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+<!-- Title -->
+<title>分类: 题解 | NekoMio&#39;s Blog</title>
+
+<!-- favicon -->
+<!-- Favicons -->
+
+    <link rel="icon" type="image/ico" href="/null.png">
+
+
+
+
+
+
+<!-- Android Chrome Color -->
+
+
+
+<meta name="format-detection" content="telephone=no">
+
+<!-- Description -->
+<meta name="description" content="NekoMio 的博客 爱这个世界">
+
+<!-- Keywords -->
+<meta name="keywords" content>
+
+<!-- Disable Fucking Bloody Baidu Tranformation -->
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+    <!-- ### Import File ### -->
+    
+        <!-- spectre.css -->
+
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css">
+
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style>
+
+<!-- style.css -->
+
+    <link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+    
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <!-- ### RSS ### -->
+    
+    
+        <link rel="alternate" type="application/rss+xml" href="/rss2.xml">
+    
+
+
+    <!-- ### WebApp ### -->
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="NekoMio&#39;s Blog">
+<meta name="msapplication-starturl" content="https://www.nekomio.com">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="NekoMio&#39;s Blog">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- Manifest Import -->
+
+<!-- Open Search -->
+
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="分类: 题解 | NekoMio&#39;s Blog">
+<meta property="og:site_name" content="NekoMio&#39;s Blog">
+
+<meta property="og:locale" content="zh-CN">
+
+<meta property="og:url" content="https://www.nekomio.com/categories/题解/page/4/">
+<meta property="og:image" content="https://www.nekomio.com/null.png">
+
+<meta property="og:description" content="NekoMio 的博客 爱这个世界">
+
+<meta name="twitter:card" content="summary">
+
+
+    <meta property="og:type" content="blog">
+
+
+
+
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://www.nekomio.com/categories/题解/page/4/">
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+            <link href="/js/KaTex/katex.min.css" rel="stylesheet">
+        
+            <style>::-webkit-scrollbar{  width: 5px;  height: 8px;  background-color: #B9B9B9;}::-webkit-scrollbar-track{  border-radius: 10px;  background-color: #B9B9B9;}::-webkit-scrollbar-thumb{  border-radius: 10px;  background-color: #FFB6B9; }</style>
+        
+
+
+</head>
+
+    <body>
+        
+
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">NekoMio&#39;s Blog</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                美しいものが起こることを常に信じている
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+        <a href="/search.html" class="navbar-link">搜索</a>
+    
+    
+        <a href="/links.html" class="navbar-link">Friends</a>
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=NekoMio's Blog&url=https://www.nekomio.com&pic=https://www.nekomio.com/null.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=NekoMio's Blog&url=https://www.nekomio.com&via=NekoMio" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nekomio.com&title=undefined" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=NekoMio's Blog&title=undefined&summary=NekoMio 的博客 爱这个世界&pics=https://www.nekomio.com/null.png&url=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://www.nekomio.com&text=undefined" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB3klEQVR42u3aQY7DIBBEUd//0jPbSIGq6sgLuvneREqc8CwRoAuevwOvBxQoUKAWqEdcX18S762++3l/0g6oOahlp1v8YPK+e5XtgBqF2nXSXcffIXffce2AugvlBs7V5+lDgroXpSbfdKAFdRdKLd5Wje0aXH3++ioB1PEotaB/8/W1agbU0SgbOhQKAleQvpa6gDoalUyyqghNJu/k90HNQbkFmHpPDYouDLGDJ6i2qHTidBP4qhBNJmj77wPVDqWCseofId0g2D4MqDGo6gCqwtbKgAlqJkretFnM7R4kCWrlBgCoEah0UFSFpwrHktAE1CxU9UeT8KL6gKDmodIi1G0CuYHVBiegRqBc8GUXZqZB9dCg5qIqQWpywCb5Q0QVMqi2qGRzyIWrSce2YRuokag0kHDhRnoAzG5sg2qHqizQkoJUHdJR94OahXIdPmkw6cylIBZUe5TriOkB03QzHNRdqF8G0ARoJ21QI1CVg4IK7YKMqGgFNQKVdMi06EzC/PhUEKjWqCTsqARgaThbKhxAtUMlE7IqMFwRkkzKoO5BqQYdyBWpP3d0UCNQ6Qa4m+S3h8BAjUJVOrE7WOgG3LhCBtUWlXbKSgjmwjgbmoFqizrpAgUKFKiP6x+8w5IRkt3TxgAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <div class="container">
+    <div class="main-container">
+        <main>
+            <!-- # Title # -->
+            <h2 class="page-title">分类 : 题解</h2>
+            <!-- # Post List # -->
+            <div class="post-stream-container">
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/10/21/115/" rel="bookmark">BZOJ 1176 [Balkan2007]Mokia CDQ</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        Description维护一个W*W的矩阵，...
+    <a href="/2017/10/21/115/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-10-21</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/10/21/114/" rel="bookmark">BZOJ 2064 分裂 状压DP</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        Description背景： 和久必分，分久...
+    <a href="/2017/10/21/114/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-10-21</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/10/10/113/" rel="bookmark">BZOJ 1972 [Sdoi2010]猪国杀</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+概述
+
+《猪国杀》是一种多猪牌类回合制游戏，一共有三种角色：主猪，忠猪，反猪。
+每局游戏主猪有且只有一只，忠猪和反猪可以有多只，每只猪扮演一种角色。
+    <a href="/2017/10/10/113/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-10-10</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/09/24/110/" rel="bookmark">BZOJ 2827 千山鸟飞绝 Treap</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        题目描述话说有一天doyouloveme和vfleaking到山里玩。谁知doyouloveme刚刚进山，所有的鸟儿竟被他的神犇气场给惊得全部飞走了。vfleaking顿时膜拜不已。这时鸟王用鸟语说道：“!@#$%……?”安抚了一下众鸟的情绪。鸟王生性好斗，作出了一个决定——要排鸟布阵把刚才吓到它们的人类赶出山去。  
+    <a href="/2017/09/24/110/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-09-24</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/09/19/109/" rel="bookmark">BZOJ 3211 花神游历各国</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        Description  
+    <a href="/2017/09/19/109/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-09-19</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/09/17/108/" rel="bookmark">BZOJ 1770 [Usaco2009 Nov]lights 燈 折半搜索</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        题目描述贝希和她的闺密们在她们的牛棚中玩游戏。但是天不从人愿，突然，牛棚的电源跳闸了，所有的灯都被关闭了。贝希是一个很胆小的女生，在伸手不见拇指的无尽的黑暗中，她感到惊恐，痛苦与绝望。她希望您能够帮帮她，把所有的灯都给重新开起来！她才能继续快乐地跟她的闺密们继续玩游戏！
+    <a href="/2017/09/17/108/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-09-17</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/09/17/107/" rel="bookmark">[NOIP2004] 虫食算</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        题目描述所谓虫食算，就是原先的算式中有一部分被虫子啃掉了，需要我们根据剩下的数字来判定被啃掉的字母。来看一个简单的例子：
+    <a href="/2017/09/17/107/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-09-17</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/09/15/106/" rel="bookmark">NOIP模拟 超级树</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        3.1 描述一棵k-超级树可按如下方法得到：取一棵深度为k的满二叉树，对每个节点，向它的所有祖先连边（如果这条边不存在的话）。例如，下图是一个4-超级树的例子：
+    <a href="/2017/09/15/106/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-09-15</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/08/22/105/" rel="bookmark">[ZJOI2007]矩阵游戏</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        题目描述　　小Q是一个非常聪明的孩子，除了国际象棋，他还很喜欢玩一个电脑益智游戏——矩阵游戏。矩阵游戏在一个N*N黑白方阵进行（如同国际象棋一般，只是颜色是随意的）。每次可以对该矩阵进行两种操作：行交换操作：选择矩阵的任意两行，交换这两行（即交换对应格子的颜色）列交换操作：选择矩阵的任意行列，交换这两列（即交换对应格子的颜色）
+    <a href="/2017/08/22/105/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-08-22</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+                    <div class="grid-item">
+                        
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/08/22/104/" rel="bookmark">[HNOI2012]矿场搭建</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        题目描述煤矿工地可以看成是由隧道连接挖煤点组成的无向图。为安全起见，希望在工地发生事故时所有挖煤点的工人都能有一条出路逃到救援出口处。于是矿主决定在某些挖煤点设立救援出口，使得无论哪一个挖煤点坍塌之后，其他挖煤点的工人都有一条道路通向救援出口。请写一个程序，用来计算至少需要设置几个救援出口，以及不同最少救援出口的设置方案总数。
+    <a href="/2017/08/22/104/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-08-22</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/题解/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    </div>
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+        <li class="page-item page-prev">
+            <a href="/categories/题解/page/3/" rel="prev">
+                <span class="page-item-subtitle"><i class="icon icon-back" aria-hidden="true"></i></span>
+                <span class="page-item-title">上一页</span>
+            </a>
+        </li>
+    
+    
+        <li class="page-item page-next">
+            <a href="/categories/题解/page/5/" rel="next">
+                <span class="page-item-title">下一页</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span data-year></span>
+        <a class="footer-copyright-a" href="https://www.nekomio.com">NekoMio&#39;s Blog</a>
+    </p>
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+        
+            <a href="http://www.beian.miit.gov.cn" rel="nofollow noopener noreferrer">京ICP备19044785号-1</a>
+        
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+            
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+        
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+        
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+
+
+    /* Copyright */
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.querySelector('span[data-year]')
+    
+        copyrightSince = 2017;
+        if (copyrightSince === copyrightNow) {
+            copyrightContent.textContent = copyrightNow
+        } else {
+            copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow
+        }
+    
+
+
+
+/* Cnosole Log */
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+</script>
+
+<!-- vanilla-lazyload -->
+
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+
+
+    <!-- Busuanzi -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+
+
+
+<!-- gallery.js -->
+
+
+<!-- Comment -->
+
+    
+
+
+<!-- ### Custom Footer ### -->
+
+            <script src="/js/selector.js"></script><script src="/js/KaTex/katex.min.js"></script><script src="/js/KaTex/contrib/auto-render.js"></script>
+        
+
+    </body>
+
+</html>
