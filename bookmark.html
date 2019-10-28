@@ -39,6 +39,8 @@ window.oldVersion = [
 <!-- analytics -->
 
 
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
 
 
 
@@ -236,6 +238,15 @@ function doDecrypt (pwd, onError) {
 
     <!-- ### Analytics ### -->
     
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-102044541-2', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
 
 
 
@@ -496,7 +507,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX19FywqZmwmShzlSf3quwS6KE8p69NVp9zNe9XCrN0QPvpsKU3SNBrJ01AemDGpJzMr3is5sB0pWyP6hQ2cB2DkthZxwc8lOX59p8KZbS4CDC0RmR06y5N0JVcww6ltKVqil8CKg0+WPmHCok82ZQPt1Rqx4x7eZLf+BRxEohrESRvrfKV1BOw/EOL+REVNnn+4xUsIW7/jASfc8xXi6FaLZaliVQi/ekc3+zgsmqEo74VYIgGvl0/0hlO/Vkv4FTuvIFbBT900wNy32yKJTpsONAwnS442F5ik=</div>
+<div id="enc_content" style="display:none">U2FsdGVkX19MLOYrwbKQKmQOp+Uu7m5mKfyHPJUabdWG5BEzAmfzZ0et2s0ydBudPsjQ7gfXqwgbxToU4d3TmzE6Xtfe8qjnkLnIM5G4Hqpg1+JJYBKHKZBP4azjiZ7hEVUVs2n7bLFGwpit6NgNeYPsC2+PXu+KifcCvu6bIt8lviXvOgTGc7ZMwy9lF9JsUFKqBHw+sEx1tyzY8LRW1g/nufhf2qNp/ocnetOwbraryMetK+hSJ3qDIqEzWVsDBTVNIgNpR40c8yGWwy1PXmA4df3512Pny6glAAJLtgA=</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -528,7 +539,7 @@ doDecrypt(passwd, onError);
 
     <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
     <script>
-        var dateUpdate = Date.parse("2019-10-12");
+        var dateUpdate = Date.parse("2019-10-28");
         var nowDate = new Date();
         var a = nowDate.getTime();
         var b = a - dateUpdate;
@@ -543,7 +554,7 @@ doDecrypt(passwd, onError);
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2018-06-24T02:56:10.000Z" itemprop="datePublished">2018-06-24</time>
 
-    , 最后修改于&nbsp;<time datetime="2019-10-12T02:47:58.556Z" itemprop="dateModified">2019-10-12</time>
+    , 最后修改于&nbsp;<time datetime="2019-10-28T12:20:46.552Z" itemprop="dateModified">2019-10-28</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
