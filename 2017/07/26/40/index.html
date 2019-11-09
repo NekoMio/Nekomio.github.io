@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="//cdn1.lncld.net">
+
+
+<!-- analytics -->
+
+
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>COGS 2235 烤鸡翅 | NekoMio&#39;s Blog</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/null.png">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="COGS 2235 烤鸡翅 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https:&#x2F;&#x2F;www.nekomio.com&#x2F;2017&#x2F;07&#x2F;26&#x2F;40&#x2F;"><meta property="og:locale" content="zh-CN"><meta name="description" content="【题目描述】在焦作太行路上，有一家烤鸡翅的生意火爆。因为好吃，所以卖的特别好。排队的人就特别多，经常有很多人买不到鸡翅。鸡翅会在每分钟烤出Xi个，每分钟也只会卖给一个客人，第i个客人需要买Yi个。因为生意火爆，老板可以选择在这分钟不卖给这个客人鸡翅，或者卖给这个顾客他需要的鸡翅， 如果现在剩余的鸡翅不够，那就肯定不能卖给这个客人。无论这个客人能否买到鸡翅，他必须离开队伍。现在给定N分钟，且已经知道 - NekoMio - NekoMio&#39;s Blog"><meta name="keywords" content="贪心"><meta property="article:published_time" content="2017-07-26T13:13:59.000Z"><meta property="article:modified_time" content="2019-11-09T15:47:33.451Z"><meta property="og:updated_time" content="2019-11-09T15:47:33.451Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="贪心"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://www.nekomio.com/2017/07/26/40/">
+
+    <meta name="generator" content="Hexo 4.0.0">
+
+    <!-- ### Analytics ### -->
+    
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-102044541-2', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://www.nekomio.com/2017/07/26/40/",
+    "@type": "BlogPosting",
+    "logo": "https://www.nekomio.com/null.png",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.nekomio.com/2017/07/26/40/"
+    },
+    "headline": "COGS 2235 烤鸡翅 | NekoMio&#39;s Blog",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://www.nekomio.com/null.png"
+    },
+    
+    "datePublished": "2017-07-26T13:13:59.000Z",
+    "dateModified": "2019-11-09T15:47:33.451Z",
+    "author": {
+        "@type": "Person",
+        "name": "NekoMio",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://www.nekomio.com/null.png"
+        },
+        "description": "美しいものが起こることを常に信じている"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "NekoMio&#39;s Blog",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nekomio.com/null.png"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.nekomio.com/search.html?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "贪心",
+    "description": "【题目描述】在焦作太行路上，有一家烤鸡翅的生意火爆。因为好吃，所以卖的特别好。排队的人就特别多，经常有很多人买不到鸡翅。鸡翅会在每分钟烤出Xi个，每分钟也只会卖给一个客人，第i个客人需要买Yi个。因为生意火爆，老板可以选择在这分钟不卖给这个客人鸡翅，或者卖给这个顾客他需要的鸡翅， 如果现在剩余的鸡翅不够，那就肯定不能卖给这个客人。无论这个客人能否买到鸡翅，他必须离开队伍。现在给定N分钟，且已经知道 - NekoMio - NekoMio&#39;s Blog"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    <link href="/js/KaTex/katex.min.css" rel="stylesheet"><style>::-webkit-scrollbar{  width: 5px;  height: 8px;  background-color: #B9B9B9;}::-webkit-scrollbar-track{  border-radius: 10px;  background-color: #B9B9B9;}::-webkit-scrollbar-thumb{  border-radius: 10px;  background-color: #FFB6B9; }</style>
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">NekoMio&#39;s Blog</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                美しいものが起こることを常に信じている
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+        <a href="/search.html" class="navbar-link">搜索</a>
+    
+    
+        <a href="/links.html" class="navbar-link">Friends</a>
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=NekoMio's Blog&url=https://www.nekomio.com&pic=https://www.nekomio.com/null.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=NekoMio's Blog&url=https://www.nekomio.com&via=NekoMio" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nekomio.com&title=COGS 2235 烤鸡翅" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=NekoMio's Blog&title=COGS 2235 烤鸡翅&summary=NekoMio 的博客 爱这个世界&pics=https://www.nekomio.com/null.png&url=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://www.nekomio.com&text=COGS 2235 烤鸡翅" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABgElEQVR42u3awY7CMAyE4b7/Sy8npBXEnnG3hcnq76UCmvAdrNpxcvwEXAcIECC2QBzN9fz99d59584LIhuxDJrfD78OXvzpaoycF0Q0ogrI1XPd2Cpol+NBbIlQLy4VmCD+N2KVoLoEBmJvRJVoqiCsMLdkURAfR0wLXfd+a7UN4jaEXLSaRW313CWrchAfRbiJpwpkFYSrhROIvRCqkFXFzmVNEhBfR6jE1U0+edGByEd0Ade9kNwXXBfMIDIRamD1uRrfBesbHkQkYhKMquBxF0EgshFdYE4KFwdhNUlAxCLUYtdJeKrIAZGLUBuyaiPGhbRZFEQUYrKIcZroqpkCIhtxZrOlTUpGQgOxJ6JLZF1DbdKsB5GJGDc2jIMepxrsIGIQTjA5kzvNUxB7IJwNeyvI/noAEEQUYprIpslttAIDEYNwD/S4Cas7JARib4QKyDPNMxD7I6YNNOcwEIh8hNxINYudyWEgELkI96CwCrpJYQwiF/HNCwQIENGIByJtOfla8ZxRAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">COGS 2235 烤鸡翅</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <span>2017-07-26</span>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">分享本文</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=COGS 2235 烤鸡翅&url=https://www.nekomio.com/2017/07/26/40/&pic=https://www.nekomio.com/null.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=COGS 2235 烤鸡翅&url=https://www.nekomio.com/2017/07/26/40/&via=NekoMio" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.nekomio.com/2017/07/26/40/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=https://www.nekomio.com/2017/07/26/40/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nekomio.com/2017/07/26/40/&title=NekoMio's Blog" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=NekoMio's Blog&title=NekoMio's Blog&summary=NekoMio 的博客 爱这个世界&pics=https://www.nekomio.com/null.png&url=https://www.nekomio.com/2017/07/26/40/" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=https://www.nekomio.com/2017/07/26/40/&text=NekoMio's Blog" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABgElEQVR42u3awY7CMAyE4b7/Sy8npBXEnnG3hcnq76UCmvAdrNpxcvwEXAcIECC2QBzN9fz99d59584LIhuxDJrfD78OXvzpaoycF0Q0ogrI1XPd2Cpol+NBbIlQLy4VmCD+N2KVoLoEBmJvRJVoqiCsMLdkURAfR0wLXfd+a7UN4jaEXLSaRW313CWrchAfRbiJpwpkFYSrhROIvRCqkFXFzmVNEhBfR6jE1U0+edGByEd0Ade9kNwXXBfMIDIRamD1uRrfBesbHkQkYhKMquBxF0EgshFdYE4KFwdhNUlAxCLUYtdJeKrIAZGLUBuyaiPGhbRZFEQUYrKIcZroqpkCIhtxZrOlTUpGQgOxJ6JLZF1DbdKsB5GJGDc2jIMepxrsIGIQTjA5kzvNUxB7IJwNeyvI/noAEEQUYprIpslttAIDEYNwD/S4Cas7JARib4QKyDPNMxD7I6YNNOcwEIh8hNxINYudyWEgELkI96CwCrpJYQwiF/HNCwQIENGIByJtOfla8ZxRAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【题目描述】"><span class="post-toc-number">1.</span> <span class="post-toc-text">【题目描述】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【输入格式】"><span class="post-toc-number">2.</span> <span class="post-toc-text">【输入格式】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【输出格式】"><span class="post-toc-number">3.</span> <span class="post-toc-text">【输出格式】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【样例输入】"><span class="post-toc-number">4.</span> <span class="post-toc-text">【样例输入】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【样例输出】"><span class="post-toc-number">5.</span> <span class="post-toc-text">【样例输出】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【数据范围】"><span class="post-toc-number">6.</span> <span class="post-toc-text">【数据范围】</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题解"><span class="post-toc-number"></span> <span class="post-toc-text">题解</span></a></div>
+                        
+                    
+                    <article id="post-content">
+                        <h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p>在焦作太行路上，有一家烤鸡翅的生意火爆。因为好吃，所以卖的特别好。排队的人就特别多，经常有很多人买不到鸡翅。<br>鸡翅会在每分钟烤出Xi个，每分钟也只会卖给一个客人，第i个客人需要买Yi个。因为生意火爆，老板可以选择在这分钟不卖给这个客人鸡翅，或者卖给这个顾客他需要的鸡翅， 如果现在剩余的鸡翅不够，那就肯定不能卖给这个客人。无论这个客人能否买到鸡翅，他必须离开队伍。<br>现在给定N分钟，且已经知道每分钟烤出的鸡翅个数Xi，也知道每个客人需要鸡翅的Yi个数，现在老板想知道，如何合理安排卖给与拒绝，最多可以满足多少人</p>
+<a id="more"></a>
+<h3 id="【输入格式】"><a href="#【输入格式】" class="headerlink" title="【输入格式】"></a>【输入格式】</h3><p>第一行一个正整数N，表示有N分钟的时间卖鸡翅<br>第二行N个用空格隔开的整数 X1，X2……Xn，Xi表示第i分钟会有Xi个鸡翅烤出<br>第三行N个用空格隔开的整数Y1，Y2……Yn，Yi表示第i分钟的顾客需要Yi个鸡翅</p>
+<h3 id="【输出格式】"><a href="#【输出格式】" class="headerlink" title="【输出格式】"></a>【输出格式】</h3><p>一个整数，表示最多可以满足买到鸡翅的人数。</p>
+<h3 id="【样例输入】"><a href="#【样例输入】" class="headerlink" title="【样例输入】"></a>【样例输入】</h3><blockquote>
+<p>6<br>2 2 1 2 1 0<br>1 2 2 3 4 4  </p>
+</blockquote>
+<h3 id="【样例输出】"><a href="#【样例输出】" class="headerlink" title="【样例输出】"></a>【样例输出】</h3><blockquote>
+<p>3  </p>
+</blockquote>
+<h3 id="【数据范围】"><a href="#【数据范围】" class="headerlink" title="【数据范围】"></a>【数据范围】</h3><p>  50%  数据保证 N&lt;=1000<br>  100%  1&lt;=N&lt;=250000   Xi,Yi都在[0,10^9]范围内</p>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>能卖就卖<br>卖不了了如何以前有人买的数目比他多<br>那就不卖给以前的那个人了也就是收回来<br>可后悔的贪心，长见识了。<br>主要使用优先队列</p>
+<pre><code class="c++"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span>
+<span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span>
+<span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;queue&gt;</span></span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;
+<span class="keyword">int</span> x[<span class="number">250005</span>], y[<span class="number">250005</span>];
+<span class="class"><span class="keyword">class</span> <span class="title">comp</span></span>
+<span class="class">{</span>
+  <span class="keyword">public</span>:
+    <span class="function"><span class="keyword">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a, <span class="keyword">long</span> <span class="keyword">long</span> b)</span></span>
+<span class="function">    </span>{
+        <span class="keyword">return</span> y[a] &lt; y[b];
+    }
+};
+priority_queue&lt;<span class="keyword">long</span> <span class="keyword">long</span>, <span class="built_in">vector</span>&lt;<span class="keyword">long</span> <span class="keyword">long</span>&gt;, comp&gt; Q;
+<span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>
+<span class="function"></span>{
+    freopen(<span class="string">"wing.in"</span>, <span class="string">"r"</span>, <span class="built_in">stdin</span>);
+    freopen(<span class="string">"wing.out"</span>, <span class="string">"w"</span>, <span class="built_in">stdout</span>);
+    <span class="keyword">int</span> n;
+    <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;n);
+    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)
+        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;x[i]);
+    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)
+        <span class="built_in">scanf</span>(<span class="string">"%d"</span>, &amp;y[i]);
+    <span class="keyword">long</span> <span class="keyword">long</span> sum = <span class="number">0</span>;
+    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= n; i++)
+    {
+        sum += x[i];
+        <span class="keyword">if</span> (sum &gt;= y[i])
+            sum -= y[i], Q.push(i);
+        <span class="keyword">else</span>
+        {
+            <span class="keyword">if</span> (!Q.empty())
+            {
+                <span class="keyword">if</span> (y[Q.top()] &gt; y[i])
+                {
+                    sum += y[Q.top()];
+                    Q.pop();
+                    sum -= y[i];
+                    Q.push(i);
+                }
+            }
+        }
+    }
+    <span class="built_in">printf</span>(<span class="string">"%d\n"</span>, Q.<span class="built_in">size</span>());
+}</code></pre>
+
+                    </article>
+                    
+    <blockquote class="post-license">
+        <p>
+            <strong>本文作者&nbsp;:&nbsp;NekoMio</strong>
+            <br>
+            <strong>
+            
+                <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+            </strong>
+            <br>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://www.nekomio.com/2017/07/26/40/">https://www.nekomio.com/2017/07/26/40/</a>
+        </p>
+    </blockquote>
+
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2019-11-09");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2017-07-26T13:13:59.000Z" itemprop="datePublished">2017-07-26</time>
+
+    , 最后修改于&nbsp;<time datetime="2019-11-09T15:47:33.451Z" itemprop="dateModified">2019-11-09</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+<span class="post-categories-list mt-2">
+
+<a class="post-categories-list-item" href='/categories/%E9%A2%98%E8%A7%A3/'>题解</a>
+
+</span>
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/%E8%B4%AA%E5%BF%83/" rel="tag">#&nbsp;贪心</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2017/07/26/41/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">COGS 1752 [BOI2007] 摩基亚Mokia</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2017/07/26/39/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">BZOJ 3668 [NOI2014] 起床困难综合症</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                        <div class="card-footer post-comment">
+                            <div id="vcomments"></div>
+
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = 'undefined' === 'true';
+    var verify = 'undefined' === 'true';
+    new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        appId: "hRRi8jRRJiMaKCoOeToz8Geo-gzGzoHsz",
+        appKey: "1gTOBrBAIYbj2urmHJfu5gcl",
+        placeholder: "Just go go",
+        meta: guest_info,
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn',
+        guest_info: guest_info,
+        visitor: false
+    });
+</script>
+
+                        </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://www.nekomio.com">NekoMio's Blog</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    <a href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer noopener">京ICP备19044785号-1</a>
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2017;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.4.0 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+    
+        
+    
+
+
+<!-- ### Custom Footer ### -->
+<script src="/js/KaTex/katex.min.js"></script><script src="/js/KaTex/contrib/auto-render.js"></script><script src="/js/render.js"></script>
+    </body>
+
+</html>

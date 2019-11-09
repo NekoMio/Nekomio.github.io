@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+    <link rel="dns-prefetch" href="//cdn1.lncld.net">
+
+
+<!-- analytics -->
+
+
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>标签: 矩阵乘 | NekoMio&#39;s Blog</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/null.png">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="标签: 矩阵乘 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="website"><meta property="og:url" content="https:&#x2F;&#x2F;www.nekomio.com&#x2F;tags&#x2F;%E7%9F%A9%E9%98%B5%E4%B9%98&#x2F;"><meta property="og:locale" content="zh-CN"><meta name="description" content="NekoMio 的博客 爱这个世界 - NekoMio - NekoMio&#39;s Blog">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://www.nekomio.com/tags/%E7%9F%A9%E9%98%B5%E4%B9%98/">
+
+    <meta name="generator" content="Hexo 4.0.0">
+
+    <!-- ### Analytics ### -->
+    
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-102044541-2', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+
+    <!-- ### Custom Head ### -->
+    <link href="/js/KaTex/katex.min.css" rel="stylesheet"><style>::-webkit-scrollbar{  width: 5px;  height: 8px;  background-color: #B9B9B9;}::-webkit-scrollbar-track{  border-radius: 10px;  background-color: #B9B9B9;}::-webkit-scrollbar-thumb{  border-radius: 10px;  background-color: #FFB6B9; }</style>
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">NekoMio&#39;s Blog</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                美しいものが起こることを常に信じている
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">首页</a>
+    
+    
+        <a href="/archives/" class="navbar-link">归档</a>
+    
+    
+        <a href="/search.html" class="navbar-link">搜索</a>
+    
+    
+        <a href="/links.html" class="navbar-link">Friends</a>
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=NekoMio's Blog&url=https://www.nekomio.com&pic=https://www.nekomio.com/null.png&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=NekoMio's Blog&url=https://www.nekomio.com&via=NekoMio" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.nekomio.com&title=undefined" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=NekoMio's Blog&title=undefined&summary=NekoMio 的博客 爱这个世界&pics=https://www.nekomio.com/null.png&url=https://www.nekomio.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://www.nekomio.com&text=undefined" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB30lEQVR42u3ay47DIBBEUf//T09WI3kBVdU4kaB9vckiyXAiMfSDvv42fC5QoECBGqAu8fy/f3+9fyd5P10HVC/UcNPdFpstoD6n0KN1QPVDJRtcbeTZD0rXAfUeVOUwVHhQoNyhOFp0GGRBvRalAqVDqEP0J1kCqO1RlcLhyevPqhlQW6GixoMAjwJ1UjA87rqA2hY1CrAqeVMw91kVmEH1QVUSN5XQjRZXQX34g0G1QDmQ+mNqI6ffif/7QB2Hcold2qxwDTPZNAHVApUGZldguuROHaageqGSJoRbNC08yxfboI5EucvHlYb/bKO7ZhuoPigXiNPDzzVj7QEMqg1KAVwh+o0GLKheqPRCp1oIpEMYthgFdRwqSebUYunwTnQJDqoNKhmUSBr3KhAvJXmgjkUljbDqUNesOSsPalAtUCsFZPI513SzSR6oo1FuA7tmhwKmQR1UP1RyIeQullSB4RI8UL1QyUZOLxuTgZ7pGqBaoJIhwcolZdKEnR2+oHqgyptxYUAnaZyA6oVaaZ6lF96VIhZUL1RlcEtt9KT4mAZwUK9BpU21pPhUjQ5Q70CtHJxuwBnUO1BusCa9WEwaHY+zBFDbo5LCwQ3oTAvMYBgaVC/UTg8oUKBA3Z4Pr2RRYN2RlrQAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <!-- # Title # -->
+            <h2 class="page-title">标签 : 矩阵乘</h2>
+            <!-- # Post List # -->
+            <div class="post-stream-container">
+                
+                    <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/04/12/144/" rel="bookmark">「清华集训 2017」小 Y 和恐怖的奴隶主</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        题目描述
+“A fight? Count me in!” 要打...
+    <a href="/2018/04/12/144/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2018-04-12</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/08/05/65/" rel="bookmark">[BZOJ2432][Noi2011]兔农 矩阵乘法+exgcd</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        Description 农夫栋栋近年收入不景气，正在他发愁如何能多赚点钱时，他听到隔壁的小朋友在讨论兔子繁殖的问题。问题是这样的：第一个月初有一对刚出生的小兔子，经过两个月长大后，这对兔子从第三个月开始，每个月初生一对小兔子。新出生的小兔子生长两个月后又能每个月生出一对小兔子。问第n个月有多少只兔子？
+    <a href="/2017/08/05/65/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-08-05</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/08/02/57/" rel="bookmark">[BZOJ 1409] Password</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        DescriptionRivest是密码学专家。近日他正在研究一种数列E = {E[1],E[2],……,E[n]}，且E[1] = E[2] = p（p为一个质数），E[i] = E[i-2]*E[i-1] （若2&lt;i&lt;=n）。  
+    <a href="/2017/08/02/57/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-08-03</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/07/27/45/" rel="bookmark">BZOJ 2510 弱题</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        Description有M个球，一开始每个球均有一个初始标号，标号范围为1～N且为整数，标号为i的球有ai个，并保证Σai = M。每次操作等概率取出一个球（即取出每个球的概率均为1/M），若这个球标号为k（k &lt; N），则将它重新标号为k + 1；若这个球标号为N，则将其重标号为1。（取出球后并不将其丢弃）现在你需要求出，经过K次这样的操作后，每个标号的球的期望个数。
+    <a href="/2017/07/27/45/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-07-27</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2017/07/13/35/" rel="bookmark">BZOJ 1875 [SDOI2009]HH去散步 矩阵乘</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        Made by WZZDescriptionHH有个一成不变的习惯，喜欢饭后百步走。所谓百步走，就是散步，就是在一定的时间 内，走过一定的距离。 但是同时HH又是个喜欢变化的人，所以他不会立刻沿着刚刚走来的路走回。 又因为HH是个喜欢变化的人，所以他每天走过的路径都不完全一样，他想知道他究竟有多 少种散步的方法。 现在给你学校的地图（假设每条路的长度都是一样的都是1），问长度为t，从给定地 点A走到给定地点B共有多少条符合条件的路径
+    <a href="/2017/07/13/35/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/null.png" src="/img/suka-lazyload.gif" alt="NekoMio's Avatar">
+        <time>2017-07-13</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+            </div>
+        </main>
+        
+
+    </div>
+</div>
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://www.nekomio.com">NekoMio's Blog</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    <a href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer noopener">京ICP备19044785号-1</a>
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2017;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.4.0 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+    
+
+
+<!-- ### Custom Footer ### -->
+<script src="/js/KaTex/katex.min.js"></script><script src="/js/KaTex/contrib/auto-render.js"></script><script src="/js/render.js"></script>
+    </body>
+
+</html>
