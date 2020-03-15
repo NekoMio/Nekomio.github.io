@@ -6870,20 +6870,20 @@ priority_queue&lt;<span class="keyword">long</span> <span class="keyword">long</
     </entry>
     
     <entry>
-      <title><![CDATA[BZOJ 1901 Dynamic Rankings 线段树套Treap]]></title>
-      <url>https://www.nekomio.com/2017/06/14/12/</url>
-      <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个含有n个数的序列a[1],a[2],a[3]……a[n]，程序必须回答这样的询问：对于给定的i,j,k，在a[i],a[i+1],a[i+2]……a[j]中第k小的数是多少(1≤k≤j-i+1)，并且，你可以改变一些a[i]的值，改变后，程序还能针对改变后的a继续回答上面的问题。你需要编一个这样的程序，从输入文件中读入序列a，然后读入一系列的指令，包括询问指令和修改指令。对于每一个询问指令，你必须输出正确的回答。 第一行有两个正整数n(1≤n≤10000)，m(1≤m≤10000)。分别表示序列的长度和指令的个数。第二行有n个数，表示a[1],a[2]……a[n]，这些数都小于10^9。接下来的m行描述每条指令，每行的格式是下面两种格式中的一种。 Q i j k 或者 C i t Q i j k （i,j,k是数字，1≤i≤j≤n, 1≤k≤j-i+1）表示询问指令，询问a[i]，a[i+1]……a[j]中第k小的数。C i t (1≤i≤n，0≤t≤10^9)表示把a[i]改变成为t。</p>
+      <title><![CDATA[BZOJ 3172 [Tjoi2013]单词 fail tree]]></title>
+      <url>https://www.nekomio.com/2017/06/14/13/</url>
+      <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>某人读论文，一篇论文是由许多单词组成。但他发现一个单词会在论文中出现很多次，现在想知道每个单词分别在论文中出现多少次。</p>
 <a id="more"></a> 
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>对于每一次询问，你都需要输出他的答案，每一个输出占单独的一行。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一个一个整数N,表示有多少个单词，接下来N行每行一个单词。每个单词由小写字母组成，N&lt;=200,单词长度不超过10^6</p>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出N个整数，第i行的数字表示第i个单词在文章中出现了多少次。</p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><blockquote>
-<p>5 3<br>3 2 1 4 7<br>Q 1 4 3<br>C 2 6<br>Q 2 5 3  </p>
+<p>3<br>a<br>aa<br>aaa  </p>
 </blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><blockquote>
-<p>3<br>6  </p>
+<p>6<br>3<br>1  </p>
 </blockquote>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>区间k大+修改<br>直接树套树</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10005</span>],n;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Treap</span>&#123;</span></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="keyword">int</span> <span class="built_in">size</span>,v,key;</span><br><span class="line">        Node *ch[<span class="number">2</span>];</span><br><span class="line">        Node(<span class="keyword">int</span> x)&#123;</span><br><span class="line">            key=rand();v=x;<span class="built_in">size</span>=<span class="number">1</span>;</span><br><span class="line">            ch[<span class="number">0</span>]=ch[<span class="number">1</span>]=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="meta">#<span class="meta-keyword">define</span> size(_) ((_)?(_)-&gt;size:0)</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Pushup</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="built_in">size</span>=<span class="built_in">size</span>(ch[<span class="number">0</span>])+<span class="built_in">size</span>(ch[<span class="number">1</span>])+<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;*root;</span><br><span class="line">    <span class="function">Node *<span class="title">Merge</span><span class="params">(Node *A,Node *B)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!A)<span class="keyword">return</span> B;</span><br><span class="line">        <span class="keyword">if</span>(!B)<span class="keyword">return</span> A;</span><br><span class="line">        <span class="keyword">if</span>(A-&gt;key&gt;B-&gt;key)&#123;</span><br><span class="line">            A-&gt;ch[<span class="number">1</span>]=Merge(A-&gt;ch[<span class="number">1</span>],B);</span><br><span class="line">            A-&gt;Pushup();</span><br><span class="line">            <span class="keyword">return</span> A;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            B-&gt;ch[<span class="number">0</span>]=Merge(A,B-&gt;ch[<span class="number">0</span>]);</span><br><span class="line">            B-&gt;Pushup();</span><br><span class="line">            <span class="keyword">return</span> B;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">typedef</span> pair&lt;Node*,Node*&gt; DNode;</span><br><span class="line">    <span class="function">DNode <span class="title">Split</span><span class="params">(Node *rt,<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!rt)<span class="keyword">return</span> DNode(<span class="literal">NULL</span>,<span class="literal">NULL</span>);</span><br><span class="line">        DNode o;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">size</span>(rt-&gt;ch[<span class="number">0</span>])&gt;=k)&#123;</span><br><span class="line">            o=Split(rt-&gt;ch[<span class="number">0</span>],k);</span><br><span class="line">            rt-&gt;ch[<span class="number">0</span>]=o.second;</span><br><span class="line">            rt-&gt;Pushup();</span><br><span class="line">            o.second=rt;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            o=Split(rt-&gt;ch[<span class="number">1</span>],k-<span class="built_in">size</span>(rt-&gt;ch[<span class="number">0</span>])<span class="number">-1</span>);</span><br><span class="line">            rt-&gt;ch[<span class="number">1</span>]=o.first;</span><br><span class="line">            rt-&gt;Pushup();</span><br><span class="line">            o.first=rt;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> o;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Treap()&#123;</span><br><span class="line">        root=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">kth</span><span class="params">(<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">        DNode x=Split(root,k<span class="number">-1</span>);</span><br><span class="line">        DNode y=Split(x.second,<span class="number">1</span>);</span><br><span class="line">        Node *ans=y.first;</span><br><span class="line">        root=Merge(x.first,Merge(y.first,y.second));</span><br><span class="line">        <span class="keyword">return</span> ans-&gt;v;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">rank</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> rank(root,x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">rank</span><span class="params">(Node *rt,<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!rt)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> x&lt;=rt-&gt;v?rank(rt-&gt;ch[<span class="number">0</span>],x):rank(rt-&gt;ch[<span class="number">1</span>],x)+<span class="built_in">size</span>(rt-&gt;ch[<span class="number">0</span>])+<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> k=rank(root,x);</span><br><span class="line">        DNode y=Split(root,k);</span><br><span class="line">        Node *n=<span class="keyword">new</span> Node(x);</span><br><span class="line">        root=Merge(Merge(y.first,n),y.second);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> k=rank(root,x);</span><br><span class="line">        DNode a=Split(root,k);</span><br><span class="line">        DNode b=Split(a.second,<span class="number">1</span>);</span><br><span class="line">        root=Merge(a.first,b.second);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;root[<span class="number">40000</span>];</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> lch l,m,rt&lt;&lt;1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rch m+1,r,rt&lt;&lt;1|1 </span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> rt)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=l;i&lt;=r;i++) root[rt].Insert(a[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">buildtree</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> rt)</span></span>&#123;</span><br><span class="line">    build(l,r,rt);</span><br><span class="line">    <span class="keyword">if</span>(l==r)<span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> m=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    buildtree(lch);</span><br><span class="line">    buildtree(rch);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">updata</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> x,<span class="keyword">int</span> y,<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> rt)</span></span>&#123;</span><br><span class="line">    root[rt].<span class="built_in">remove</span>(y);</span><br><span class="line">    root[rt].Insert(x);</span><br><span class="line">    <span class="keyword">if</span>(l==r)<span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> m=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(k&lt;=m) updata(k,x,y,lch);</span><br><span class="line">    <span class="keyword">else</span> updata(k,x,y,rch);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">rank</span><span class="params">(<span class="keyword">int</span> L,<span class="keyword">int</span> R,<span class="keyword">int</span> x,<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> rt)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(L&lt;=l&amp;&amp;R&gt;=r)<span class="keyword">return</span> root[rt].rank(x);</span><br><span class="line">    <span class="keyword">int</span> m=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(R&lt;=m)<span class="keyword">return</span> rank(L,R,x,lch);</span><br><span class="line">    <span class="keyword">if</span>(L&gt;m) <span class="keyword">return</span> rank(L,R,x,rch);</span><br><span class="line">    <span class="keyword">return</span> rank(L,R,x,lch)+rank(L,R,x,rch);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">kth</span><span class="params">(<span class="keyword">int</span> L,<span class="keyword">int</span> R,<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> l=<span class="number">-1e10</span>,r=<span class="number">1e10</span>;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">        <span class="keyword">int</span> m=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> num=rank(L,R,m,<span class="number">1</span>,n,<span class="number">1</span>)+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(num&lt;=k)l=m+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> r=m<span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="keyword">int</span> m;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">    buildtree(<span class="number">1</span>,n,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">char</span> s[<span class="number">5</span>];<span class="keyword">int</span> i,j,k,t;</span><br><span class="line">    <span class="keyword">while</span>(m--)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">        <span class="keyword">if</span>(s[<span class="number">0</span>]==<span class="string">'Q'</span>)&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;i,&amp;j,&amp;k);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,kth(i,j,k));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;i,&amp;t);</span><br><span class="line">            updata(i,t,a[i],<span class="number">1</span>,n,<span class="number">1</span>);</span><br><span class="line">            a[i]=t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>fail 树<br>照着打个板子</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> S[<span class="number">1000005</span>];</span><br><span class="line"><span class="keyword">int</span> Index;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Trie</span>&#123;</span></span><br><span class="line">    Trie *ch[<span class="number">26</span>];</span><br><span class="line">    Trie *fail;</span><br><span class="line">    <span class="keyword">int</span> id,num;</span><br><span class="line">    Trie()&#123;<span class="built_in">memset</span>(ch,<span class="number">0</span>,<span class="keyword">sizeof</span>(ch));fail=<span class="literal">NULL</span>;fail=<span class="number">0</span>;num=<span class="number">0</span>;id=++Index;&#125;</span><br><span class="line">&#125;*root,*<span class="keyword">word</span>[<span class="number">220</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">char</span> *s,<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len=<span class="built_in">strlen</span>(s);</span><br><span class="line">    Trie *now=root;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!now-&gt;ch[s[i]-<span class="string">'a'</span>])now-&gt;ch[s[i]-<span class="string">'a'</span>]=<span class="keyword">new</span> Trie();</span><br><span class="line">        now=now-&gt;ch[s[i]-<span class="string">'a'</span>];</span><br><span class="line">        now-&gt;num++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">word</span>[x]=now;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">edge</span>&#123;</span></span><br><span class="line">    Trie *END;edge *next;</span><br><span class="line">&#125;*first[<span class="number">26000500</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(Trie *a,Trie *b)</span></span>&#123;</span><br><span class="line">    edge *k=<span class="keyword">new</span> edge;</span><br><span class="line">    k-&gt;END=b;</span><br><span class="line">    k-&gt;next=first[a-&gt;id];</span><br><span class="line">    first[a-&gt;id]=k;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_fail</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">queue</span>&lt;Trie*&gt; Q;</span><br><span class="line">    Trie *now=root,*temp;</span><br><span class="line">    Q.push(now);</span><br><span class="line">    <span class="keyword">while</span>(!Q.empty())&#123;</span><br><span class="line">        temp=Q.front();Q.pop();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">26</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(temp-&gt;ch[i])&#123;</span><br><span class="line">                <span class="keyword">if</span>(temp==root)&#123;</span><br><span class="line">                    temp-&gt;ch[i]-&gt;fail=root;</span><br><span class="line">                    add(root,temp-&gt;ch[i]);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    now=temp-&gt;fail;</span><br><span class="line">                    <span class="keyword">while</span>(now&amp;&amp;now-&gt;ch[i]==<span class="literal">NULL</span>) now=now-&gt;fail;</span><br><span class="line">                    <span class="keyword">if</span>(now==<span class="literal">NULL</span>)add(root,temp-&gt;ch[i]),temp-&gt;ch[i]-&gt;fail=root;</span><br><span class="line">                    <span class="keyword">else</span> add(now-&gt;ch[i],temp-&gt;ch[i]),temp-&gt;ch[i]-&gt;fail=now-&gt;ch[i];</span><br><span class="line">                &#125;</span><br><span class="line">                Q.push(temp-&gt;ch[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(Trie *rt)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(edge *now=first[rt-&gt;id];now;now=now-&gt;next)&#123;</span><br><span class="line">        dfs(now-&gt;END);</span><br><span class="line">        rt-&gt;num+=now-&gt;END-&gt;num;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    root=<span class="keyword">new</span> Trie();</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,S);</span><br><span class="line">        insert(S,i);</span><br><span class="line">    &#125;</span><br><span class="line">    get_fail();</span><br><span class="line">    dfs(root);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,<span class="keyword">word</span>[i]-&gt;num);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
         <categories>
             
@@ -6894,9 +6894,7 @@ priority_queue&lt;<span class="keyword">long</span> <span class="keyword">long</
         
         <tags>
             
-            <tag> Treap </tag>
-            
-            <tag> 树套树 </tag>
+            <tag> fail树 </tag>
             
         </tags>
         
@@ -6937,20 +6935,20 @@ priority_queue&lt;<span class="keyword">long</span> <span class="keyword">long</
     </entry>
     
     <entry>
-      <title><![CDATA[BZOJ 3172 [Tjoi2013]单词 fail tree]]></title>
-      <url>https://www.nekomio.com/2017/06/14/13/</url>
-      <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>某人读论文，一篇论文是由许多单词组成。但他发现一个单词会在论文中出现很多次，现在想知道每个单词分别在论文中出现多少次。</p>
+      <title><![CDATA[BZOJ 1901 Dynamic Rankings 线段树套Treap]]></title>
+      <url>https://www.nekomio.com/2017/06/14/12/</url>
+      <content type="html"><![CDATA[<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>给定一个含有n个数的序列a[1],a[2],a[3]……a[n]，程序必须回答这样的询问：对于给定的i,j,k，在a[i],a[i+1],a[i+2]……a[j]中第k小的数是多少(1≤k≤j-i+1)，并且，你可以改变一些a[i]的值，改变后，程序还能针对改变后的a继续回答上面的问题。你需要编一个这样的程序，从输入文件中读入序列a，然后读入一系列的指令，包括询问指令和修改指令。对于每一个询问指令，你必须输出正确的回答。 第一行有两个正整数n(1≤n≤10000)，m(1≤m≤10000)。分别表示序列的长度和指令的个数。第二行有n个数，表示a[1],a[2]……a[n]，这些数都小于10^9。接下来的m行描述每条指令，每行的格式是下面两种格式中的一种。 Q i j k 或者 C i t Q i j k （i,j,k是数字，1≤i≤j≤n, 1≤k≤j-i+1）表示询问指令，询问a[i]，a[i+1]……a[j]中第k小的数。C i t (1≤i≤n，0≤t≤10^9)表示把a[i]改变成为t。</p>
 <a id="more"></a> 
-<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>第一个一个整数N,表示有多少个单词，接下来N行每行一个单词。每个单词由小写字母组成，N&lt;=200,单词长度不超过10^6</p>
-<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><p>输出N个整数，第i行的数字表示第i个单词在文章中出现了多少次。</p>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>对于每一次询问，你都需要输出他的答案，每一个输出占单独的一行。</p>
 <h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><blockquote>
-<p>3<br>a<br>aa<br>aaa  </p>
+<p>5 3<br>3 2 1 4 7<br>Q 1 4 3<br>C 2 6<br>Q 2 5 3  </p>
 </blockquote>
 <h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><blockquote>
-<p>6<br>3<br>1  </p>
+<p>3<br>6  </p>
 </blockquote>
-<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>fail 树<br>照着打个板子</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;queue&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">char</span> S[<span class="number">1000005</span>];</span><br><span class="line"><span class="keyword">int</span> Index;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Trie</span>&#123;</span></span><br><span class="line">    Trie *ch[<span class="number">26</span>];</span><br><span class="line">    Trie *fail;</span><br><span class="line">    <span class="keyword">int</span> id,num;</span><br><span class="line">    Trie()&#123;<span class="built_in">memset</span>(ch,<span class="number">0</span>,<span class="keyword">sizeof</span>(ch));fail=<span class="literal">NULL</span>;fail=<span class="number">0</span>;num=<span class="number">0</span>;id=++Index;&#125;</span><br><span class="line">&#125;*root,*<span class="keyword">word</span>[<span class="number">220</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">char</span> *s,<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> len=<span class="built_in">strlen</span>(s);</span><br><span class="line">    Trie *now=root;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!now-&gt;ch[s[i]-<span class="string">'a'</span>])now-&gt;ch[s[i]-<span class="string">'a'</span>]=<span class="keyword">new</span> Trie();</span><br><span class="line">        now=now-&gt;ch[s[i]-<span class="string">'a'</span>];</span><br><span class="line">        now-&gt;num++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">word</span>[x]=now;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">edge</span>&#123;</span></span><br><span class="line">    Trie *END;edge *next;</span><br><span class="line">&#125;*first[<span class="number">26000500</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(Trie *a,Trie *b)</span></span>&#123;</span><br><span class="line">    edge *k=<span class="keyword">new</span> edge;</span><br><span class="line">    k-&gt;END=b;</span><br><span class="line">    k-&gt;next=first[a-&gt;id];</span><br><span class="line">    first[a-&gt;id]=k;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">get_fail</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">queue</span>&lt;Trie*&gt; Q;</span><br><span class="line">    Trie *now=root,*temp;</span><br><span class="line">    Q.push(now);</span><br><span class="line">    <span class="keyword">while</span>(!Q.empty())&#123;</span><br><span class="line">        temp=Q.front();Q.pop();</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">26</span>;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(temp-&gt;ch[i])&#123;</span><br><span class="line">                <span class="keyword">if</span>(temp==root)&#123;</span><br><span class="line">                    temp-&gt;ch[i]-&gt;fail=root;</span><br><span class="line">                    add(root,temp-&gt;ch[i]);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span>&#123;</span><br><span class="line">                    now=temp-&gt;fail;</span><br><span class="line">                    <span class="keyword">while</span>(now&amp;&amp;now-&gt;ch[i]==<span class="literal">NULL</span>) now=now-&gt;fail;</span><br><span class="line">                    <span class="keyword">if</span>(now==<span class="literal">NULL</span>)add(root,temp-&gt;ch[i]),temp-&gt;ch[i]-&gt;fail=root;</span><br><span class="line">                    <span class="keyword">else</span> add(now-&gt;ch[i],temp-&gt;ch[i]),temp-&gt;ch[i]-&gt;fail=now-&gt;ch[i];</span><br><span class="line">                &#125;</span><br><span class="line">                Q.push(temp-&gt;ch[i]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(Trie *rt)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(edge *now=first[rt-&gt;id];now;now=now-&gt;next)&#123;</span><br><span class="line">        dfs(now-&gt;END);</span><br><span class="line">        rt-&gt;num+=now-&gt;END-&gt;num;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    root=<span class="keyword">new</span> Trie();</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;n);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,S);</span><br><span class="line">        insert(S,i);</span><br><span class="line">    &#125;</span><br><span class="line">    get_fail();</span><br><span class="line">    dfs(root);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,<span class="keyword">word</span>[i]-&gt;num);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+<h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>区间k大+修改<br>直接树套树</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> a[<span class="number">10005</span>],n;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Treap</span>&#123;</span></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="keyword">int</span> <span class="built_in">size</span>,v,key;</span><br><span class="line">        Node *ch[<span class="number">2</span>];</span><br><span class="line">        Node(<span class="keyword">int</span> x)&#123;</span><br><span class="line">            key=rand();v=x;<span class="built_in">size</span>=<span class="number">1</span>;</span><br><span class="line">            ch[<span class="number">0</span>]=ch[<span class="number">1</span>]=<span class="literal">NULL</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="meta">#<span class="meta-keyword">define</span> size(_) ((_)?(_)-&gt;size:0)</span></span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">Pushup</span><span class="params">()</span></span>&#123;</span><br><span class="line">            <span class="built_in">size</span>=<span class="built_in">size</span>(ch[<span class="number">0</span>])+<span class="built_in">size</span>(ch[<span class="number">1</span>])+<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;*root;</span><br><span class="line">    <span class="function">Node *<span class="title">Merge</span><span class="params">(Node *A,Node *B)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!A)<span class="keyword">return</span> B;</span><br><span class="line">        <span class="keyword">if</span>(!B)<span class="keyword">return</span> A;</span><br><span class="line">        <span class="keyword">if</span>(A-&gt;key&gt;B-&gt;key)&#123;</span><br><span class="line">            A-&gt;ch[<span class="number">1</span>]=Merge(A-&gt;ch[<span class="number">1</span>],B);</span><br><span class="line">            A-&gt;Pushup();</span><br><span class="line">            <span class="keyword">return</span> A;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span> &#123;</span><br><span class="line">            B-&gt;ch[<span class="number">0</span>]=Merge(A,B-&gt;ch[<span class="number">0</span>]);</span><br><span class="line">            B-&gt;Pushup();</span><br><span class="line">            <span class="keyword">return</span> B;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">typedef</span> pair&lt;Node*,Node*&gt; DNode;</span><br><span class="line">    <span class="function">DNode <span class="title">Split</span><span class="params">(Node *rt,<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!rt)<span class="keyword">return</span> DNode(<span class="literal">NULL</span>,<span class="literal">NULL</span>);</span><br><span class="line">        DNode o;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">size</span>(rt-&gt;ch[<span class="number">0</span>])&gt;=k)&#123;</span><br><span class="line">            o=Split(rt-&gt;ch[<span class="number">0</span>],k);</span><br><span class="line">            rt-&gt;ch[<span class="number">0</span>]=o.second;</span><br><span class="line">            rt-&gt;Pushup();</span><br><span class="line">            o.second=rt;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            o=Split(rt-&gt;ch[<span class="number">1</span>],k-<span class="built_in">size</span>(rt-&gt;ch[<span class="number">0</span>])<span class="number">-1</span>);</span><br><span class="line">            rt-&gt;ch[<span class="number">1</span>]=o.first;</span><br><span class="line">            rt-&gt;Pushup();</span><br><span class="line">            o.first=rt;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> o;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    Treap()&#123;</span><br><span class="line">        root=<span class="literal">NULL</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">kth</span><span class="params">(<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">        DNode x=Split(root,k<span class="number">-1</span>);</span><br><span class="line">        DNode y=Split(x.second,<span class="number">1</span>);</span><br><span class="line">        Node *ans=y.first;</span><br><span class="line">        root=Merge(x.first,Merge(y.first,y.second));</span><br><span class="line">        <span class="keyword">return</span> ans-&gt;v;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">rank</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> rank(root,x);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">rank</span><span class="params">(Node *rt,<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(!rt)<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">return</span> x&lt;=rt-&gt;v?rank(rt-&gt;ch[<span class="number">0</span>],x):rank(rt-&gt;ch[<span class="number">1</span>],x)+<span class="built_in">size</span>(rt-&gt;ch[<span class="number">0</span>])+<span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Insert</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> k=rank(root,x);</span><br><span class="line">        DNode y=Split(root,k);</span><br><span class="line">        Node *n=<span class="keyword">new</span> Node(x);</span><br><span class="line">        root=Merge(Merge(y.first,n),y.second);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">remove</span><span class="params">(<span class="keyword">int</span> x)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> k=rank(root,x);</span><br><span class="line">        DNode a=Split(root,k);</span><br><span class="line">        DNode b=Split(a.second,<span class="number">1</span>);</span><br><span class="line">        root=Merge(a.first,b.second);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;root[<span class="number">40000</span>];</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> lch l,m,rt&lt;&lt;1</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> rch m+1,r,rt&lt;&lt;1|1 </span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">build</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> rt)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=l;i&lt;=r;i++) root[rt].Insert(a[i]);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">buildtree</span><span class="params">(<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> rt)</span></span>&#123;</span><br><span class="line">    build(l,r,rt);</span><br><span class="line">    <span class="keyword">if</span>(l==r)<span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> m=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    buildtree(lch);</span><br><span class="line">    buildtree(rch);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">updata</span><span class="params">(<span class="keyword">int</span> k,<span class="keyword">int</span> x,<span class="keyword">int</span> y,<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> rt)</span></span>&#123;</span><br><span class="line">    root[rt].<span class="built_in">remove</span>(y);</span><br><span class="line">    root[rt].Insert(x);</span><br><span class="line">    <span class="keyword">if</span>(l==r)<span class="keyword">return</span>;</span><br><span class="line">    <span class="keyword">int</span> m=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(k&lt;=m) updata(k,x,y,lch);</span><br><span class="line">    <span class="keyword">else</span> updata(k,x,y,rch);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">rank</span><span class="params">(<span class="keyword">int</span> L,<span class="keyword">int</span> R,<span class="keyword">int</span> x,<span class="keyword">int</span> l,<span class="keyword">int</span> r,<span class="keyword">int</span> rt)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(L&lt;=l&amp;&amp;R&gt;=r)<span class="keyword">return</span> root[rt].rank(x);</span><br><span class="line">    <span class="keyword">int</span> m=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(R&lt;=m)<span class="keyword">return</span> rank(L,R,x,lch);</span><br><span class="line">    <span class="keyword">if</span>(L&gt;m) <span class="keyword">return</span> rank(L,R,x,rch);</span><br><span class="line">    <span class="keyword">return</span> rank(L,R,x,lch)+rank(L,R,x,rch);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">kth</span><span class="params">(<span class="keyword">int</span> L,<span class="keyword">int</span> R,<span class="keyword">int</span> k)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> l=<span class="number">-1e10</span>,r=<span class="number">1e10</span>;</span><br><span class="line">    <span class="keyword">while</span>(l&lt;=r)&#123;</span><br><span class="line">        <span class="keyword">int</span> m=l+r&gt;&gt;<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> num=rank(L,R,m,<span class="number">1</span>,n,<span class="number">1</span>)+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(num&lt;=k)l=m+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">else</span> r=m<span class="number">-1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> r;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="keyword">int</span> m;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)<span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">    buildtree(<span class="number">1</span>,n,<span class="number">1</span>);</span><br><span class="line">    <span class="keyword">char</span> s[<span class="number">5</span>];<span class="keyword">int</span> i,j,k,t;</span><br><span class="line">    <span class="keyword">while</span>(m--)&#123;</span><br><span class="line">        <span class="built_in">scanf</span>(<span class="string">"%s"</span>,s);</span><br><span class="line">        <span class="keyword">if</span>(s[<span class="number">0</span>]==<span class="string">'Q'</span>)&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d%d"</span>,&amp;i,&amp;j,&amp;k);</span><br><span class="line">            <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,kth(i,j,k));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">"%d%d"</span>,&amp;i,&amp;t);</span><br><span class="line">            updata(i,t,a[i],<span class="number">1</span>,n,<span class="number">1</span>);</span><br><span class="line">            a[i]=t;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
       
         <categories>
             
@@ -6961,7 +6959,9 @@ priority_queue&lt;<span class="keyword">long</span> <span class="keyword">long</
         
         <tags>
             
-            <tag> fail树 </tag>
+            <tag> Treap </tag>
+            
+            <tag> 树套树 </tag>
             
         </tags>
         
@@ -7665,7 +7665,7 @@ function doDecrypt (pwd, onError) {
 	}
 }
 </script>
-<div id="enc_content" style="display:none">U2FsdGVkX19LSjRtOWUVtYd7ejRvegvxpT1sjAIGRmEVz5foV0TLPT8uHnD1pwg32IsO5Ctv4dR44NO6cvOKm3tui18IKiUqBGaaZZkGZ2kle+RQoK+nwByo2TiMpoUqTiaYf0xlPVnGoB+fCGM9eu5mPElkbOuFsnHImgwQhkcLkggS97pq2uAsMKRnr9RJiURgOP73CpfClkeyvT3EWCpLCO8ohlZQ9sjq1byAhQ6A9T8fWl0AdPBtQO/re8iywer+NWMNfo5/E6wCaFrRmyNtiy8Vj2n8Shi605r2G7I=</div>
+<div id="enc_content" style="display:none">U2FsdGVkX1/UWMvjyLLFtaxhBCnUe7ywLZWqva+keNob/4ikHVk1xc64cI07eK1BTh3Y2MQwqqEtKYAD6RVfgi3zkEmyuDfPlRNIU4F3LDDaSW+frcvhvqoMEh2X+4lvpDltkVy/wCf3VlXqN4kPDjxCkKrwJ2wc4wuuhfY9un3yVKlJyLlLXAH9kFkxSGB2StFxed2BIHNYXhzJjXT+OSsuxWYNtionxAEDj7g7vpEIaCWgjrVDVU1T2HwdKyJ/lvneTx33GlDGftTMQEbrvZtniV5F8KnthQ+BSQQM6Lw=</div>
 <div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
 <script>
 var onError = function(error) {
@@ -7689,6 +7689,12 @@ doDecrypt(passwd, onError);
     <entry>
       <title><![CDATA[Search]]></title>
       <url>https://www.nekomio.com/search.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[tags]]></title>
+      <url>https://www.nekomio.com/tags.html</url>
       <content type="html"></content>
     </entry>
     
@@ -8373,595 +8379,6 @@ ajax.onreadystatechange=function()
     </entry>
     
     <entry>
-      <title><![CDATA[tags]]></title>
-      <url>https://www.nekomio.com/tags.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>https://www.nekomio.com/404-no.html</url>
-      <content type="html"><![CDATA[<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>2048</title>
-<style type="text/css">
-	#gridPanel{
-		width:480px;
-		height:480px;
-		margin:0 auto;
-		background-color:#bbada0;
-		border-radius:10px;
-		position:relative;	
-	}
-	.grid,.cell{
-		width:100px;
-		height:100px;
-		border-radius:6px;
-	}
-	.grid{
-		float:left;
-		margin:16px 0 0 16px;
-		background-color:#ccc0b3;	
-	}
-	.cell{
-		text-align:center;
-		line-height:100px;
-		color:#776e65;
-		font-size:60px;
-		position:absolute;	
-	}
-	/*每一行拥有同样的top
-	  每一列拥有同样的left*/
-	#c00,#c01,#c02,#c03{top:16px;}
-	#c00,#c10,#c20,#c30{left:16px;}
-	#c10,#c11,#c12,#c13{top:132px;}
-	#c01,#c11,#c21,#c31{left:132px;}
-	#c20,#c21,#c22,#c23{top:248px;}
-	#c02,#c12,#c22,#c32{left:248px;}
-	#c30,#c31,#c32,#c33{top:364px;}
-	#c03,#c13,#c23,#c33{left:364px;}
-	.n2{background-color:#eee3da;}
-	.n4{background-color:#ede0c8;}
-	.n8{background-color:#f2b179;}
-	.n16{background-color:#f59563;}
-	.n32{background-color:#f67c5f;}
-	.n64{background-color:#f65e3b;}
-	.n128{background-color:#edcf72;}
-	.n256{background-color:#edcc61;}
-	.n512{background-color:#9c0;}
-	.n1024{background-color:#33b5e5;}
-	.n2048{background-color:#09c;}
-	.n4096{background-color:#a6c;}
-	.n8192{background-color:#93c;}
-	.n8,.n16,.n32,.n64,.n128,.n256,.n512,.n1024,.n2048,.n4096,.n8192{color:#fff;}
-	.n1024,.n2048,.n4096,.n8192{font-size:40px;}
-	/*显示分数的p元素*/
-	p{width:480px;margin:0 auto;font-family:Arial;font-weight:bold;font-size:40px;padding-top:15px;}
-	/*game over界面样式*/
-	#gameOver{width:100%;height:100%;;position:absolute;top:0px;left:0px;display:none;}
-	#gameOver div{width:100%;height:100%;background-color:#555;opacity:0.5;}
-	#gameOver p{position:absolute;border-radius:10px;top:200px;left:40%;width:300px;height:200px;border:1px solid #edcf72;line-height:1.6em;text-align:center;background-color:#fff;}
-	.button{padding:10px;background-color:#9f8d77;border-radius:6px;color:#fff;cursor:pointer;	}
-</style>
-</head>
-<body>
-	<div><p>404 No Found <a href="/">回到首页
-	</a></p> <br></div>
-	<p>Score:<span id="score"><span></p>
-	<div id="gridPanel">
-    	<!--背景单元格-->
-    	<div id="g00" class="grid"></div>
-        <div id="g01" class="grid"></div>
-        <div id="g02" class="grid"></div>
-        <div id="g03" class="grid"></div>
-        
-        <div id="g10" class="grid"></div>
-        <div id="g11" class="grid"></div>
-        <div id="g12" class="grid"></div>
-        <div id="g13" class="grid"></div>
-        
-        <div id="g20" class="grid"></div>
-        <div id="g21" class="grid"></div>
-        <div id="g22" class="grid"></div>
-        <div id="g23" class="grid"></div>
-        
-        <div id="g30" class="grid"></div>
-        <div id="g31" class="grid"></div>
-        <div id="g32" class="grid"></div>
-        <div id="g33" class="grid"></div>
-        
-        <!--前景单元格-->
-    	<div id="c00" class="cell n2">2</div>
-        <div id="c01" class="cell n4">4</div>
-        <div id="c02" class="cell n8">8</div>
-        <div id="c03" class="cell n16">16</div>
-        
-        <div id="c10" class="cell n32">32</div>
-        <div id="c11" class="cell n64">64</div>
-        <div id="c12" class="cell n128">128</div>
-        <div id="c13" class="cell n256">256</div>
-        
-        <div id="c20" class="cell n512">512</div>
-        <div id="c21" class="cell n1024">1024</div>
-        <div id="c22" class="cell n2048">2048</div>
-        <div id="c23" class="cell n4096">4096</div>
-        
-        <div id="c30" class="cell n8192">8192</div>
-        <div id="c31" class="cell"></div>
-        <div id="c32" class="cell"></div>
-        <div id="c33" class="cell"></div>
-    </div>
-    
-    <!--Game Over!界面-->
-	<div id="gameOver">
-		<div><!--灰色半透明北景--></div>
-        <!--前景小窗-->
-        <p>Game Over!<br/>
-        Score:<span id="finalScore"></span><br/>
-        <a class="button" id="restart" style="font-size:30px;" onclick="game.start()">爱心 Try again!</a>
-        </p>    
-    </div>
-</body>
-
-<script>
-var game={
-	data:[],//单元格中的所有数字
-	score:0,
-	state:1,
-	RUNNING:1,
-	GAME_OVER:0,
-	PLAYING:2,//动画正在播放中
-	start:function(){//启动游戏时调用
-		this.data=[ [0,0,0,0],
-					[0,0,0,0],
-					[0,0,0,0],
-					[0,0,0,0] ];	
-		//在两个随机位置生成2或4
-		this.score=0;	
-		this.state=this.RUNNING;
-		var div=document.getElementById("gameOver");	
-		div.style.display="none";
-		this.randomNum();
-		this.randomNum();
-		//document.write(this.data.join("<br/>"));
-		this.updateView();
-	},
-	isFull:function(){//判断是否已满
-	  /*遍历data数组，
-			只要发现==0，就返回false
-		如果退出循环，就返回true*/
-		for(var row=0;row<4;row++){//this.data.length=4
-			for(var col=0;col<4;col++){//this.data[row].length=4
-				if(this.data[row][col]==0){
-					return false;
-				}	
-			}
-		}
-		return true;	
-	},
-	randomNum:function(){//在随机位置生成2或4
-		if(this.isFull()){return;}//如果满了就不用生成
-	  /*循环条件：true
-		随机在0到3行中生成一个行下标row
-		随机在0到3列中生成一个列下标col
-		如果该位置==0，随机选择2或4:如果Math.random()<0.5,选2，否则选4；放入该位置退出循环*/
-		while(true){
-			var row=Math.floor(Math.random()*(3-0+1)+0);
-			var col=Math.floor(Math.random()*(3-0+1)+0);
-			if(this.data[row][col]==0){
-				/*this.data[row][col]=Math.random()*(1-0+1)+0;
-				if(Math.random()<0.5){
-					this.data[row][col]=2;	
-				}else{
-					this.data[row][col]=4;
-				}*/
-				this.data[row][col]=Math.random()<0.5?2:4;
-				break;
-			}			
-		}
-	},
-	canLeft:function(){
-		/*遍历每个元素（最左侧列除外），只要发现任意元素左侧数==0或者当前值==左侧值return true  如果循环正常结束，  return false*/
-		for(var row=0;row<4;row++){
-			for(var col=1;col<4;col++){
-				if(this.data[row][col]!=0){
-					if(this.data[row][col-1]==0||this.data[row][col]==this.data[row][col-1]){
-						return true;
-					}
-				}
-			}
-		}
-		return false;
-	},
-	moveLeft:function(){//实现左移所有行
-		if(this.canLeft()){//先判断能否左移
-			for(var row=0;row<4;row++){
-				this.moveLeftInRow(row);
-			}
-			this.state=this.PLAYING;
-			animation.start();
-			setTimeout(function(){
-				game.state=game.RUNNING;
-				game.randomNum();
-			    game.updateView();	
-			
-			},animation.times*animation.interval);
-			
-		}
-	},
-	moveLeftInRow:function(row){//左移一行
-	  /*从0位置开始到2结束遍历row行中的每个元素  获得一个下一个不为0的元素的nextCol下标
-		如果nextCol==-1，break；
-		否则，判断合并
-			如果自己==0，用下一个元素的值替换自己，将下一个元素的值设为0，让col留在原地：col--
-			如果自己==下一个元素 将自己*2； 将下一个元素设为0*/
-		for(var col=0;col<=2;col++){
-			var nextCol=this.getNextRight(row,col);
-			if(nextCol==-1){
-				break;
-			}else{
-				if(this.data[row][col]==0){
-					this.data[row][col]=this.data[row][nextCol];
-					this.data[row][nextCol]=0;
-					animation.addTask(""+row+nextCol,""+row+col);
-					col--;
-				
-				}else if(this.data[row][col]==this.data[row][nextCol]){
-					this.data[row][col]*=2;
-					this.score+=this.data[row][col];
-					this.data[row][nextCol]=0;
-					animation.addTask(""+row+nextCol,""+row+col);
-				}
-			}
-		}
-	},
-	getNextRight:function(row,col){//获得当前行中，指定位置右侧第一个不为0的数，返回下一个为0的数的位置
-	  /*遍历当前位置右侧每个元素	只要返现！=0的，就返回其位置下标nextCol 退出循环，返回-1*/
-		for(var i=col+1;i<4;i++){
-			if(this.data[row][i]!=0){
-				return i;	
-			}	
-		}		
-		return -1;	
-	},
-	canRight:function(){//判断能否右移
-		for(var row=0;row<4;row++){
-			for(var col=2;col>=0;col--){
-				if(this.data[row][col]!=0){
-					if(this.data[row][col+1]==0||this.data[row][col]==this.data[row][col+1]){
-						return true;
-					}
-				}
-			}
-		}
-		return false;
-	},
-	moveRight:function(){//向右移动所有行
-		if(this.canRight()){
-			for(var row=0;row<4;row++){
-				this.moveRightInRow(row);
-			}
-			this.state=this.PLAYING;
-			animation.start();
-			setTimeout(function(){
-				game.state=game.RUNNING;
-				game.randomNum();
-			    game.updateView();	
-			
-			},animation.times*animation.interval);
-		}
-	},
-	moveRightInRow:function(row){//右移当前行
-		/*从右向左遍历检查，（最左边元素除外）*/
-		for(var col=3;col>0;col--){
-			var nextCol=this.getNextLeft(row,col);
-			if(nextCol==-1){
-				break;
-			}else{
-				if(this.data[row][col]==0){
-					this.data[row][col]=this.data[row][nextCol];
-					this.data[row][nextCol]=0;
-					animation.addTask(""+row+nextCol,""+row+col);
-					col++;
-				}else if(this.data[row][col]==this.data[row][nextCol]){
-					this.data[row][col]*=2;
-					this.score+=this.data[row][col];
-					this.data[row][nextCol]=0;
-					animation.addTask(""+row+nextCol,""+row+col);
-				}
-			}
-		}
-	},
-	getNextLeft:function(row,col){
-		/*从当前位置向左，找下一个不为0的数*/
-		for(var i=col-1;i>=0;i--){
-			if(this.data[row][i]!=0){
-				return i;	
-			}	
-		}		
-		return -1;	
-	},
-	canUp:function(){
-		for(var row=1;row<4;row++){
-			for(var col=0;col<4;col++){
-				if(this.data[row][col]!=0){
-					if(this.data[row-1][col]==0||this.data[row][col]==this.data[row-1][col]){
-						return true;
-					}
-				}
-			}
-		}
-		return false;
-	},
-	moveUp:function(){
-		if(this.canUp()){//先判断能否左移
-		for(var col=0;col<4;col++){
-				this.moveUpInCol(col);
-			}
-			this.state=this.PLAYING;
-			animation.start();
-			setTimeout(function(){
-				game.state=game.RUNNING;
-				game.randomNum();
-			    game.updateView();	
-			
-			},animation.times*animation.interval);
-		}
-	},
-	moveUpInCol:function(col){
-		for(var row=0;row<3;row++){
-			var nextRow=this.getNextDown(row,col);
-			if(nextRow==-1){
-				break;
-			}else{
-				if(this.data[row][col]==0){
-					this.data[row][col]=this.data[nextRow][col];
-					this.data[nextRow][col]=0;
-					animation.addTask(""+nextRow+col,""+row+col);
-					row--;
-				}else if(this.data[row][col]==this.data[nextRow][col]){
-					this.data[row][col]*=2;
-					this.score+=this.data[row][col];
-					this.data[nextRow][col]=0;
-					animation.addTask(""+nextRow+col,""+row+col);
-				}
-			}
-		}
-	},
-	getNextDown:function(row,col){
-		for(var i=row+1;i<4;i++){
-			if(this.data[i][col]!=0){
-					return i;
-			}
-		}
-		return -1;
-	},
-	canDown:function(){//判断能否右移
-		for(var row=0;row<3;row++){
-			for(var col=0;col<4;col++){
-				if(this.data[row][col]!=0){
-					if(this.data[row+1][col]==0||this.data[row][col]==this.data[row+1][col]){
-						return true;
-					}
-				}
-			}
-		}
-		return false;
-	},
-	moveDown:function(){//向右移动所有行
-		if(this.canDown()){
-			for(var col=0;col<4;col++){
-				this.moveDownInCol(col);
-			}
-			this.state=this.PLAYING;
-			animation.start();
-			setTimeout(function(){
-				game.state=game.RUNNING;
-				game.randomNum();
-			    game.updateView();	
-			
-			},animation.times*animation.interval);
-		}
-	},
-	moveDownInCol:function(col){//右移当前行
-		/*从右向左遍历检查，（最左边元素除外）*/
-		for(var row=3;row>0;row--){
-			var nextRow=this.getNextUp(row,col);
-			if(nextRow==-1){
-				break;
-			}else{
-				if(this.data[row][col]==0){
-					this.data[row][col]=this.data[nextRow][col];
-					this.data[nextRow][col]=0;
-					animation.addTask(""+nextRow+col,""+row+col);
-					row++;
-				}else if(this.data[row][col]==this.data[nextRow][col]){
-					this.data[row][col]*=2;
-					this.score+=this.data[row][col];
-					this.data[nextRow][col]=0;
-					animation.addTask(""+nextRow+col,""+row+col);
-				}
-			}
-		}
-	},
-	getNextUp:function(row,col){
-		/*从当前位置向左，找下一个不为0的数*/
-		for(var i=row-1;i>=0;i--){
-			if(this.data[i][col]!=0){
-				return i;	
-			}	
-		}		
-		return -1;	
-	},
-	/*将游戏数据整体更新到页面上*/
-	updateView:function(){
-	   /*step1.遍历二维数组中的每个元素
-		  step2：找到当前元素对应的div
-				拼div的id：c+row+col
-			var div=document.getElementById(id)；
-		  step3：将当前元素的值放入div中
-		  		如果当前值==0，就放入“”，div.innerHTML=?
-					否则放入当前值
-		  step4：根据当前元素值修改div样式类
-			  	div.className="类名";
-				如果当前值==0，className=“cell”；
-					否则className=“cell n”+当前值*/
-		for(var row=0;row<4;row++){
-			for(var col=0;col<4;col++){
-				var div=document.getElementById("c"+row+col);
-				/*if(this.data[row][col]==0){
-					div.innerHTML="";
-				}else{
-					div.innerHTML=this.data[row][col];
-				}*/
-				div.innerHTML=this.data[row][col]==0?"":this.data[row][col];
-			/*	if(this.data[row][col]==0){
-					div.className="cell";
-				}else{
-					div.className="cell n"+this.data[row][col];
-				}*/
-				div.className=this.data[row][col]==0?"cell":"cell n"+this.data[row][col];
-				/*将分数放入span*/
-			}
-		}
-		/*将分数放入span*/
-		var span=document.getElementById("score");
-		span.innerHTML=this.score;
-		/*判断游戏结束
-			如果游戏结束，this.state=GAME_OVER
-				显示游戏结束div
-				找到gameOverdiv
-				修改div的style.display*/
-		if(this.isGameOver()){
-			this.state=this.GAME_OVER;
-			var div=document.getElementById("gameOver");
-			var finalSocre=document.getElementById("finalScore");
-			finalSocre.innerHTML=this.score;
-			div.style.display="block";
-		}
-		/*if(this.state==this.RUNNING){
-			var div=document.getElementById("gameOver");	
-			div.style.display="none";
-		}*/
-	},
-	
-	isGameOver:function(){//判断游戏是否结束
-		/*能继续时返回false，否则返回true*/
-		if(!this.isFull()){return false;}
-		/*已经满了*/	/*if(this.canLeft()||this.canRight()||this.canUp()||this.canDown()){return false;}
-		else{return ture;}*/
-		for(var row=0;row<4;row++){
-			for(var col=0;col<4;col++){
-				//if(this.data[row][col==0]){return false;}
-				if(col<3){/*检查右侧相邻*/
-					if(this.data[row][col]==this.data[row][col+1]){
-						return false;
-					}
-				}
-				if(row<3){/*检查下方相邻*/
-					if(this.data[row][col]==this.data[row+1][col]){
-						return false;
-					}
-				}
-			}
-		}
-		return true;
-	}
-}
-//当窗口加载后，调用game对象的start方法
-window.onload=function(){//事件处理函数
-	game.start();
-	//console.log(game.moveLeftInRow(0));
-	document.onkeydown=function(){
-		/*step1：先获得事件对象！
-		  		 所有事件发生时，都自动创建一个event对象
-				 event对象中封装了事件信息，比如：鼠标的坐标，触发事件的元素，按键的编号
-		  step2：获得事件对象中的按键编号
-		  		如果是37号，就调用moveLeft
-		*/	
-		if(game.state!=game.PLAYING){
-			var event=window.event||arguments[0];//||经常用于解决浏览器兼容性问题
-			if(game.state==game.RUNNING){	
-				if(event.keyCode==37){
-					game.moveLeft();	
-				}else if(event.keyCode==39){
-					game.moveRight();	
-				}
-				else if(event.keyCode==38){
-					game.moveUp();	
-				}
-				else if(event.keyCode==40){
-					game.moveDown();	
-				}
-			}else if(event.keyCode==13){
-				game.start();
-			}
-		}
-	}
-}
-
-// animation
-function Task(obj,topStep,leftStep){
-	this.obj=obj;
-	this.topStep=topStep;
-	this.leftStep=leftStep;
-}
-/*moveStep方法将当前元素对象移动一步*/
-Task.prototype.moveStep=function(){
-	var style=getComputedStyle(this.obj,null);	
-	var top=parseInt(style.top);
-	var left=parseInt(style.left);
-	this.obj.style.top=top+this.topStep+"px";
-	this.obj.style.left=left+this.leftStep+"px";
-}
-/*清楚元素对象的样式，使其返回原地*/
-Task.prototype.clear=function(){
-	this.obj.style.left="";
-	this.obj.style.top="";
-}
-var animation={
-	times:10,//每个动画10步完成
-	interval:10,//10毫秒迈一步	
-	timer:null,//保存定时器id的属性
-	tasks:[],//保存每次需要移动的任务
-	
-	addTask:function(source,target){
-		console.log(source+","+target);
-		var sourceDiv=document.getElementById("c"+source);
-		var targetDiv=document.getElementById("c"+target);
-		var sourceStyle=getComputedStyle(sourceDiv);
-		var targetStyle=getComputedStyle(targetDiv);
-		var topStep=(parseInt(targetStyle.top)-parseInt(sourceStyle.top))/this.times;
-		var leftStep=(parseInt(targetStyle.left)-parseInt(sourceStyle.left))/this.times;
-		var task=new Task(sourceDiv,topStep,leftStep);
-		this.tasks.push(task);
-	},
-	
-	start:function(){
-		this.timer=setInterval(function(){
-			for(var i=0;i<animation.tasks.length;i++){
-				animation.tasks[i].moveStep();	
-			}	
-			animation.times--;
-			if(animation.times==0){
-				for(var i=0;i<animation.tasks.length;i++){
-				animation.tasks[i].clear();	
-				}
-				clearInterval(animation.timer);
-				animation.timer=null;
-				animation.tasks=[];
-				animation.times=10;	
-			}
-		},this.interval);
-	}
-}
-</script>
-</html>]]></content>
-    </entry>
-    
-    <entry>
       <title></title>
       <url>https://www.nekomio.com/via.html</url>
       <content type="html"><![CDATA[<!DOCTYPE html>
@@ -9639,6 +9056,589 @@ ajax.onreadystatechange=function()
 	</script>
 </body>
 
+</html>]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
+      <url>https://www.nekomio.com/404-no.html</url>
+      <content type="html"><![CDATA[<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>2048</title>
+<style type="text/css">
+	#gridPanel{
+		width:480px;
+		height:480px;
+		margin:0 auto;
+		background-color:#bbada0;
+		border-radius:10px;
+		position:relative;	
+	}
+	.grid,.cell{
+		width:100px;
+		height:100px;
+		border-radius:6px;
+	}
+	.grid{
+		float:left;
+		margin:16px 0 0 16px;
+		background-color:#ccc0b3;	
+	}
+	.cell{
+		text-align:center;
+		line-height:100px;
+		color:#776e65;
+		font-size:60px;
+		position:absolute;	
+	}
+	/*每一行拥有同样的top
+	  每一列拥有同样的left*/
+	#c00,#c01,#c02,#c03{top:16px;}
+	#c00,#c10,#c20,#c30{left:16px;}
+	#c10,#c11,#c12,#c13{top:132px;}
+	#c01,#c11,#c21,#c31{left:132px;}
+	#c20,#c21,#c22,#c23{top:248px;}
+	#c02,#c12,#c22,#c32{left:248px;}
+	#c30,#c31,#c32,#c33{top:364px;}
+	#c03,#c13,#c23,#c33{left:364px;}
+	.n2{background-color:#eee3da;}
+	.n4{background-color:#ede0c8;}
+	.n8{background-color:#f2b179;}
+	.n16{background-color:#f59563;}
+	.n32{background-color:#f67c5f;}
+	.n64{background-color:#f65e3b;}
+	.n128{background-color:#edcf72;}
+	.n256{background-color:#edcc61;}
+	.n512{background-color:#9c0;}
+	.n1024{background-color:#33b5e5;}
+	.n2048{background-color:#09c;}
+	.n4096{background-color:#a6c;}
+	.n8192{background-color:#93c;}
+	.n8,.n16,.n32,.n64,.n128,.n256,.n512,.n1024,.n2048,.n4096,.n8192{color:#fff;}
+	.n1024,.n2048,.n4096,.n8192{font-size:40px;}
+	/*显示分数的p元素*/
+	p{width:480px;margin:0 auto;font-family:Arial;font-weight:bold;font-size:40px;padding-top:15px;}
+	/*game over界面样式*/
+	#gameOver{width:100%;height:100%;;position:absolute;top:0px;left:0px;display:none;}
+	#gameOver div{width:100%;height:100%;background-color:#555;opacity:0.5;}
+	#gameOver p{position:absolute;border-radius:10px;top:200px;left:40%;width:300px;height:200px;border:1px solid #edcf72;line-height:1.6em;text-align:center;background-color:#fff;}
+	.button{padding:10px;background-color:#9f8d77;border-radius:6px;color:#fff;cursor:pointer;	}
+</style>
+</head>
+<body>
+	<div><p>404 No Found <a href="/">回到首页
+	</a></p> <br></div>
+	<p>Score:<span id="score"><span></p>
+	<div id="gridPanel">
+    	<!--背景单元格-->
+    	<div id="g00" class="grid"></div>
+        <div id="g01" class="grid"></div>
+        <div id="g02" class="grid"></div>
+        <div id="g03" class="grid"></div>
+        
+        <div id="g10" class="grid"></div>
+        <div id="g11" class="grid"></div>
+        <div id="g12" class="grid"></div>
+        <div id="g13" class="grid"></div>
+        
+        <div id="g20" class="grid"></div>
+        <div id="g21" class="grid"></div>
+        <div id="g22" class="grid"></div>
+        <div id="g23" class="grid"></div>
+        
+        <div id="g30" class="grid"></div>
+        <div id="g31" class="grid"></div>
+        <div id="g32" class="grid"></div>
+        <div id="g33" class="grid"></div>
+        
+        <!--前景单元格-->
+    	<div id="c00" class="cell n2">2</div>
+        <div id="c01" class="cell n4">4</div>
+        <div id="c02" class="cell n8">8</div>
+        <div id="c03" class="cell n16">16</div>
+        
+        <div id="c10" class="cell n32">32</div>
+        <div id="c11" class="cell n64">64</div>
+        <div id="c12" class="cell n128">128</div>
+        <div id="c13" class="cell n256">256</div>
+        
+        <div id="c20" class="cell n512">512</div>
+        <div id="c21" class="cell n1024">1024</div>
+        <div id="c22" class="cell n2048">2048</div>
+        <div id="c23" class="cell n4096">4096</div>
+        
+        <div id="c30" class="cell n8192">8192</div>
+        <div id="c31" class="cell"></div>
+        <div id="c32" class="cell"></div>
+        <div id="c33" class="cell"></div>
+    </div>
+    
+    <!--Game Over!界面-->
+	<div id="gameOver">
+		<div><!--灰色半透明北景--></div>
+        <!--前景小窗-->
+        <p>Game Over!<br/>
+        Score:<span id="finalScore"></span><br/>
+        <a class="button" id="restart" style="font-size:30px;" onclick="game.start()">爱心 Try again!</a>
+        </p>    
+    </div>
+</body>
+
+<script>
+var game={
+	data:[],//单元格中的所有数字
+	score:0,
+	state:1,
+	RUNNING:1,
+	GAME_OVER:0,
+	PLAYING:2,//动画正在播放中
+	start:function(){//启动游戏时调用
+		this.data=[ [0,0,0,0],
+					[0,0,0,0],
+					[0,0,0,0],
+					[0,0,0,0] ];	
+		//在两个随机位置生成2或4
+		this.score=0;	
+		this.state=this.RUNNING;
+		var div=document.getElementById("gameOver");	
+		div.style.display="none";
+		this.randomNum();
+		this.randomNum();
+		//document.write(this.data.join("<br/>"));
+		this.updateView();
+	},
+	isFull:function(){//判断是否已满
+	  /*遍历data数组，
+			只要发现==0，就返回false
+		如果退出循环，就返回true*/
+		for(var row=0;row<4;row++){//this.data.length=4
+			for(var col=0;col<4;col++){//this.data[row].length=4
+				if(this.data[row][col]==0){
+					return false;
+				}	
+			}
+		}
+		return true;	
+	},
+	randomNum:function(){//在随机位置生成2或4
+		if(this.isFull()){return;}//如果满了就不用生成
+	  /*循环条件：true
+		随机在0到3行中生成一个行下标row
+		随机在0到3列中生成一个列下标col
+		如果该位置==0，随机选择2或4:如果Math.random()<0.5,选2，否则选4；放入该位置退出循环*/
+		while(true){
+			var row=Math.floor(Math.random()*(3-0+1)+0);
+			var col=Math.floor(Math.random()*(3-0+1)+0);
+			if(this.data[row][col]==0){
+				/*this.data[row][col]=Math.random()*(1-0+1)+0;
+				if(Math.random()<0.5){
+					this.data[row][col]=2;	
+				}else{
+					this.data[row][col]=4;
+				}*/
+				this.data[row][col]=Math.random()<0.5?2:4;
+				break;
+			}			
+		}
+	},
+	canLeft:function(){
+		/*遍历每个元素（最左侧列除外），只要发现任意元素左侧数==0或者当前值==左侧值return true  如果循环正常结束，  return false*/
+		for(var row=0;row<4;row++){
+			for(var col=1;col<4;col++){
+				if(this.data[row][col]!=0){
+					if(this.data[row][col-1]==0||this.data[row][col]==this.data[row][col-1]){
+						return true;
+					}
+				}
+			}
+		}
+		return false;
+	},
+	moveLeft:function(){//实现左移所有行
+		if(this.canLeft()){//先判断能否左移
+			for(var row=0;row<4;row++){
+				this.moveLeftInRow(row);
+			}
+			this.state=this.PLAYING;
+			animation.start();
+			setTimeout(function(){
+				game.state=game.RUNNING;
+				game.randomNum();
+			    game.updateView();	
+			
+			},animation.times*animation.interval);
+			
+		}
+	},
+	moveLeftInRow:function(row){//左移一行
+	  /*从0位置开始到2结束遍历row行中的每个元素  获得一个下一个不为0的元素的nextCol下标
+		如果nextCol==-1，break；
+		否则，判断合并
+			如果自己==0，用下一个元素的值替换自己，将下一个元素的值设为0，让col留在原地：col--
+			如果自己==下一个元素 将自己*2； 将下一个元素设为0*/
+		for(var col=0;col<=2;col++){
+			var nextCol=this.getNextRight(row,col);
+			if(nextCol==-1){
+				break;
+			}else{
+				if(this.data[row][col]==0){
+					this.data[row][col]=this.data[row][nextCol];
+					this.data[row][nextCol]=0;
+					animation.addTask(""+row+nextCol,""+row+col);
+					col--;
+				
+				}else if(this.data[row][col]==this.data[row][nextCol]){
+					this.data[row][col]*=2;
+					this.score+=this.data[row][col];
+					this.data[row][nextCol]=0;
+					animation.addTask(""+row+nextCol,""+row+col);
+				}
+			}
+		}
+	},
+	getNextRight:function(row,col){//获得当前行中，指定位置右侧第一个不为0的数，返回下一个为0的数的位置
+	  /*遍历当前位置右侧每个元素	只要返现！=0的，就返回其位置下标nextCol 退出循环，返回-1*/
+		for(var i=col+1;i<4;i++){
+			if(this.data[row][i]!=0){
+				return i;	
+			}	
+		}		
+		return -1;	
+	},
+	canRight:function(){//判断能否右移
+		for(var row=0;row<4;row++){
+			for(var col=2;col>=0;col--){
+				if(this.data[row][col]!=0){
+					if(this.data[row][col+1]==0||this.data[row][col]==this.data[row][col+1]){
+						return true;
+					}
+				}
+			}
+		}
+		return false;
+	},
+	moveRight:function(){//向右移动所有行
+		if(this.canRight()){
+			for(var row=0;row<4;row++){
+				this.moveRightInRow(row);
+			}
+			this.state=this.PLAYING;
+			animation.start();
+			setTimeout(function(){
+				game.state=game.RUNNING;
+				game.randomNum();
+			    game.updateView();	
+			
+			},animation.times*animation.interval);
+		}
+	},
+	moveRightInRow:function(row){//右移当前行
+		/*从右向左遍历检查，（最左边元素除外）*/
+		for(var col=3;col>0;col--){
+			var nextCol=this.getNextLeft(row,col);
+			if(nextCol==-1){
+				break;
+			}else{
+				if(this.data[row][col]==0){
+					this.data[row][col]=this.data[row][nextCol];
+					this.data[row][nextCol]=0;
+					animation.addTask(""+row+nextCol,""+row+col);
+					col++;
+				}else if(this.data[row][col]==this.data[row][nextCol]){
+					this.data[row][col]*=2;
+					this.score+=this.data[row][col];
+					this.data[row][nextCol]=0;
+					animation.addTask(""+row+nextCol,""+row+col);
+				}
+			}
+		}
+	},
+	getNextLeft:function(row,col){
+		/*从当前位置向左，找下一个不为0的数*/
+		for(var i=col-1;i>=0;i--){
+			if(this.data[row][i]!=0){
+				return i;	
+			}	
+		}		
+		return -1;	
+	},
+	canUp:function(){
+		for(var row=1;row<4;row++){
+			for(var col=0;col<4;col++){
+				if(this.data[row][col]!=0){
+					if(this.data[row-1][col]==0||this.data[row][col]==this.data[row-1][col]){
+						return true;
+					}
+				}
+			}
+		}
+		return false;
+	},
+	moveUp:function(){
+		if(this.canUp()){//先判断能否左移
+		for(var col=0;col<4;col++){
+				this.moveUpInCol(col);
+			}
+			this.state=this.PLAYING;
+			animation.start();
+			setTimeout(function(){
+				game.state=game.RUNNING;
+				game.randomNum();
+			    game.updateView();	
+			
+			},animation.times*animation.interval);
+		}
+	},
+	moveUpInCol:function(col){
+		for(var row=0;row<3;row++){
+			var nextRow=this.getNextDown(row,col);
+			if(nextRow==-1){
+				break;
+			}else{
+				if(this.data[row][col]==0){
+					this.data[row][col]=this.data[nextRow][col];
+					this.data[nextRow][col]=0;
+					animation.addTask(""+nextRow+col,""+row+col);
+					row--;
+				}else if(this.data[row][col]==this.data[nextRow][col]){
+					this.data[row][col]*=2;
+					this.score+=this.data[row][col];
+					this.data[nextRow][col]=0;
+					animation.addTask(""+nextRow+col,""+row+col);
+				}
+			}
+		}
+	},
+	getNextDown:function(row,col){
+		for(var i=row+1;i<4;i++){
+			if(this.data[i][col]!=0){
+					return i;
+			}
+		}
+		return -1;
+	},
+	canDown:function(){//判断能否右移
+		for(var row=0;row<3;row++){
+			for(var col=0;col<4;col++){
+				if(this.data[row][col]!=0){
+					if(this.data[row+1][col]==0||this.data[row][col]==this.data[row+1][col]){
+						return true;
+					}
+				}
+			}
+		}
+		return false;
+	},
+	moveDown:function(){//向右移动所有行
+		if(this.canDown()){
+			for(var col=0;col<4;col++){
+				this.moveDownInCol(col);
+			}
+			this.state=this.PLAYING;
+			animation.start();
+			setTimeout(function(){
+				game.state=game.RUNNING;
+				game.randomNum();
+			    game.updateView();	
+			
+			},animation.times*animation.interval);
+		}
+	},
+	moveDownInCol:function(col){//右移当前行
+		/*从右向左遍历检查，（最左边元素除外）*/
+		for(var row=3;row>0;row--){
+			var nextRow=this.getNextUp(row,col);
+			if(nextRow==-1){
+				break;
+			}else{
+				if(this.data[row][col]==0){
+					this.data[row][col]=this.data[nextRow][col];
+					this.data[nextRow][col]=0;
+					animation.addTask(""+nextRow+col,""+row+col);
+					row++;
+				}else if(this.data[row][col]==this.data[nextRow][col]){
+					this.data[row][col]*=2;
+					this.score+=this.data[row][col];
+					this.data[nextRow][col]=0;
+					animation.addTask(""+nextRow+col,""+row+col);
+				}
+			}
+		}
+	},
+	getNextUp:function(row,col){
+		/*从当前位置向左，找下一个不为0的数*/
+		for(var i=row-1;i>=0;i--){
+			if(this.data[i][col]!=0){
+				return i;	
+			}	
+		}		
+		return -1;	
+	},
+	/*将游戏数据整体更新到页面上*/
+	updateView:function(){
+	   /*step1.遍历二维数组中的每个元素
+		  step2：找到当前元素对应的div
+				拼div的id：c+row+col
+			var div=document.getElementById(id)；
+		  step3：将当前元素的值放入div中
+		  		如果当前值==0，就放入“”，div.innerHTML=?
+					否则放入当前值
+		  step4：根据当前元素值修改div样式类
+			  	div.className="类名";
+				如果当前值==0，className=“cell”；
+					否则className=“cell n”+当前值*/
+		for(var row=0;row<4;row++){
+			for(var col=0;col<4;col++){
+				var div=document.getElementById("c"+row+col);
+				/*if(this.data[row][col]==0){
+					div.innerHTML="";
+				}else{
+					div.innerHTML=this.data[row][col];
+				}*/
+				div.innerHTML=this.data[row][col]==0?"":this.data[row][col];
+			/*	if(this.data[row][col]==0){
+					div.className="cell";
+				}else{
+					div.className="cell n"+this.data[row][col];
+				}*/
+				div.className=this.data[row][col]==0?"cell":"cell n"+this.data[row][col];
+				/*将分数放入span*/
+			}
+		}
+		/*将分数放入span*/
+		var span=document.getElementById("score");
+		span.innerHTML=this.score;
+		/*判断游戏结束
+			如果游戏结束，this.state=GAME_OVER
+				显示游戏结束div
+				找到gameOverdiv
+				修改div的style.display*/
+		if(this.isGameOver()){
+			this.state=this.GAME_OVER;
+			var div=document.getElementById("gameOver");
+			var finalSocre=document.getElementById("finalScore");
+			finalSocre.innerHTML=this.score;
+			div.style.display="block";
+		}
+		/*if(this.state==this.RUNNING){
+			var div=document.getElementById("gameOver");	
+			div.style.display="none";
+		}*/
+	},
+	
+	isGameOver:function(){//判断游戏是否结束
+		/*能继续时返回false，否则返回true*/
+		if(!this.isFull()){return false;}
+		/*已经满了*/	/*if(this.canLeft()||this.canRight()||this.canUp()||this.canDown()){return false;}
+		else{return ture;}*/
+		for(var row=0;row<4;row++){
+			for(var col=0;col<4;col++){
+				//if(this.data[row][col==0]){return false;}
+				if(col<3){/*检查右侧相邻*/
+					if(this.data[row][col]==this.data[row][col+1]){
+						return false;
+					}
+				}
+				if(row<3){/*检查下方相邻*/
+					if(this.data[row][col]==this.data[row+1][col]){
+						return false;
+					}
+				}
+			}
+		}
+		return true;
+	}
+}
+//当窗口加载后，调用game对象的start方法
+window.onload=function(){//事件处理函数
+	game.start();
+	//console.log(game.moveLeftInRow(0));
+	document.onkeydown=function(){
+		/*step1：先获得事件对象！
+		  		 所有事件发生时，都自动创建一个event对象
+				 event对象中封装了事件信息，比如：鼠标的坐标，触发事件的元素，按键的编号
+		  step2：获得事件对象中的按键编号
+		  		如果是37号，就调用moveLeft
+		*/	
+		if(game.state!=game.PLAYING){
+			var event=window.event||arguments[0];//||经常用于解决浏览器兼容性问题
+			if(game.state==game.RUNNING){	
+				if(event.keyCode==37){
+					game.moveLeft();	
+				}else if(event.keyCode==39){
+					game.moveRight();	
+				}
+				else if(event.keyCode==38){
+					game.moveUp();	
+				}
+				else if(event.keyCode==40){
+					game.moveDown();	
+				}
+			}else if(event.keyCode==13){
+				game.start();
+			}
+		}
+	}
+}
+
+// animation
+function Task(obj,topStep,leftStep){
+	this.obj=obj;
+	this.topStep=topStep;
+	this.leftStep=leftStep;
+}
+/*moveStep方法将当前元素对象移动一步*/
+Task.prototype.moveStep=function(){
+	var style=getComputedStyle(this.obj,null);	
+	var top=parseInt(style.top);
+	var left=parseInt(style.left);
+	this.obj.style.top=top+this.topStep+"px";
+	this.obj.style.left=left+this.leftStep+"px";
+}
+/*清楚元素对象的样式，使其返回原地*/
+Task.prototype.clear=function(){
+	this.obj.style.left="";
+	this.obj.style.top="";
+}
+var animation={
+	times:10,//每个动画10步完成
+	interval:10,//10毫秒迈一步	
+	timer:null,//保存定时器id的属性
+	tasks:[],//保存每次需要移动的任务
+	
+	addTask:function(source,target){
+		console.log(source+","+target);
+		var sourceDiv=document.getElementById("c"+source);
+		var targetDiv=document.getElementById("c"+target);
+		var sourceStyle=getComputedStyle(sourceDiv);
+		var targetStyle=getComputedStyle(targetDiv);
+		var topStep=(parseInt(targetStyle.top)-parseInt(sourceStyle.top))/this.times;
+		var leftStep=(parseInt(targetStyle.left)-parseInt(sourceStyle.left))/this.times;
+		var task=new Task(sourceDiv,topStep,leftStep);
+		this.tasks.push(task);
+	},
+	
+	start:function(){
+		this.timer=setInterval(function(){
+			for(var i=0;i<animation.tasks.length;i++){
+				animation.tasks[i].moveStep();	
+			}	
+			animation.times--;
+			if(animation.times==0){
+				for(var i=0;i<animation.tasks.length;i++){
+				animation.tasks[i].clear();	
+				}
+				clearInterval(animation.timer);
+				animation.timer=null;
+				animation.tasks=[];
+				animation.times=10;	
+			}
+		},this.interval);
+	}
+}
+</script>
 </html>]]></content>
     </entry>
     
