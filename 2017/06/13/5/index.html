@@ -154,7 +154,7 @@
     <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="[COGS 2051] 王者之剑 题解 网络流最大权闭合子图 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2017/06/13/5/"><meta property="og:locale" content="zh-CN"><meta name="description" content="【题目描述】这是在阿尔托利亚·潘德拉贡成为英灵前的事情，她正要去拔出石中剑成为亚瑟王，在这之前她要去收集一些宝石。宝石排列在一个n*m的网格中，每个网格中有一块价值为v(i,j)的宝石，阿尔托利亚·潘德拉贡可以选择自己的起点。开始时刻为0秒。以下操作，每秒按顺序执行1.在第i秒开始的时候，阿尔托利亚·潘德拉贡在方格（x,y）上，她可以拿走（x，y）中的宝石。2.在偶数秒，阿尔托利亚·潘德拉贡周围四 - NekoMio - NekoMio's Blog"><meta name="keywords" content="网络流"><meta property="og:image" content="https://ooo.0o0.ooo/2017/06/13/593fa2607488e.jpg"><meta property="article:published_time" content="2017-06-13T07:35:35.000Z"><meta property="article:modified_time" content="2020-12-17T13:02:20.833Z"><meta property="og:updated_time" content="2020-12-17T13:02:20.833Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="网络流"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="[COGS 2051] 王者之剑 题解 网络流最大权闭合子图 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2017/06/13/5/"><meta property="og:locale" content="zh-CN"><meta name="description" content="【题目描述】这是在阿尔托利亚·潘德拉贡成为英灵前的事情，她正要去拔出石中剑成为亚瑟王，在这之前她要去收集一些宝石。宝石排列在一个n*m的网格中，每个网格中有一块价值为v(i,j)的宝石，阿尔托利亚·潘德拉贡可以选择自己的起点。开始时刻为0秒。以下操作，每秒按顺序执行1.在第i秒开始的时候，阿尔托利亚·潘德拉贡在方格（x,y）上，她可以拿走（x，y）中的宝石。2.在偶数秒，阿尔托利亚·潘德拉贡周围四 - NekoMio - NekoMio's Blog"><meta name="keywords" content="网络流"><meta property="og:image" content="https://ooo.0o0.ooo/2017/06/13/593fa2607488e.jpg"><meta property="article:published_time" content="2017-06-13T07:35:35.000Z"><meta property="article:modified_time" content="2020-12-17T14:53:15.604Z"><meta property="og:updated_time" content="2020-12-17T14:53:15.604Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="网络流"><meta name="twitter:card" content="summary">
 
     
 
@@ -203,7 +203,7 @@
     },
     
     "datePublished": "2017-06-13T07:35:35.000Z",
-    "dateModified": "2020-12-17T13:02:20.833Z",
+    "dateModified": "2020-12-17T14:53:15.604Z",
     "author": {
         "@type": "Person",
         "name": "NekoMio",
@@ -439,11 +439,6 @@
                 </div>
                 <div class="card-body">
                     
-                        
-                        
-                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【题目描述】"><span class="post-toc-number">1.</span> <span class="post-toc-text">【题目描述】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【输入格式】"><span class="post-toc-number">2.</span> <span class="post-toc-text">【输入格式】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【输出格式】"><span class="post-toc-number">3.</span> <span class="post-toc-text">【输出格式】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【样例输入】"><span class="post-toc-number">4.</span> <span class="post-toc-text">【样例输入】</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#【样例输出】"><span class="post-toc-number">5.</span> <span class="post-toc-text">【样例输出】</span></a></li></ol></div>
-                        
-                    
                     <article id="post-content">
                         <h3 id="【题目描述】"><a href="#【题目描述】" class="headerlink" title="【题目描述】"></a>【题目描述】</h3><p><img src="https://ooo.0o0.ooo/2017/06/13/593fa2607488e.jpg" alt="saber"><br>这是在阿尔托利亚·潘德拉贡成为英灵前的事情，她正要去拔出石中剑成为亚瑟王，在这之前她要去收集一些宝石。<br>宝石排列在一个n*m的网格中，每个网格中有一块价值为v(i,j)的宝石，阿尔托利亚·潘德拉贡可以选择自己的起点。<br>开始时刻为0秒。以下操作，每秒按顺序执行<br>1.在第i秒开始的时候，阿尔托利亚·潘德拉贡在方格（x,y）上，她可以拿走（x，y）中的宝石。<br>2.在偶数秒，阿尔托利亚·潘德拉贡周围四格的宝石会消失<br>3.若阿尔托利亚·潘德拉贡第i秒开始时在方格（x，y）上，则在第i+1秒可以立即移动到（x+1，y），（x，y+1），（x-1，y）或（x，y-1）上，也可以停留在（x,y)上。<br>求阿尔托利亚·潘德拉贡最多可以获得多少价值的宝石</p>
 <a id="more"></a> 
@@ -495,7 +490,7 @@
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2017-06-13T07:35:35.000Z" itemprop="datePublished">2017-06-13</time>
 
-    , 最后修改于&nbsp;<time datetime="2020-12-17T13:02:20.833Z" itemprop="dateModified">2020-12-17</time>
+    , 最后修改于&nbsp;<time datetime="2020-12-17T14:53:15.604Z" itemprop="dateModified">2020-12-17</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">

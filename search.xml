@@ -2053,11 +2053,11 @@
         
         <tags>
             
+            <tag> CDQ </tag>
+            
             <tag> FFT&amp;NTT </tag>
             
             <tag> 生成函数 </tag>
-            
-            <tag> CDQ </tag>
             
         </tags>
         
@@ -8030,6 +8030,85 @@ var animation={
     
     <entry>
       <title></title>
+      <url>https://www.nekomio.com/Markdown.html</url>
+      <content type="html"><![CDATA[<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>MarkDown</title>
+	<link href="/css/markdown-palettes.css" rel="stylesheet">
+    <link rel="icon shortcut" type="image/ico" href="/null.png">
+    <link rel="icon" href="/null.png">
+    <script>
+    var _hmt = _hmt || [];
+    (function() {var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?266bd695243da8f9574854aa4aa3e099';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+    })();
+	</script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+<body>
+	<div id="editor"></div>
+</body>
+<script src="/js/markdown-palettes.js"></script>
+<script>
+	var markdownEditor = new MarkdownPalettes("#editor");
+</script>
+</html>
+
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[书签]]></title>
+      <url>https://www.nekomio.com/bookmark.html</url>
+      <content type="html"><![CDATA[<script src=/js/crypto-js.js></script>
+<script>
+function doDecrypt (pwd, onError) {
+	console.log('in doDecrypt');
+	const txt = document.getElementById('enc_content').innerHTML;
+	let plantext;
+	try {
+		const bytes = CryptoJS.AES.decrypt(txt, pwd);
+		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+	} catch(err) {
+		if(onError) {
+			onError(err);
+		}
+		return;
+	}
+	document.getElementById('enc_content').innerHTML = plaintext;
+	document.getElementById('enc_content').style.display = 'block';
+	document.getElementById('enc_passwd').style.display = 'none';
+	if(typeof MathJax !== 'undefined') {
+		MathJax.Hub.Queue(
+			['resetEquationNumbers', MathJax.InputJax.TeX],
+			['PreProcess', MathJax.Hub],
+			['Reprocess', MathJax.Hub]
+		);
+	}
+}
+</script>
+<div id="enc_content" style="display:none">U2FsdGVkX1+rrYIDpw4yTFyM13pWOoiSNn9UN7my5akO1Vb+dvMCXcx/svSmXsvR8TFqUzes1/KhKAozbRNSlGUDDL5tdz6iiT8kEWIGopV8dDd09xw2fZOX+StQ+sbFkTD++yC5pX+ZZuLJNDZBuvKoy9lrinkp/TvypJtdiBMOwBoRcfjWUVZ7kOoxRHXPYZBwQXu2MFFuHfzA6ZL+oRxQ27gcl1CF5kS9NSD4Y8BtqZLqy1+1yE98kRH4PDw9ajlnQmlsYtQVQaEj3fgdIkPrtnJs71kqnCpztsN4+4E=</div>
+<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
+<script>
+var onError = function(error) {
+	document.getElementById("enc_error").innerHTML = "password error!"
+};
+function decrypt() {
+var passwd = document.getElementById("enc_pwd_input").value;
+console.log(passwd);
+doDecrypt(passwd, onError);
+}
+</script>
+</div>]]></content>
+    </entry>
+    
+    <entry>
+      <title></title>
       <url>https://www.nekomio.com/404.html</url>
       <content type="html"><![CDATA[<!DOCTYPE html>
 <head>
@@ -8242,85 +8321,6 @@ var animation={
 </body>
 
 </html>]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
-      <url>https://www.nekomio.com/Markdown.html</url>
-      <content type="html"><![CDATA[<!DOCTYPE html>
-<html lang="zh">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>MarkDown</title>
-	<link href="/css/markdown-palettes.css" rel="stylesheet">
-    <link rel="icon shortcut" type="image/ico" href="/null.png">
-    <link rel="icon" href="/null.png">
-    <script>
-    var _hmt = _hmt || [];
-    (function() {var hm = document.createElement('script');
-    hm.src = 'https://hm.baidu.com/hm.js?266bd695243da8f9574854aa4aa3e099';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(hm, s);
-    })();
-	</script>
-<meta name="generator" content="Hexo 4.2.1"></head>
-<body>
-	<div id="editor"></div>
-</body>
-<script src="/js/markdown-palettes.js"></script>
-<script>
-	var markdownEditor = new MarkdownPalettes("#editor");
-</script>
-</html>
-
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[书签]]></title>
-      <url>https://www.nekomio.com/bookmark.html</url>
-      <content type="html"><![CDATA[<script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX186D3dRlZj1b4bLcqpF2Q/vp3mJh4ZPvitP5ySs7TwAn5irFwSAbzXTCDDJNTbCop5ZLwEpfPmpFSRsVwGAOYxRLGSXkkg8+uOq391GUOsBVtFg//wfNSdHawCws2VbDTG7ngbxgWwTLKAOlL9c7SqAsVqn6uQU6bXNaRMwoJmRypQ6mRhEjNUn5CBm+US5Tbrm23XHavmwT3imgoXr24GqXnvLwWsV6o+A0lBx7zMbG6VAAre2Ecx8KNBsj69xCtcZ96sGFRgP3u5d4ROClH+TuQZ0ffTharA=</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="解&nbsp;密" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "password error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>]]></content>
     </entry>
     
     <entry>

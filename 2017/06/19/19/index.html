@@ -154,7 +154,7 @@
     <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="BZOJ 1778 [Usaco2010 Hol] Dotp 驱逐猪猡 高斯消元 概率期望 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2017/06/19/19/"><meta property="og:locale" content="zh-CN"><meta name="description" content="Description奶牛们建立了一个随机化的臭气炸弹来驱逐猪猡。猪猡的文明包含1到N (2 &amp;lt;= N &amp;lt;= 300)一共N个猪城。这些城市由M (1 &amp;lt;= M &amp;lt;= 44,850)条由两个不同端点A_j和B_j (1 &amp;lt;= A_j&amp;lt;= N; 1 &amp;lt;= B_j &amp;lt;= N)表示的双向道路连接。保证城市1至少连接一个其它的城市。一开始臭气弹会被放在城市1 - NekoMio - NekoMio's Blog"><meta name="keywords" content="概率DP, 高斯消元"><meta property="article:published_time" content="2017-06-19T09:12:36.000Z"><meta property="article:modified_time" content="2020-12-17T13:02:20.833Z"><meta property="og:updated_time" content="2020-12-17T13:02:20.833Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="概率DP, 高斯消元"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="BZOJ 1778 [Usaco2010 Hol] Dotp 驱逐猪猡 高斯消元 概率期望 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2017/06/19/19/"><meta property="og:locale" content="zh-CN"><meta name="description" content="Description奶牛们建立了一个随机化的臭气炸弹来驱逐猪猡。猪猡的文明包含1到N (2 &amp;lt;= N &amp;lt;= 300)一共N个猪城。这些城市由M (1 &amp;lt;= M &amp;lt;= 44,850)条由两个不同端点A_j和B_j (1 &amp;lt;= A_j&amp;lt;= N; 1 &amp;lt;= B_j &amp;lt;= N)表示的双向道路连接。保证城市1至少连接一个其它的城市。一开始臭气弹会被放在城市1 - NekoMio - NekoMio's Blog"><meta name="keywords" content="概率DP, 高斯消元"><meta property="article:published_time" content="2017-06-19T09:12:36.000Z"><meta property="article:modified_time" content="2020-12-17T14:53:15.604Z"><meta property="og:updated_time" content="2020-12-17T14:53:15.604Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="概率DP, 高斯消元"><meta name="twitter:card" content="summary">
 
     
 
@@ -203,7 +203,7 @@
     },
     
     "datePublished": "2017-06-19T09:12:36.000Z",
-    "dateModified": "2020-12-17T13:02:20.833Z",
+    "dateModified": "2020-12-17T14:53:15.604Z",
     "author": {
         "@type": "Person",
         "name": "NekoMio",
@@ -439,11 +439,6 @@
                 </div>
                 <div class="card-body">
                     
-                        
-                        
-                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Description"><span class="post-toc-number">1.</span> <span class="post-toc-text">Description</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Input"><span class="post-toc-number">2.</span> <span class="post-toc-text">Input</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Output"><span class="post-toc-number">3.</span> <span class="post-toc-text">Output</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Sample-Input"><span class="post-toc-number">4.</span> <span class="post-toc-text">Sample Input</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Sample-Output"><span class="post-toc-number">5.</span> <span class="post-toc-text">Sample Output</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题解"><span class="post-toc-number"></span> <span class="post-toc-text">题解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#期望"><span class="post-toc-number">0.1.</span> <span class="post-toc-text">期望</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#概率"><span class="post-toc-number">0.2.</span> <span class="post-toc-text">概率</span></a></li></ol></li></ol></div>
-                        
-                    
                     <article id="post-content">
                         <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>奶牛们建立了一个随机化的臭气炸弹来驱逐猪猡。猪猡的文明包含1到N (2 &lt;= N &lt;= 300)一共N个猪城。这些城市由M (1 &lt;= M &lt;= 44,850)条由两个不同端点A_j和B_j (1 &lt;= A_j&lt;= N; 1 &lt;= B_j &lt;= N)表示的双向道路连接。保证城市1至少连接一个其它的城市。一开始臭气弹会被放在城市1。每个小时（包括第一个小时），它有P/Q (1 &lt;= P &lt;=1,000,000; 1 &lt;= Q &lt;= 1,000,000)的概率污染它所在的城市。如果这个小时内它没有污染它所在的城市，那麽它随机地选择一条道路，在这个小时内沿着这条道路走到一个新的城市。可以离开这个城市的所有道路被选择的概率均等。因为这个臭气弹的随机的性质，</p>
 <a id="more"></a> 
@@ -494,7 +489,7 @@
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2017-06-19T09:12:36.000Z" itemprop="datePublished">2017-06-19</time>
 
-    , 最后修改于&nbsp;<time datetime="2020-12-17T13:02:20.833Z" itemprop="dateModified">2020-12-17</time>
+    , 最后修改于&nbsp;<time datetime="2020-12-17T14:53:15.604Z" itemprop="dateModified">2020-12-17</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">

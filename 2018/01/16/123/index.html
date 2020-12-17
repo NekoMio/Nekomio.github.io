@@ -154,7 +154,7 @@
     <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="BZOJ1095 [ZJOI2007] Hide 捉迷藏 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2018/01/16/123/"><meta property="og:locale" content="zh-CN"><meta name="description" content="Description　　捉迷藏 Jiajia和Wind是一对恩爱的夫妻，并且他们有很多孩子。某天，Jiajia、Wind和孩子们决定在家里玩捉迷藏游戏。他们的家很大且构造很奇特，由N个屋子和N-1条双向走廊组成，这N-1条走廊的分布使得任意两个屋子都互相可达。游戏是这样进行的，孩子们负责躲藏，Jiajia负责找，而Wind负责操纵这N个屋子的灯。在起初的时候，所有的灯都没有被打开。每一次，孩子们 - NekoMio - NekoMio's Blog"><meta name="keywords" content="点分治"><meta property="article:published_time" content="2018-01-16T00:24:12.000Z"><meta property="article:modified_time" content="2020-12-17T13:02:20.829Z"><meta property="og:updated_time" content="2020-12-17T13:02:20.829Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="点分治"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="BZOJ1095 [ZJOI2007] Hide 捉迷藏 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2018/01/16/123/"><meta property="og:locale" content="zh-CN"><meta name="description" content="Description　　捉迷藏 Jiajia和Wind是一对恩爱的夫妻，并且他们有很多孩子。某天，Jiajia、Wind和孩子们决定在家里玩捉迷藏游戏。他们的家很大且构造很奇特，由N个屋子和N-1条双向走廊组成，这N-1条走廊的分布使得任意两个屋子都互相可达。游戏是这样进行的，孩子们负责躲藏，Jiajia负责找，而Wind负责操纵这N个屋子的灯。在起初的时候，所有的灯都没有被打开。每一次，孩子们 - NekoMio - NekoMio's Blog"><meta name="keywords" content="点分治"><meta property="article:published_time" content="2018-01-16T00:24:12.000Z"><meta property="article:modified_time" content="2020-12-17T14:53:15.600Z"><meta property="og:updated_time" content="2020-12-17T14:53:15.600Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="点分治"><meta name="twitter:card" content="summary">
 
     
 
@@ -203,7 +203,7 @@
     },
     
     "datePublished": "2018-01-16T00:24:12.000Z",
-    "dateModified": "2020-12-17T13:02:20.829Z",
+    "dateModified": "2020-12-17T14:53:15.600Z",
     "author": {
         "@type": "Person",
         "name": "NekoMio",
@@ -439,11 +439,6 @@
                 </div>
                 <div class="card-body">
                     
-                        
-                        
-                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Description"><span class="post-toc-number">1.</span> <span class="post-toc-text">Description</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Input"><span class="post-toc-number">2.</span> <span class="post-toc-text">Input</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Output"><span class="post-toc-number">3.</span> <span class="post-toc-text">Output</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Sample-Input"><span class="post-toc-number">4.</span> <span class="post-toc-text">Sample Input</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Sample-Output"><span class="post-toc-number">5.</span> <span class="post-toc-text">Sample Output</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HINT"><span class="post-toc-number">6.</span> <span class="post-toc-text">HINT</span></a></li></ol></div>
-                        
-                    
                     <article id="post-content">
                         <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>　　捉迷藏 Jiajia和Wind是一对恩爱的夫妻，并且他们有很多孩子。某天，Jiajia、Wind和孩子们决定在家里玩<br>捉迷藏游戏。他们的家很大且构造很奇特，由N个屋子和N-1条双向走廊组成，这N-1条走廊的分布使得任意两个屋<br>子都互相可达。游戏是这样进行的，孩子们负责躲藏，Jiajia负责找，而Wind负责操纵这N个屋子的灯。在起初的<br>时候，所有的灯都没有被打开。每一次，孩子们只会躲藏在没有开灯的房间中，但是为了增加刺激性，孩子们会要<br>求打开某个房间的电灯或者关闭某个房间的电灯。为了评估某一次游戏的复杂性，Jiajia希望知道可能的最远的两<br>个孩子的距离（即最远的两个关灯房间的距离）。 我们将以如下形式定义每一种操作： C(hange) i 改变第i个房<br>间的照明状态，若原来打开，则关闭；若原来关闭，则打开。 G(ame) 开始一次游戏，查询最远的两个关灯房间的<br>距离。</p>
 <h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><p>　　第一行包含一个整数N，表示房间的个数，房间将被编号为1,2,3…N的整数。接下来N-1行每行两个整数a, b，<br>表示房间a与房间b之间有一条走廊相连。接下来一行包含一个整数Q，表示操作次数。接着Q行，每行一个操作，如<br>上文所示。</p>
@@ -491,7 +486,7 @@
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2018-01-16T00:24:12.000Z" itemprop="datePublished">2018-01-16</time>
 
-    , 最后修改于&nbsp;<time datetime="2020-12-17T13:02:20.829Z" itemprop="dateModified">2020-12-17</time>
+    , 最后修改于&nbsp;<time datetime="2020-12-17T14:53:15.600Z" itemprop="dateModified">2020-12-17</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">

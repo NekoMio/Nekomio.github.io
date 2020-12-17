@@ -154,7 +154,7 @@
     <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="[BZOJ 1592] Making The Grade路面修整 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2017/08/03/61/"><meta property="og:locale" content="zh-CN"><meta name="description" content="DescriptionFJ打算好好修一下农场中某条凹凸不平的土路。按奶牛们的要求，修好后的路面高度应当单调上升或单调下降，也就是说，高度上升与高度下降的路段不能同时出现在修好的路中。 整条路被分成了N段，N个整数A_1, … , A_N (1 &amp;lt;= N &amp;lt;= 2,000)依次描述了每一段路的高度(0 &amp;lt;= A_i &amp;lt;= 1,000,000,000)。FJ希望找到一个恰好含N - NekoMio - NekoMio's Blog"><meta name="keywords" content="DP"><meta property="article:published_time" content="2017-08-03T00:24:30.000Z"><meta property="article:modified_time" content="2020-12-17T13:02:20.837Z"><meta property="og:updated_time" content="2020-12-17T13:02:20.837Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="DP"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="[BZOJ 1592] Making The Grade路面修整 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2017/08/03/61/"><meta property="og:locale" content="zh-CN"><meta name="description" content="DescriptionFJ打算好好修一下农场中某条凹凸不平的土路。按奶牛们的要求，修好后的路面高度应当单调上升或单调下降，也就是说，高度上升与高度下降的路段不能同时出现在修好的路中。 整条路被分成了N段，N个整数A_1, … , A_N (1 &amp;lt;= N &amp;lt;= 2,000)依次描述了每一段路的高度(0 &amp;lt;= A_i &amp;lt;= 1,000,000,000)。FJ希望找到一个恰好含N - NekoMio - NekoMio's Blog"><meta name="keywords" content="DP"><meta property="article:published_time" content="2017-08-03T00:24:30.000Z"><meta property="article:modified_time" content="2020-12-17T14:53:15.604Z"><meta property="og:updated_time" content="2020-12-17T14:53:15.604Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="DP"><meta name="twitter:card" content="summary">
 
     
 
@@ -203,7 +203,7 @@
     },
     
     "datePublished": "2017-08-03T00:24:30.000Z",
-    "dateModified": "2020-12-17T13:02:20.837Z",
+    "dateModified": "2020-12-17T14:53:15.604Z",
     "author": {
         "@type": "Person",
         "name": "NekoMio",
@@ -439,11 +439,6 @@
                 </div>
                 <div class="card-body">
                     
-                        
-                        
-                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Description"><span class="post-toc-number">1.</span> <span class="post-toc-text">Description</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Input"><span class="post-toc-number">2.</span> <span class="post-toc-text">Input</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Output"><span class="post-toc-number">3.</span> <span class="post-toc-text">Output</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Sample-Input"><span class="post-toc-number">4.</span> <span class="post-toc-text">Sample Input</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Sample-Output"><span class="post-toc-number">5.</span> <span class="post-toc-text">Sample Output</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#HINT"><span class="post-toc-number">6.</span> <span class="post-toc-text">HINT</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#题解"><span class="post-toc-number"></span> <span class="post-toc-text">题解</span></a></div>
-                        
-                    
                     <article id="post-content">
                         <h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>FJ打算好好修一下农场中某条凹凸不平的土路。按奶牛们的要求，修好后的路面高度应当单调上升或单调下降，也就是说，高度上升与高度下降的路段不能同时出现在修好的路中。 整条路被分成了N段，N个整数A_1, … , A_N (1 &lt;= N &lt;= 2,000)依次描述了每一段路的高度(0 &lt;= A_i &lt;= 1,000,000,000)。FJ希望找到一个恰好含N个元素的不上升或不下降序列B_1, … , B_N，作为修过的路中每个路段的高度。由于将每一段路垫高或挖低一个单位的花费相同，修路的总支出可以表示为：$ |A_1 - B_1| + |A_2 - B_2| + … + |A_N - B_N| $请你计算一下，FJ在这项工程上的最小支出是多少。FJ向你保证，这个支出不会超过2^31-1。</p>
 <a id="more"></a>
@@ -499,7 +494,7 @@
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2017-08-03T00:24:30.000Z" itemprop="datePublished">2017-08-03</time>
 
-    , 最后修改于&nbsp;<time datetime="2020-12-17T13:02:20.837Z" itemprop="dateModified">2020-12-17</time>
+    , 最后修改于&nbsp;<time datetime="2020-12-17T14:53:15.604Z" itemprop="dateModified">2020-12-17</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
