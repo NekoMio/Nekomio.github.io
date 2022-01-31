@@ -57,7 +57,7 @@
     <title>UOJ328 【UTR #3】量子破碎 | NekoMio&#39;s Blog</title>
 
     <!-- Favicons -->
-    <link rel="icon" type="image/ico" href="/null.png">
+    <link rel="icon" type="image&#x2F;ico" href="/null.png">
 
     <!-- ### Import File ### -->
     <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
@@ -154,14 +154,14 @@
     <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="UOJ328 【UTR #3】量子破碎 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2018/04/21/149/"><meta property="og:locale" content="zh-CN"><meta name="description" content="Scape下载了好久终于下完了关于量子巧克力的游戏——Quantum break，准备邀请Mythological来享受在一起的时光。可是谁知道积劳成疾的Scape，居然在Mythological到来之前就陷入了梦境之中。 Scape在梦境中隐隐约约看见了这样的一份题面： Mythological应邀来和他一起隔膜，并且带来了一盒与游戏中同款的 ”黎明前就会破碎的量子巧克力“。 在游戏里量子巧克力 - NekoMio - NekoMio's Blog"><meta name="keywords" content="数学, 交互, FWT"><meta property="article:published_time" content="2018-04-21T07:12:31.000Z"><meta property="article:modified_time" content="2021-09-17T05:49:12.320Z"><meta property="og:updated_time" content="2021-09-17T05:49:12.320Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="数学, 交互, FWT"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="UOJ328 【UTR #3】量子破碎 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2018/04/21/149/"><meta property="og:locale" content="zh-CN"><meta name="description" content="Scape下载了好久终于下完了关于量子巧克力的游戏——Quantum break，准备邀请Mythological来享受在一起的时光。可是谁知道积劳成疾的Scape，居然在Mythological到来之前就陷入了梦境之中。 Scape在梦境中隐隐约约看见了这样的一份题面： Mythological应邀来和他一起隔膜，并且带来了一盒与游戏中同款的 ”黎明前就会破碎的量子巧克力“。 在游戏里量子巧克力 - NekoMio - NekoMio&#39;s Blog"><meta name="keywords" content="数学, 交互, FWT"><meta property="article:published_time" content="2018-04-21T07:12:31.000Z"><meta property="article:modified_time" content="2022-01-31T14:11:37.794Z"><meta property="og:updated_time" content="2022-01-31T14:11:37.794Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="数学, 交互, FWT"><meta name="twitter:card" content="summary">
 
     
 
     <!-- ### Canonical link ### -->
     <link rel="canonical" href="https://www.nekomio.com/2018/04/21/149/">
 
-    <meta name="generator" content="Hexo 4.2.1">
+    <meta name="generator" content="Hexo 5.4.0">
 
     <!-- ### Analytics ### -->
     
@@ -203,7 +203,7 @@
     },
     
     "datePublished": "2018-04-21T07:12:31.000Z",
-    "dateModified": "2021-09-17T05:49:12.320Z",
+    "dateModified": "2022-01-31T14:11:37.794Z",
     "author": {
         "@type": "Person",
         "name": "NekoMio",
@@ -539,23 +539,23 @@
 </tr>
 </tbody></table>
 <p>时间限制：$2s$<br>空间限制：256MB</p>
-<p><a href="http://uoj.ac/problem/328" target="_blank" rel="noopener">UOJ328</a>  </p>
+<p><a target="_blank" rel="noopener" href="http://uoj.ac/problem/328">UOJ328</a>  </p>
 <h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><h4 id="Subtask-1"><a href="#Subtask-1" class="headerlink" title="Subtask 1"></a>Subtask 1</h4><p>我们看到 $n$ 较小， 我们可以直接查询每一个位置， 然后就获得了 $5$ 分的好成绩。  </p>
-<p><a href="http://uoj.ac/submission/243944" target="_blank" rel="noopener">5pts</a></p>
+<p><a target="_blank" rel="noopener" href="http://uoj.ac/submission/243944">5pts</a></p>
 <h4 id="Subtask-2"><a href="#Subtask-2" class="headerlink" title="Subtask 2"></a>Subtask 2</h4><p>因为每个函数只能用小于 $400$ 次， 我们考虑如何减少查询次数。  </p>
 <p>按位考虑<br>如果我们只想知道 $x \oplus y$ 的第 $i$ 位是否为$1$， 那么我们不用考虑其他位， 也就是说， 我们要把 $x,y$ 中除第 $i$ 位以外的位都变为 $0$。 这是一个不可逆的操作。 所以矩阵是不可逆的， 所以我们要用的操作为 $3$, 矩阵为 $\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 0 \end{pmatrix}$<br>这本质上是把第 $i$ 位为 1 的数 $x$ 累加到 $x - 2^i$ 上， 然后将 $x$ 的值设为 $0$。<br>最后要查询一下 $a[0]$ 与 $a[2^i]$ 是否都为 $1$。  </p>
-<p><a href="http://uoj.ac/submission/243948" target="_blank" rel="noopener">20pts</a></p>
-<p>(UPD 2018-4-25 21:37)<br>还有一种方法(by wq)<br>同样是按位考虑作用矩阵 $\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}$<br>这样作用完了之后如果 $x \oplus y$ 中有 $2^i$， 那么最后查询 $2^i$就为$\frac{1}{\sqrt{2} }$。<br>查询一下就好了。<br><a href="http://uoj.ac/submission/245096" target="_blank" rel="noopener">20pts</a></p>
+<p><a target="_blank" rel="noopener" href="http://uoj.ac/submission/243948">20pts</a></p>
+<p>(UPD 2018-4-25 21:37)<br>还有一种方法(by wq)<br>同样是按位考虑作用矩阵 $\begin{pmatrix} 1 &amp; 1 \\ 0 &amp; 1 \end{pmatrix}$<br>这样作用完了之后如果 $x \oplus y$ 中有 $2^i$， 那么最后查询 $2^i$就为$\frac{1}{\sqrt{2} }$。<br>查询一下就好了。<br><a target="_blank" rel="noopener" href="http://uoj.ac/submission/245096">20pts</a></p>
 <h4 id="Subtask-3"><a href="#Subtask-3" class="headerlink" title="Subtask 3"></a>Subtask 3</h4><h5 id="Part1"><a href="#Part1" class="headerlink" title="Part1"></a>Part1</h5><p>我们考虑如何丢掉最后一步用操作4查 $a[0]$ 和$a[2^i]$<br>如果直接随机，那么无论 xor 是 0 还是 1 ，都会随机返回 0 或 1 （每次 x 会重新随机）。<br>为了区分出来我们做变换 $a[0]=a[0]+a[2^i]$, $a[2^i]=a[0]-a[2^i]$, 用上矩阵$\begin{pmatrix} 1 &amp; 1 \\ 1 &amp; -1 \end{pmatrix}$<br>如果异或值为 1 则答案一定为 $0$, 否则答案为$0$或$1$。<br>那么我们可以多次询问搞一下。</p>
 <blockquote>
 <p>可是并不能过掉第三个Subtask， 因为复杂度是 $n^2$ 的然后如果乘个常数， 好像就超次数了。<br>如果我的理解有不对的， 请联系我。  </p>
 </blockquote>
 <h5 id="Part2"><a href="#Part2" class="headerlink" title="Part2"></a>Part2</h5><p>我们考虑另一种概率做法。<br>注意题面里有提到交互库的实现，会在概率平方和为0的时候返回0。<br>如果平方和不为0，返回0的概率很小。<br>对于每一位我们作用上 $\begin{pmatrix} 1 &amp; 0 \\ 0 &amp; 0 \end{pmatrix}$<br>这样如果 $x, y$ 的第 $i$ 位都为 1， 则一定会返回 $0$, 其他情况下返回$0$ 的概率很小， 基本不用考虑。<br>那么如果返回 $0$， 我们可以就认为$x, y$的第$i$ 位都为 1。 这种方法得出的结果是有很小的概率不对的， 但正确的概率很大。<br>事实上, 所有 Subtask 3 的数据都不会卡掉这个做法。<br>但如果 $x, y$ 的值都为 $0$, 他依然不会返回 $0$, 所以我们要多次查询， 在这些次中，有很大的概率使得有至少一次 $x, y$ 都为 1。  </p>
 <p>到此我们得到了 $40$ 分的好成绩。</p>
-<p><a href="http://uoj.ac/submission/243969" target="_blank" rel="noopener">40pts</a></p>
+<p><a target="_blank" rel="noopener" href="http://uoj.ac/submission/243969">40pts</a></p>
 <h3 id="Subtask-4"><a href="#Subtask-4" class="headerlink" title="Subtask 4"></a>Subtask 4</h3><p>我们看一下<a href="#Part1">Subtask 3 Part1</a> 中的那个变换， 其实它很有用。<br>他本质上就是一个异或的$FWT$的正变换。<br>然后回顾一下他的性质， 在变换完的数组中， 下标为 $2^i$ 的位置的值为所有二进制中第 i 位不为 1 的数的和减所有二进制中第 i 位为 1 的数的和。<br>那么如果 $x, y$ 的二进制第 $i$ 位相同那么 $a[2^i]$ 就是 0， 反之亦然。<br>这样我们就能求出答案了</p>
 <p>还有一件事， 因为要保证 $AA^T=I$， 所以我们不能用 $\begin{pmatrix} 1 &amp; 1 \\ 1 &amp; -1 \end{pmatrix}$ 而是用 $\begin{pmatrix} \frac{1}{\sqrt{2} } &amp; \frac{1}{\sqrt{2} } \\ \frac{1}{\sqrt{2} } &amp; -\frac{1}{\sqrt{2} } \end{pmatrix}$<br>这样相当于将所以数都乘了一个 $\frac{1}{\sqrt{2} }^n$<br>这样就有 $60$ 分了。 </p>
-<p><a href="http://uoj.ac/submission/244011" target="_blank" rel="noopener">60pts</a></p>
+<p><a target="_blank" rel="noopener" href="http://uoj.ac/submission/244011">60pts</a></p>
 <h3 id="Subtask-5-amp-6"><a href="#Subtask-5-amp-6" class="headerlink" title="Subtask 5 &amp; 6"></a>Subtask 5 &amp; 6</h3><p>我们已经知道了他是一个$FWT$，我们考虑随机的一位对我们有用的信息是什么  </p>
 <p>考虑 $x$ 对一个数 $t$ 的贡献， 根据 $FWT$ 的定义他显然为 $(-1)^{cnt(x &amp; t)}$， $cnt(x &amp; t)$ 表示 $x &amp; t$ 的二进制中 1 的个数。<br>如果有两个数 $x, y$ 对 $t$ 贡献， 那么贡献的值 $v$ 为 $(-1)^{cnt(x&amp;t)} + (-1)^{cnt(y &amp; t)}$<br>$v$ 不为 0 的条件是 $cnt(x &amp; t) + cnt(y &amp; t)$ 为奇数。<br>我们可以证明 $cnt(x &amp; t) + cnt(y &amp; t)$ 的奇偶性与 $cnt((x \oplus y) &amp; t)$ 的奇偶性相同。<br>证明:</p>
 <blockquote>
@@ -644,7 +644,7 @@
 <p>或者:<br>直接高斯消元， 然后排除掉 $x \oplus y = 0$ 这个解就可以了。<br>时间复杂度为 $O(n^2)$, 询问次数为 $O(n^2)$</p>
 <p>可以 AC 此题。  </p>
 <p><del>FWT从入门到放弃</del></p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"quantumbreak.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">double</span> q = <span class="built_in">sqrt</span>(<span class="number">0.5</span>);</span><br><span class="line"><span class="keyword">double</span> C[<span class="number">2</span>][<span class="number">2</span>] = &#123;&#123;q, q&#125;, &#123;q, -q&#125;&#125;;</span><br><span class="line"><span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; vc;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Num</span><span class="params">(<span class="keyword">unsigned</span> <span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> tmp = x</span><br><span class="line">					 - ((x &gt;&gt; <span class="number">1</span>) &amp; <span class="number">033333333333</span>)</span><br><span class="line">					 - ((x &gt;&gt; <span class="number">2</span>) &amp; <span class="number">011111111111</span>);</span><br><span class="line">	tmp = (tmp + (tmp &gt;&gt; <span class="number">3</span>)) &amp; <span class="number">030707070707</span>;</span><br><span class="line">	<span class="keyword">return</span> tmp % <span class="number">63</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query_xor</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">20</span>; j++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">			manipulate(C, i);</span><br><span class="line">		vc.push_back(query());</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// for (auto x : vc)</span></span><br><span class="line">		<span class="comment">// printf ("%d\n", x);</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; (<span class="number">1</span> &lt;&lt; n); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">bool</span> flag = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">auto</span> x : vc)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">// if (i == 42163) printf ("%d\n", Num(x &amp; i));</span></span><br><span class="line">			<span class="keyword">if</span> (Num(x &amp; i) &amp; <span class="number">1</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				flag = <span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (!flag) <span class="keyword">return</span> i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// printf ("%d\n", ans);</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&quot;quantumbreak.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdlib&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">double</span> q = <span class="built_in">sqrt</span>(<span class="number">0.5</span>);</span><br><span class="line"><span class="keyword">double</span> C[<span class="number">2</span>][<span class="number">2</span>] = &#123;&#123;q, q&#125;, &#123;q, -q&#125;&#125;;</span><br><span class="line">vector&lt;<span class="keyword">int</span>&gt; vc;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Num</span><span class="params">(<span class="keyword">unsigned</span> <span class="keyword">int</span> x)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">unsigned</span> <span class="keyword">int</span> tmp = x</span><br><span class="line">					 - ((x &gt;&gt; <span class="number">1</span>) &amp; <span class="number">033333333333</span>)</span><br><span class="line">					 - ((x &gt;&gt; <span class="number">2</span>) &amp; <span class="number">011111111111</span>);</span><br><span class="line">	tmp = (tmp + (tmp &gt;&gt; <span class="number">3</span>)) &amp; <span class="number">030707070707</span>;</span><br><span class="line">	<span class="keyword">return</span> tmp % <span class="number">63</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">query_xor</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">int</span> t)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> ans = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j &lt;= <span class="number">20</span>; j++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">			<span class="built_in">manipulate</span>(C, i);</span><br><span class="line">		vc.<span class="built_in">push_back</span>(<span class="built_in">query</span>());</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// for (auto x : vc)</span></span><br><span class="line">		<span class="comment">// printf (&quot;%d\n&quot;, x);</span></span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; (<span class="number">1</span> &lt;&lt; n); i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">bool</span> flag = <span class="number">0</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">auto</span> x : vc)</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="comment">// if (i == 42163) printf (&quot;%d\n&quot;, Num(x &amp; i));</span></span><br><span class="line">			<span class="keyword">if</span> (<span class="built_in">Num</span>(x &amp; i) &amp; <span class="number">1</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				flag = <span class="number">1</span>;</span><br><span class="line">				<span class="keyword">break</span>;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (!flag) <span class="keyword">return</span> i;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="comment">// printf (&quot;%d\n&quot;, ans);</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
                     </article>
                     
     <blockquote class="post-license">
@@ -653,7 +653,7 @@
             <br>
             <strong>
             
-                <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+                <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
             </strong>
             <br>
             <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://www.nekomio.com/2018/04/21/149/">https://www.nekomio.com/2018/04/21/149/</a>
@@ -665,7 +665,7 @@
     <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
     <script>
     (function() {
-        var dateUpdate = Date.parse("2021-09-17");
+        var dateUpdate = Date.parse("2022-01-31");
         var nowDate = new Date();
         var a = nowDate.getTime();
         var b = a - dateUpdate;
@@ -681,7 +681,7 @@
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2018-04-21T07:12:31.000Z" itemprop="datePublished">2018-04-21</time>
 
-    , 最后修改于&nbsp;<time datetime="2021-09-17T05:49:12.320Z" itemprop="dateModified">2021-09-17</time>
+    , 最后修改于&nbsp;<time datetime="2022-01-31T14:11:37.794Z" itemprop="dateModified">2022-01-31</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
@@ -744,8 +744,8 @@
     var guest_info = 'nick,mail,link'.split(',').filter(function(item){
         return GUEST_INFO.indexOf(item) > -1
     });
-    var notify = 'undefined' === 'true';
-    var verify = 'undefined' === 'true';
+    var notify = '' === 'true';
+    var verify = '' === 'true';
     new Valine({
         el: '#vcomments',
         notify: notify,
@@ -781,7 +781,7 @@
 
     <!-- footer custom text -->
     <p class="footer-text mb-0">
-    <a href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer noopener">京ICP备19044785号-1</a><br/>「<a href="https://webify.cloudbase.net/" target="_blank" rel="noopener">CloudBase Webify</a> 提供网站托管服务」
+    <a target="_blank" href="http://www.beian.miit.gov.cn" rel="nofollow noopener noreferrer noopener">京ICP备19044785号-1</a><br/>「<a target="_blank" rel="noopener" href="https://webify.cloudbase.net/">CloudBase Webify</a> 提供网站托管服务」
     </p>
     <!-- footer develop info -->
     <p class="footer-develop mb-0">

@@ -57,7 +57,7 @@
     <title>NOIP模拟 超级树 | NekoMio&#39;s Blog</title>
 
     <!-- Favicons -->
-    <link rel="icon" type="image/ico" href="/null.png">
+    <link rel="icon" type="image&#x2F;ico" href="/null.png">
 
     <!-- ### Import File ### -->
     <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
@@ -154,14 +154,14 @@
     <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="NOIP模拟 超级树 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2017/09/15/106/"><meta property="og:locale" content="zh-CN"><meta name="description" content="3.1 描述一棵k-超级树可按如下方法得到：取一棵深度为k的满二叉树，对每个节点，向它的所有祖先连边（如果这条边不存在的话）。例如，下图是一个4-超级树的例子： - NekoMio - NekoMio's Blog"><meta name="keywords" content="DP"><meta property="og:image" content="https://i.loli.net/2017/09/15/59bbb7efc36c1.gif"><meta property="og:image" content="https://i.loli.net/2017/09/15/59bbb8a0e55bc.png"><meta property="article:published_time" content="2017-09-15T11:18:35.000Z"><meta property="article:modified_time" content="2021-09-17T05:49:12.312Z"><meta property="og:updated_time" content="2021-09-17T05:49:12.312Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="DP"><meta name="twitter:card" content="summary">
+    <meta property="og:title" content="NOIP模拟 超级树 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="article"><meta property="og:url" content="https://www.nekomio.com/2017/09/15/106/"><meta property="og:locale" content="zh-CN"><meta name="description" content="3.1 描述一棵k-超级树可按如下方法得到：取一棵深度为k的满二叉树，对每个节点，向它的所有祖先连边（如果这条边不存在的话）。例如，下图是一个4-超级树的例子： - NekoMio - NekoMio&#39;s Blog"><meta name="keywords" content="DP"><meta property="og:image" content="https://i.loli.net/2017/09/15/59bbb7efc36c1.gif"><meta property="og:image" content="https://i.loli.net/2017/09/15/59bbb8a0e55bc.png"><meta property="article:published_time" content="2017-09-15T11:18:35.000Z"><meta property="article:modified_time" content="2022-01-31T14:11:37.790Z"><meta property="og:updated_time" content="2022-01-31T14:11:37.790Z"><meta property="article:author" content="NekoMio"><meta property="article:tag" content="DP"><meta name="twitter:card" content="summary">
 
     
 
     <!-- ### Canonical link ### -->
     <link rel="canonical" href="https://www.nekomio.com/2017/09/15/106/">
 
-    <meta name="generator" content="Hexo 4.2.1">
+    <meta name="generator" content="Hexo 5.4.0">
 
     <!-- ### Analytics ### -->
     
@@ -203,7 +203,7 @@
     },
     
     "datePublished": "2017-09-15T11:18:35.000Z",
-    "dateModified": "2021-09-17T05:49:12.312Z",
+    "dateModified": "2022-01-31T14:11:37.790Z",
     "author": {
         "@type": "Person",
         "name": "NekoMio",
@@ -441,7 +441,7 @@
                     
                     <article id="post-content">
                         <h3 id="3-1-描述"><a href="#3-1-描述" class="headerlink" title="3.1 描述"></a>3.1 描述</h3><p>一棵k-超级树可按如下方法得到：取一棵深度为k的满二叉树，对每个节<br>点，向它的所有祖先连边（如果这条边不存在的话）。例如，下图是一个4-超<br>级树的例子：</p>
-<a id="more"></a>
+<span id="more"></span>
 <p><img src="https://i.loli.net/2017/09/15/59bbb7efc36c1.gif" alt="tree.gif"><br>现在你的任务是统计一棵k-超级树中有多少条每个节点最多经过一次的不<br>同有向路径。两条路径被认为不同，当且仅当它们经过的节点的集合不同，或<br>经过的节点的顺序不同。由于答案可能很大，请输出总路径数对mod取模后的<br>结果。</p>
 <h3 id="3-2-输入"><a href="#3-2-输入" class="headerlink" title="3.2 输入"></a>3.2 输入</h3><p>一行两个整数k、mod，意义见上。  </p>
 <h3 id="3-3-输出"><a href="#3-3-输出" class="headerlink" title="3.3 输出"></a>3.3 输出</h3><p>一行一个整数，代表答案</p>
@@ -468,11 +468,11 @@
 <p>样例解释：对第一组样例，将节点如图编号，共有9条不同的路径：1, 2, 3, 1−<br>2, 2 − 1, 1 − 3, 3 − 1, 2 − 1 − 3, 3 − 1 − 2。<br><img src="https://i.loli.net/2017/09/15/59bbb8a0e55bc.png" alt="tree1.png"></p>
 <h3 id="限制与约定"><a href="#限制与约定" class="headerlink" title="限制与约定"></a>限制与约定</h3><p>对于10%的数据，k ≤ 4。<br>对于40%的数据，k ≤ 10。<br>对于60%的数据，k ≤ 100。<br>另有10%的数据，mod = 998244353。<br>对于所有数据，1 ≤ k ≤ 300，1 ≤ mod ≤ 109。</p>
 <h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>考虑dp[i][j]表示一棵i-超级树，有j条点不重复的路径的方案数。<br>对于第二维表示有j条路径他们不相交的方案数<br>这记num=dp[i][l]*dp[i][r]  </p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dp[<span class="string">i+1</span>][<span class="symbol">l+r</span>]+=num  </span><br><span class="line">dp[<span class="string">i+1</span>][<span class="symbol">l+r+1</span>]+=num  </span><br><span class="line">dp[<span class="string">i+1</span>][<span class="symbol">l+r</span>]+=2<span class="emphasis">*num*</span>(l+r)  </span><br><span class="line">dp[<span class="string">i+1</span>][<span class="symbol">l+r-1</span>]+=2<span class="emphasis">*num*</span>l*r  </span><br><span class="line">dp[<span class="string">i+1</span>][<span class="symbol">l+r-1</span>]+=num<span class="emphasis">*(l*</span>(l-1)+r*(r-1))</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dp[i+1][l+r]+=num  </span><br><span class="line">dp[i+1][l+r+1]+=num  </span><br><span class="line">dp[i+1][l+r]+=2*num*(l+r)  </span><br><span class="line">dp[i+1][l+r-1]+=2*num*l*r  </span><br><span class="line">dp[i+1][l+r-1]+=num*(l*(l-1)+r*(r-1))  </span><br></pre></td></tr></table></figure>
 
 <p>dp[1][0]=dp[1][1]=1<br>答案为dp[k][1]  </p>
 <p>因为我们发现每次转移的时候j最多会减1<br>所以我们只需要前k-i+1个状态<br>只DP这些状态就可以了</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> f[<span class="number">305</span>][<span class="number">305</span>];</span><br><span class="line"><span class="keyword">int</span> MOD;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> k;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%d%d"</span>, &amp;k, &amp;MOD);</span><br><span class="line">	f[<span class="number">1</span>][<span class="number">0</span>] = f[<span class="number">1</span>][<span class="number">1</span>] = <span class="number">1</span> % MOD;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; k; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">0</span>; l &lt;= k - i + <span class="number">1</span>; l++)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> r = <span class="number">0</span>; r &lt;= k - i + <span class="number">1</span>; r++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">long</span> <span class="keyword">long</span> num = f[i][l] * f[i][r] % MOD;</span><br><span class="line">				<span class="keyword">if</span> (r + l &lt;= k - i)</span><br><span class="line">				&#123;</span><br><span class="line">					f[i + <span class="number">1</span>][r + l] = (f[i + <span class="number">1</span>][r + l] + num) % MOD;</span><br><span class="line">					f[i + <span class="number">1</span>][r + l] = (f[i + <span class="number">1</span>][r + l] + <span class="number">2</span> * num * (l + r) % MOD) % MOD;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span> (r + l + <span class="number">1</span> &lt;= k - i)</span><br><span class="line">					f[i + <span class="number">1</span>][r + l + <span class="number">1</span>] = (f[i + <span class="number">1</span>][r + l + <span class="number">1</span>] + num) % MOD;</span><br><span class="line">				<span class="keyword">if</span> (r + l - <span class="number">1</span> &lt;= k - i)</span><br><span class="line">				&#123;</span><br><span class="line">					f[i + <span class="number">1</span>][r + l - <span class="number">1</span>] = (f[i + <span class="number">1</span>][r + l - <span class="number">1</span>] + <span class="number">2</span> * num * l * r % MOD) % MOD;</span><br><span class="line">					f[i + <span class="number">1</span>][r + l - <span class="number">1</span>] = (f[i + <span class="number">1</span>][r + l - <span class="number">1</span>] + num * (l * (l - <span class="number">1</span>) + r * (r - <span class="number">1</span>)) % MOD) % MOD;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">"%lld"</span>, f[k][<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">long</span> <span class="keyword">long</span> f[<span class="number">305</span>][<span class="number">305</span>];</span><br><span class="line"><span class="keyword">int</span> MOD;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> k;</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%d%d&quot;</span>, &amp;k, &amp;MOD);</span><br><span class="line">	f[<span class="number">1</span>][<span class="number">0</span>] = f[<span class="number">1</span>][<span class="number">1</span>] = <span class="number">1</span> % MOD;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; k; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> l = <span class="number">0</span>; l &lt;= k - i + <span class="number">1</span>; l++)</span><br><span class="line">			<span class="keyword">for</span> (<span class="keyword">int</span> r = <span class="number">0</span>; r &lt;= k - i + <span class="number">1</span>; r++)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">long</span> <span class="keyword">long</span> num = f[i][l] * f[i][r] % MOD;</span><br><span class="line">				<span class="keyword">if</span> (r + l &lt;= k - i)</span><br><span class="line">				&#123;</span><br><span class="line">					f[i + <span class="number">1</span>][r + l] = (f[i + <span class="number">1</span>][r + l] + num) % MOD;</span><br><span class="line">					f[i + <span class="number">1</span>][r + l] = (f[i + <span class="number">1</span>][r + l] + <span class="number">2</span> * num * (l + r) % MOD) % MOD;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span> (r + l + <span class="number">1</span> &lt;= k - i)</span><br><span class="line">					f[i + <span class="number">1</span>][r + l + <span class="number">1</span>] = (f[i + <span class="number">1</span>][r + l + <span class="number">1</span>] + num) % MOD;</span><br><span class="line">				<span class="keyword">if</span> (r + l - <span class="number">1</span> &lt;= k - i)</span><br><span class="line">				&#123;</span><br><span class="line">					f[i + <span class="number">1</span>][r + l - <span class="number">1</span>] = (f[i + <span class="number">1</span>][r + l - <span class="number">1</span>] + <span class="number">2</span> * num * l * r % MOD) % MOD;</span><br><span class="line">					f[i + <span class="number">1</span>][r + l - <span class="number">1</span>] = (f[i + <span class="number">1</span>][r + l - <span class="number">1</span>] + num * (l * (l - <span class="number">1</span>) + r * (r - <span class="number">1</span>)) % MOD) % MOD;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%lld&quot;</span>, f[k][<span class="number">1</span>]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
                     </article>
                     
     <blockquote class="post-license">
@@ -481,7 +481,7 @@
             <br>
             <strong>
             
-                <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+                <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
             </strong>
             <br>
             <strong>本文链接&nbsp;:&nbsp;</strong><a href="https://www.nekomio.com/2017/09/15/106/">https://www.nekomio.com/2017/09/15/106/</a>
@@ -493,7 +493,7 @@
     <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
     <script>
     (function() {
-        var dateUpdate = Date.parse("2021-09-17");
+        var dateUpdate = Date.parse("2022-01-31");
         var nowDate = new Date();
         var a = nowDate.getTime();
         var b = a - dateUpdate;
@@ -509,7 +509,7 @@
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2017-09-15T11:18:35.000Z" itemprop="datePublished">2017-09-15</time>
 
-    , 最后修改于&nbsp;<time datetime="2021-09-17T05:49:12.312Z" itemprop="dateModified">2021-09-17</time>
+    , 最后修改于&nbsp;<time datetime="2022-01-31T14:11:37.790Z" itemprop="dateModified">2022-01-31</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
@@ -568,8 +568,8 @@
     var guest_info = 'nick,mail,link'.split(',').filter(function(item){
         return GUEST_INFO.indexOf(item) > -1
     });
-    var notify = 'undefined' === 'true';
-    var verify = 'undefined' === 'true';
+    var notify = '' === 'true';
+    var verify = '' === 'true';
     new Valine({
         el: '#vcomments',
         notify: notify,
@@ -605,7 +605,7 @@
 
     <!-- footer custom text -->
     <p class="footer-text mb-0">
-    <a href="http://www.beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer noopener">京ICP备19044785号-1</a><br/>「<a href="https://webify.cloudbase.net/" target="_blank" rel="noopener">CloudBase Webify</a> 提供网站托管服务」
+    <a target="_blank" href="http://www.beian.miit.gov.cn" rel="nofollow noopener noreferrer noopener">京ICP备19044785号-1</a><br/>「<a target="_blank" rel="noopener" href="https://webify.cloudbase.net/">CloudBase Webify</a> 提供网站托管服务」
     </p>
     <!-- footer develop info -->
     <p class="footer-develop mb-0">
