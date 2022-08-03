@@ -32,6 +32,9 @@
 
 
 
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
 
 
 
@@ -152,7 +155,7 @@
     <link rel="alternate" type="application/rss+xml" href="/rss2.xml"><meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="NekoMio's Blog"><meta name="msapplication-starturl" content="https://www.nekomio.com"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="NekoMio's Blog"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
     <!-- ### The Open Graph & Twitter Card Protocol ### -->
-    <meta property="og:title" content="提问的智慧 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="website"><meta property="og:url" content="https://www.nekomio.com/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7.html"><meta property="og:locale" content="zh-CN"><meta name="description" content="提问的智慧Eric Steven Raymond, Thyrsus Enterprises, &amp;lt; esr@thyrsus.com &amp;gt;Rick Moen, &amp;lt; respond-auto@linuxmafia.com &amp;gt; 翻译：柯非, &amp;lt; zer4tul@gmail.com &amp;gt;  这篇译文基于2014.05.21更新的原文修订版3.10。   特别感谢王刚，此前本文 - NekoMio - NekoMio&#39;s Blog"><meta property="article:published_time" content="2018-05-03T11:11:12.000Z"><meta property="article:modified_time" content="2022-08-03T07:46:26.770Z"><meta property="og:updated_time" content="2022-08-03T07:46:26.770Z">
+    <meta property="og:title" content="提问的智慧 | NekoMio&#39;s Blog"><meta property="og:site_name" content="NekoMio&#39;s Blog"><meta property="og:type" content="website"><meta property="og:url" content="https://www.nekomio.com/%E6%8F%90%E9%97%AE%E7%9A%84%E6%99%BA%E6%85%A7.html"><meta property="og:locale" content="zh-CN"><meta name="description" content="提问的智慧Eric Steven Raymond, Thyrsus Enterprises, &amp;lt; esr@thyrsus.com &amp;gt;Rick Moen, &amp;lt; respond-auto@linuxmafia.com &amp;gt; 翻译：柯非, &amp;lt; zer4tul@gmail.com &amp;gt;  这篇译文基于2014.05.21更新的原文修订版3.10。   特别感谢王刚，此前本文 - NekoMio - NekoMio&#39;s Blog"><meta property="article:published_time" content="2018-05-03T11:11:12.000Z"><meta property="article:modified_time" content="2022-08-03T08:02:15.861Z"><meta property="og:updated_time" content="2022-08-03T08:02:15.861Z">
 
     
 
@@ -163,13 +166,16 @@
 
     <!-- ### Analytics ### -->
     
-    <!-- CFGA Analytics -->
-<script>
-    window.ga_tid = "UA-102044541-2"; // {String} The trackerID of your site.
-    window.ga_api = "https://analytics.nekomio.com/cfga/jquery.js"; // {String} The route of your cloudflare workers you just registered before.
-</script>
-<script src="https://npm.elemecdn.com/cfga@1.0.3" async></script>
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9TWLDVQ6L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T9TWLDVQ6L');
+</script>
 
 
 
@@ -454,7 +460,7 @@
 <p>如果你认为这种态度令人反感、以施惠者自居或傲慢自大，请检查你的假设，我们并未要求你屈服──事实上，假如你做了该做的努力，我们中的大多数将非常乐意平等地与你交流，并欢迎你融入我们的文化。试图去帮助那些不愿自救的人对我们简直没有效率。不懂没有关系，但愚蠢地做事不行。</p>
 <p>所以，你不必在技术上很在行才能吸引我们的注意，但你 <em>必须</em> 表现出能引导你在行的姿态──机敏、有想法、善于观察、乐于主动参与问题的解决。如果你做不到这些使你与众不同的事情，我们建议你付钱跟别人签商业服务合同，而不是要求黑客无偿帮助。</p>
 <p>如果你决定向我们求助，你不会想成为一名失败者，你也不想被看成一个失败者。得到快速有效回答的最好方法是使提问者看起来象个聪明、自信和有想法的人，并且暗示只是碰巧在某一特别问题上需要帮助。</p>
-<p>（欢迎对本文指正，可以将建议发至 <a href="mailto:&#101;&#115;&#x72;&#x40;&#x74;&#x68;&#121;&#x72;&#115;&#x75;&#115;&#46;&#x63;&#111;&#109;">&#101;&#115;&#x72;&#x40;&#x74;&#x68;&#121;&#x72;&#115;&#x75;&#115;&#46;&#x63;&#111;&#109;</a> 或 <a href="mailto:&#x72;&#x65;&#x73;&#x70;&#111;&#x6e;&#x64;&#45;&#97;&#x75;&#116;&#111;&#64;&#x6c;&#105;&#x6e;&#x75;&#x78;&#109;&#97;&#102;&#x69;&#x61;&#46;&#99;&#x6f;&#x6d;">&#x72;&#x65;&#x73;&#x70;&#111;&#x6e;&#x64;&#45;&#97;&#x75;&#116;&#111;&#64;&#x6c;&#105;&#x6e;&#x75;&#x78;&#109;&#97;&#102;&#x69;&#x61;&#46;&#99;&#x6f;&#x6d;</a>。 请注意，本文不想成为一般性的<a target="_blank" rel="noopener" href="http://www.ietf.org/rfc/rfc1855.txt">网络礼仪指南</a>，我一般不理会那些与在技术论坛中有效进行交流并不相关的建议。）</p>
+<p>（欢迎对本文指正，可以将建议发至 <a href="mailto:&#101;&#115;&#x72;&#x40;&#116;&#104;&#x79;&#x72;&#x73;&#x75;&#115;&#46;&#x63;&#x6f;&#109;">&#101;&#115;&#x72;&#x40;&#116;&#104;&#x79;&#x72;&#x73;&#x75;&#115;&#46;&#x63;&#x6f;&#109;</a> 或 <a href="mailto:&#x72;&#101;&#115;&#112;&#x6f;&#110;&#x64;&#x2d;&#97;&#x75;&#116;&#111;&#64;&#x6c;&#x69;&#110;&#117;&#120;&#x6d;&#97;&#102;&#105;&#97;&#46;&#99;&#x6f;&#109;">&#x72;&#101;&#115;&#112;&#x6f;&#110;&#x64;&#x2d;&#97;&#x75;&#116;&#111;&#64;&#x6c;&#x69;&#110;&#117;&#120;&#x6d;&#97;&#102;&#105;&#97;&#46;&#99;&#x6f;&#109;</a>。 请注意，本文不想成为一般性的<a target="_blank" rel="noopener" href="http://www.ietf.org/rfc/rfc1855.txt">网络礼仪指南</a>，我一般不理会那些与在技术论坛中有效进行交流并不相关的建议。）</p>
 <h2 id="提问前"><a href="#提问前" class="headerlink" title="提问前"></a>提问前</h2><p>在通过电邮、新闻组或论坛提技术问题以前，做以下事情：</p>
 <ol>
 <li><p>尝试在你准备提问论坛的历史文档中搜索答案。</p>
@@ -790,7 +796,7 @@
 
 <p class="post-footer-info mb-0 pt-0">本文发表于&nbsp;<time datetime="2018-05-03T11:11:12.000Z" itemprop="datePublished">2018-05-03</time>
 
-    , 最后修改于&nbsp;<time datetime="2022-08-03T07:46:26.770Z" itemprop="dateModified">2022-08-03</time>
+    , 最后修改于&nbsp;<time datetime="2022-08-03T08:02:15.861Z" itemprop="dateModified">2022-08-03</time>
 
 </p>
 <p class="post-footer-info mb-0 pt-2">
@@ -817,7 +823,7 @@
                         <div class="card-footer post-comment">
                             <div id="vcomments"></div>
 
-<script src="https://npm.elemecdn.com/valine@latest/dist/Valine.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/valine/1.5.1/Valine.min.js"></script>
 <script>
     var GUEST_INFO = ['nick','mail','link'];
     var guest_info = 'nick,mail,link'.split(',').filter(function(item){

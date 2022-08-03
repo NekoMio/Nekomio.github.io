@@ -32,6 +32,9 @@
 
 
 
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
 
 
 
@@ -165,13 +168,16 @@
 
     <!-- ### Analytics ### -->
     
-    <!-- CFGA Analytics -->
-<script>
-    window.ga_tid = "UA-102044541-2"; // {String} The trackerID of your site.
-    window.ga_api = "https://analytics.nekomio.com/cfga/jquery.js"; // {String} The route of your cloudflare workers you just registered before.
-</script>
-<script src="https://npm.elemecdn.com/cfga@1.0.3" async></script>
 
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9TWLDVQ6L"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T9TWLDVQ6L');
+</script>
 
 
 
@@ -565,7 +571,7 @@
                         <div class="card-footer post-comment">
                             <div id="vcomments"></div>
 
-<script src="https://npm.elemecdn.com/valine@latest/dist/Valine.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/valine/1.5.1/Valine.min.js"></script>
 <script>
     var GUEST_INFO = ['nick','mail','link'];
     var guest_info = 'nick,mail,link'.split(',').filter(function(item){
