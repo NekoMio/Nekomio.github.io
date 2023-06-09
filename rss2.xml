@@ -255,7 +255,7 @@
         
         
       <description>&lt;p&gt;在求组合数的时候， 我们可能遇到模数是非质数的情况， 这时正常的Lucas可能无法解决问题。 所以我们要用到扩展Lucas定理  &lt;/p&gt;
-&lt;p&gt;我们令 $p = p_{1}^{k_{1} } + p_{2}^{k_{2} } + p_{3}^{k_{3} } + \cdo</description>
+&lt;p&gt;我们令 $p = p_{1}^{k_{1} } + p_{2}^{k_{2} } + p_{3}^{k_{3} } + &#92;cdo</description>
         
       
       
@@ -1670,7 +1670,7 @@
       <guid>https://www.nekomio.com/2017/08/13/93/</guid>
       <pubDate>Sun, 13 Aug 2017 13:11:37 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;【题目描述】&quot;&gt;&lt;a href=&quot;#【题目描述】&quot; class=&quot;headerlink&quot; title=&quot;【题目描述】&quot;&gt;&lt;/a&gt;【题目描述】&lt;/h3&gt;&lt;p&gt;给定n,m,k,计算 $\sum_{i=1}^{n}{\sum_{j=1}^{m}{gcd(i,j)^k}}$ 对1000000007取模的结果&lt;/p&gt;</description>
+      <description>&lt;h3 id=&quot;【题目描述】&quot;&gt;&lt;a href=&quot;#【题目描述】&quot; class=&quot;headerlink&quot; title=&quot;【题目描述】&quot;&gt;&lt;/a&gt;【题目描述】&lt;/h3&gt;&lt;p&gt;给定n,m,k,计算 $&#92;sum_{i=1}^{n}{&#92;sum_{j=1}^{m}{gcd(i,j)^k}}$ 对1000000007取模的结果&lt;/p&gt;</description>
       
       
       
@@ -3122,7 +3122,7 @@
       
         
         
-      <description>&lt;h2 id=&quot;组合数&quot;&gt;&lt;a href=&quot;#组合数&quot; class=&quot;headerlink&quot; title=&quot;组合数&quot;&gt;&lt;/a&gt;组合数&lt;/h2&gt;&lt;p&gt;$$ C(n,k)=\frac {n!} {(n-k)!k!} $$&lt;br&gt;$$ 0!=1 $$&lt;/p&gt;
+      <description>&lt;h2 id=&quot;组合数&quot;&gt;&lt;a href=&quot;#组合数&quot; class=&quot;headerlink&quot; title=&quot;组合数&quot;&gt;&lt;/a&gt;组合数&lt;/h2&gt;&lt;p&gt;$$ C(n,k)=&#92;frac {n!} {(n-k)!k!} $$&lt;br&gt;$$ 0!=1 $$&lt;/p&gt;
 &lt;p&gt;$$ x^{p} m</description>
         
       
@@ -3362,7 +3362,7 @@
       <guid>https://www.nekomio.com/2017/06/21/22/</guid>
       <pubDate>Wed, 21 Jun 2017 10:00:21 GMT</pubDate>
       
-      <description>&lt;h3 id=&quot;莫比乌斯反演&quot;&gt;&lt;a href=&quot;#莫比乌斯反演&quot; class=&quot;headerlink&quot; title=&quot;莫比乌斯反演&quot;&gt;&lt;/a&gt;莫比乌斯反演&lt;/h3&gt;&lt;p&gt;已知&lt;br&gt;$$ F(n)=\sum_{d|n}{f(d)} $$&lt;br&gt;则&lt;br&gt;$$ f(n)=\sum_{d|n}{\mu(d)F(\frac {n}{d})} $$&lt;/p&gt;</description>
+      <description>&lt;h3 id=&quot;莫比乌斯反演&quot;&gt;&lt;a href=&quot;#莫比乌斯反演&quot; class=&quot;headerlink&quot; title=&quot;莫比乌斯反演&quot;&gt;&lt;/a&gt;莫比乌斯反演&lt;/h3&gt;&lt;p&gt;已知&lt;br&gt;$$ F(n)=&#92;sum_{d|n}{f(d)} $$&lt;br&gt;则&lt;br&gt;$$ f(n)=&#92;sum_{d|n}{&#92;mu(d)F(&#92;frac {n}{d})} $$&lt;/p&gt;</description>
       
       
       
