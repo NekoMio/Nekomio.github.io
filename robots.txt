@@ -1,11 +1,4 @@
 User-agent: *
-Disallow: /tags/
-Disallow: /js/
-Disallow: /css/
-Disallow: /img/
-Disallow: /fonts/
-Disallow: /downloads.html
-Disallow: /404-backup.html
-Disallow: /404.html
-Disallow: /categories/
-Disallow: /archives/
+Allow: /
+
+Sitemap: https://www.nekomio.com/sitemap-index.xml
