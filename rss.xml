@@ -8156,20 +8156,6 @@ int main()
 &lt;p&gt;连边 $t \to s$，流量为 $INF$，费用为 $0$&lt;/p&gt;
 &lt;p&gt;跑 $S \to T$ 的最小费用最大流&lt;br /&gt;
 答案为 $ans+$原图中边的下界$\times$边的费用&lt;/p&gt;
-</content:encoded></item><item><title>你好 2018</title><link>https://www.nekomio.com/posts/hello-2018/</link><guid isPermaLink="true">https://www.nekomio.com/posts/hello-2018/</guid><pubDate>Mon, 01 Jan 2018 08:21:11 GMT</pubDate><content:encoded>&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2018/01/01/5a49f0a6c5298.jpg&quot; alt=&quot;new_year_2018_color-790x500.jpg&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;新的一年到来了，送走了2017年的伤心与欢乐，我们迎来的新的2018。&lt;br /&gt;
-在新的一年里，我们要带着欢笑带着不放弃的精神继续向前。&lt;br /&gt;
-无论我们面对是什么， 还是要走下去。&lt;/p&gt;
-&lt;h2&gt;新年快乐！&lt;/h2&gt;
-&lt;h5&gt;再见 2017！你好 2018！&lt;/h5&gt;
-&lt;h5&gt;再見 2017！你好 2018！&lt;/h5&gt;
-&lt;h5&gt;Goodbye 2017! Hello 2018!&lt;/h5&gt;
-&lt;h5&gt;さよなら2017！こんにちは2018！&lt;/h5&gt;
-&lt;h5&gt;Au revoir 2017! Bonjour 2018!&lt;/h5&gt;
-&lt;h5&gt;До свидания 2017! Привет 2018!&lt;/h5&gt;
-&lt;h5&gt;Auf Wiedersehen 2017! Hallo 2018!&lt;/h5&gt;
-&lt;h5&gt;وداعا 2017! مرحبا 2018!&lt;/h5&gt;
-&lt;h5&gt;Adiós 2017! ¡Hola 2018!&lt;/h5&gt;
 </content:encoded></item><item><title>BZOJ2716 [Violet 3]天使玩偶</title><link>https://www.nekomio.com/posts/121/</link><guid isPermaLink="true">https://www.nekomio.com/posts/121/</guid><pubDate>Thu, 14 Dec 2017 14:16:10 GMT</pubDate><content:encoded>&lt;h3&gt;Description&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://i.loli.net/2017/12/14/5a3217db068a2.gif&quot; alt=&quot;T3des(2).gif&quot; /&gt;&lt;/p&gt;
 &lt;h3&gt;Input&lt;/h3&gt;
@@ -13409,129 +13395,6 @@ int Main()
 }
 int main() { Mine_WorkSpace::Main(); }
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>BZOJ 4299 Codechef FRBSUM</title><link>https://www.nekomio.com/posts/83/</link><guid isPermaLink="true">https://www.nekomio.com/posts/83/</guid><pubDate>Wed, 09 Aug 2017 21:24:05 GMT</pubDate><content:encoded>&lt;h3&gt;Description&lt;/h3&gt;
-&lt;p&gt;数集S的ForbiddenSum定义为无法用S的某个子集（可以为空）的和表示的最小的非负整数。
-例如，S={1,1,3,7}，则它的子集和中包含0(S’=∅)，1(S’={1})，2(S’={1,1})，3(S’={3})，4(S’={1,3})，5(S&apos; = {1, 1, 3})，但是它无法得到6。因此S的ForbiddenSum为6。
-给定一个序列A，你的任务是回答该数列的一些子区间所形成的数集的ForbiddenSum是多少。
-&amp;lt;!--more--&amp;gt;&lt;/p&gt;
-&lt;h3&gt;Input&lt;/h3&gt;
-&lt;p&gt;输入数据的第一行包含一个整数N，表示序列的长度。
-接下来一行包含N个数，表示给定的序列A（从1标号）。
-接下来一行包含一个整数M，表示询问的组数。
-接下来M行，每行一对整数，表示一组询问。&lt;/p&gt;
-&lt;h3&gt;Output&lt;/h3&gt;
-&lt;p&gt;对于每组询问，输出一行表示对应的答案。&lt;/p&gt;
-&lt;h3&gt;Sample Input&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;5&lt;br /&gt;
-1 2 4 9 10&lt;br /&gt;
-5&lt;br /&gt;
-1 1&lt;br /&gt;
-1 2&lt;br /&gt;
-1 3&lt;br /&gt;
-1 4&lt;br /&gt;
-1 5&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;Sample Output&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;2&lt;br /&gt;
-4&lt;br /&gt;
-8&lt;br /&gt;
-8&lt;br /&gt;
-8&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;HINT&lt;/h3&gt;
-&lt;p&gt;对于100%的数据，1≤N,M≤100000,1≤A_i≤10^9，1≤A_1+A_2+…+A_N≤10^9。&lt;/p&gt;
-&lt;h2&gt;题解&lt;/h2&gt;
-&lt;p&gt;可以看出&lt;/p&gt;
-&lt;p&gt;如果一个区间能组出1~n的数而且有一个数小于等于n+1&lt;br /&gt;
-则这个区间一定能构造出 n+1&lt;/p&gt;
-&lt;p&gt;然后就可以了&lt;/p&gt;
-&lt;p&gt;用主席树维护一下就可以了&lt;/p&gt;
-&lt;p&gt;复习一下主席树&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#include &amp;lt;cstdio&amp;gt;
-#include &amp;lt;cstring&amp;gt;
-#include &amp;lt;algorithm&amp;gt;
-using namespace std;
-const int INF = 1e9;
-struct Seg_Node
-{
-    int l, r;
-    Seg_Node *ch[2];
-    int Sum;
-} * root[100005], *null;
-int a[100005];
-Seg_Node *NewSeg_Node()
-{
-    Seg_Node *S = new Seg_Node();
-    S-&amp;gt;ch[0] = S-&amp;gt;ch[1] = null;
-    return S;
-}
-void copy(Seg_Node *&amp;amp;a, Seg_Node *b)
-{
-    if (b == null)
-        a = null;
-    else
-        a = NewSeg_Node(), *a = *b;
-}
-void Update(int v, int l, int r, Seg_Node *&amp;amp;rt1, Seg_Node *rt2)
-{
-    copy(rt1, rt2);
-    if(rt1==null)
-        rt1=NewSeg_Node();
-    rt1-&amp;gt;Sum += v;
-    rt1-&amp;gt;l = l, rt1-&amp;gt;r = r;
-    if (l == r)
-        return;
-    int m = l + r &amp;gt;&amp;gt; 1;
-    if (v &amp;lt;= m)
-    {
-        Update(v, l, m, rt1-&amp;gt;ch[0], rt2-&amp;gt;ch[0]);
-    }
-    else
-    {
-        Update(v, m + 1, r, rt1-&amp;gt;ch[1], rt2-&amp;gt;ch[1]);
-    }
-}
-int Query(int R, int l, int r, Seg_Node *rt1, Seg_Node *rt2)
-{
-    if (R &amp;gt;= r)
-        return rt1-&amp;gt;Sum - rt2-&amp;gt;Sum;
-    int m = l + r &amp;gt;&amp;gt; 1;
-    if (R &amp;lt;= m)
-        return Query(R, l, m, rt1-&amp;gt;ch[0], rt2-&amp;gt;ch[0]);
-    return Query(R, l, m, rt1-&amp;gt;ch[0], rt2-&amp;gt;ch[0]) + Query(R, m + 1, r, rt1-&amp;gt;ch[1], rt2-&amp;gt;ch[1]);
-}
-int main()
-{
-    null = new Seg_Node();
-    null-&amp;gt;ch[0] = null-&amp;gt;ch[1] = null;
-    root[0] = null;
-    int n;
-    scanf(&quot;%d&quot;, &amp;amp;n);
-    for (int i = 1; i &amp;lt;= n; i++)
-        scanf(&quot;%d&quot;, &amp;amp;a[i]);
-    for (int i = 1; i &amp;lt;= n; i++)
-    {
-        Update(a[i], 1, 1e9, root[i], root[i - 1]);
-    }
-    int m;
-    scanf(&quot;%d&quot;, &amp;amp;m);
-    int a, b, ans;
-    while (m--)
-    {
-        scanf(&quot;%d%d&quot;, &amp;amp;a, &amp;amp;b);
-        int res = 1;
-        ans = min(INF, Query(res, 1, 1e9, root[b], root[a - 1]));
-        while (ans &amp;gt;= res &amp;amp;&amp;amp; res &amp;lt; 1e9)
-        {
-            res = ans + 1;
-            ans = min(INF, Query(res, 1, 1e9, root[b], root[a - 1]));
-        }
-        printf(&quot;%d\n&quot;, ans + 1);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
 </content:encoded></item><item><title> [NOI2017] 蚯蚓排队</title><link>https://www.nekomio.com/posts/82/</link><guid isPermaLink="true">https://www.nekomio.com/posts/82/</guid><pubDate>Wed, 09 Aug 2017 21:24:05 GMT</pubDate><content:encoded>&lt;p&gt;题目描述
 蚯蚓幼儿园有nnn只蚯蚓。幼儿园园长神刀手为了管理方便，时常让这些蚯蚓们列队表演。
 &amp;lt;!--more--&amp;gt;
@@ -13667,6 +13530,129 @@ int main()
             }
             printf(&quot;%lld\n&quot;, ans);
         }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>BZOJ 4299 Codechef FRBSUM</title><link>https://www.nekomio.com/posts/83/</link><guid isPermaLink="true">https://www.nekomio.com/posts/83/</guid><pubDate>Wed, 09 Aug 2017 21:24:05 GMT</pubDate><content:encoded>&lt;h3&gt;Description&lt;/h3&gt;
+&lt;p&gt;数集S的ForbiddenSum定义为无法用S的某个子集（可以为空）的和表示的最小的非负整数。
+例如，S={1,1,3,7}，则它的子集和中包含0(S’=∅)，1(S’={1})，2(S’={1,1})，3(S’={3})，4(S’={1,3})，5(S&apos; = {1, 1, 3})，但是它无法得到6。因此S的ForbiddenSum为6。
+给定一个序列A，你的任务是回答该数列的一些子区间所形成的数集的ForbiddenSum是多少。
+&amp;lt;!--more--&amp;gt;&lt;/p&gt;
+&lt;h3&gt;Input&lt;/h3&gt;
+&lt;p&gt;输入数据的第一行包含一个整数N，表示序列的长度。
+接下来一行包含N个数，表示给定的序列A（从1标号）。
+接下来一行包含一个整数M，表示询问的组数。
+接下来M行，每行一对整数，表示一组询问。&lt;/p&gt;
+&lt;h3&gt;Output&lt;/h3&gt;
+&lt;p&gt;对于每组询问，输出一行表示对应的答案。&lt;/p&gt;
+&lt;h3&gt;Sample Input&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;5&lt;br /&gt;
+1 2 4 9 10&lt;br /&gt;
+5&lt;br /&gt;
+1 1&lt;br /&gt;
+1 2&lt;br /&gt;
+1 3&lt;br /&gt;
+1 4&lt;br /&gt;
+1 5&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;Sample Output&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;2&lt;br /&gt;
+4&lt;br /&gt;
+8&lt;br /&gt;
+8&lt;br /&gt;
+8&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;HINT&lt;/h3&gt;
+&lt;p&gt;对于100%的数据，1≤N,M≤100000,1≤A_i≤10^9，1≤A_1+A_2+…+A_N≤10^9。&lt;/p&gt;
+&lt;h2&gt;题解&lt;/h2&gt;
+&lt;p&gt;可以看出&lt;/p&gt;
+&lt;p&gt;如果一个区间能组出1~n的数而且有一个数小于等于n+1&lt;br /&gt;
+则这个区间一定能构造出 n+1&lt;/p&gt;
+&lt;p&gt;然后就可以了&lt;/p&gt;
+&lt;p&gt;用主席树维护一下就可以了&lt;/p&gt;
+&lt;p&gt;复习一下主席树&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+#include &amp;lt;algorithm&amp;gt;
+using namespace std;
+const int INF = 1e9;
+struct Seg_Node
+{
+    int l, r;
+    Seg_Node *ch[2];
+    int Sum;
+} * root[100005], *null;
+int a[100005];
+Seg_Node *NewSeg_Node()
+{
+    Seg_Node *S = new Seg_Node();
+    S-&amp;gt;ch[0] = S-&amp;gt;ch[1] = null;
+    return S;
+}
+void copy(Seg_Node *&amp;amp;a, Seg_Node *b)
+{
+    if (b == null)
+        a = null;
+    else
+        a = NewSeg_Node(), *a = *b;
+}
+void Update(int v, int l, int r, Seg_Node *&amp;amp;rt1, Seg_Node *rt2)
+{
+    copy(rt1, rt2);
+    if(rt1==null)
+        rt1=NewSeg_Node();
+    rt1-&amp;gt;Sum += v;
+    rt1-&amp;gt;l = l, rt1-&amp;gt;r = r;
+    if (l == r)
+        return;
+    int m = l + r &amp;gt;&amp;gt; 1;
+    if (v &amp;lt;= m)
+    {
+        Update(v, l, m, rt1-&amp;gt;ch[0], rt2-&amp;gt;ch[0]);
+    }
+    else
+    {
+        Update(v, m + 1, r, rt1-&amp;gt;ch[1], rt2-&amp;gt;ch[1]);
+    }
+}
+int Query(int R, int l, int r, Seg_Node *rt1, Seg_Node *rt2)
+{
+    if (R &amp;gt;= r)
+        return rt1-&amp;gt;Sum - rt2-&amp;gt;Sum;
+    int m = l + r &amp;gt;&amp;gt; 1;
+    if (R &amp;lt;= m)
+        return Query(R, l, m, rt1-&amp;gt;ch[0], rt2-&amp;gt;ch[0]);
+    return Query(R, l, m, rt1-&amp;gt;ch[0], rt2-&amp;gt;ch[0]) + Query(R, m + 1, r, rt1-&amp;gt;ch[1], rt2-&amp;gt;ch[1]);
+}
+int main()
+{
+    null = new Seg_Node();
+    null-&amp;gt;ch[0] = null-&amp;gt;ch[1] = null;
+    root[0] = null;
+    int n;
+    scanf(&quot;%d&quot;, &amp;amp;n);
+    for (int i = 1; i &amp;lt;= n; i++)
+        scanf(&quot;%d&quot;, &amp;amp;a[i]);
+    for (int i = 1; i &amp;lt;= n; i++)
+    {
+        Update(a[i], 1, 1e9, root[i], root[i - 1]);
+    }
+    int m;
+    scanf(&quot;%d&quot;, &amp;amp;m);
+    int a, b, ans;
+    while (m--)
+    {
+        scanf(&quot;%d%d&quot;, &amp;amp;a, &amp;amp;b);
+        int res = 1;
+        ans = min(INF, Query(res, 1, 1e9, root[b], root[a - 1]));
+        while (ans &amp;gt;= res &amp;amp;&amp;amp; res &amp;lt; 1e9)
+        {
+            res = ans + 1;
+            ans = min(INF, Query(res, 1, 1e9, root[b], root[a - 1]));
+        }
+        printf(&quot;%d\n&quot;, ans + 1);
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
@@ -17810,83 +17796,6 @@ int main(int argc, char const *argv[])
     return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>vijos 天神下凡</title><link>https://www.nekomio.com/posts/48/</link><guid isPermaLink="true">https://www.nekomio.com/posts/48/</guid><pubDate>Sun, 30 Jul 2017 15:16:05 GMT</pubDate><content:encoded>&lt;h3&gt;题目描述&lt;/h3&gt;
-&lt;p&gt;Czy找到宝藏获得屠龙宝刀和神秘秘籍！现在他要去找经常ntr他的Jmars报仇……&lt;/p&gt;
-&lt;p&gt;Czy学会了一招“堕天一击”，他对一个地点发动堕天一击，地面上就会留下一个很大的圆坑。圆坑的周围一圈能量太过庞大，因此无法通过。所以每次czy发动技能都会把地面分割。Jmars拥有好大好大的土地，几十眼都望不到头，所以可以假设土地的大小是无限大。现在czy对他发动了猛烈的攻击，他想知道在泽宇攻击之后他的土地被切成几份了?
-&amp;lt;!--more--&amp;gt;
-Czy毕竟很虚，因此圆心都在x坐标轴上。另外，保证所有圆两两之间不会相交。&lt;/p&gt;
-&lt;h3&gt;输入&lt;/h3&gt;
-&lt;p&gt;输入第一行为整数n，表示czy放了n次堕天一击。&lt;/p&gt;
-&lt;p&gt;接下来n行，每行两个整数x[i]，r[i]。表示在坐标（x[i] , 0）放了一次堕天一击，半径为r[i]。&lt;/p&gt;
-&lt;h3&gt;输出&lt;/h3&gt;
-&lt;p&gt;输出一行，表示地面被分割成几块。&lt;/p&gt;
-&lt;h3&gt;样例输入&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;4&lt;br /&gt;
-7 5&lt;br /&gt;
--9 11&lt;br /&gt;
-11 9&lt;br /&gt;
-0 20&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;样例输出&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;6&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;题解&lt;/h3&gt;
-&lt;p&gt;那个栈扫一遍&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#include &amp;lt;cstdio&amp;gt;
-#include &amp;lt;cstring&amp;gt;
-#include &amp;lt;stack&amp;gt;
-#include &amp;lt;algorithm&amp;gt;
-using namespace std;
-struct data
-{
-    int l, r, id;
-    bool operator&amp;lt;(const data &amp;amp;a) const
-    {
-        return l == a.l ? r &amp;gt; a.r : l &amp;lt; a.l;
-    }
-} a[1000001];
-int main(int argc, char const *argv[])
-{
-    stack&amp;lt;data&amp;gt; st;
-    int n, s, r;
-    scanf(&quot;%d&quot;, &amp;amp;n);
-    for (int i = 0; i &amp;lt; n; i++)
-    {
-        scanf(&quot;%d%d&quot;, &amp;amp;s, &amp;amp;r);
-        a[i].l = s - r, a[i].id = i, a[i].r = s + r;
-    }
-    sort(a, a + n);
-    // for (int i = 0; i &amp;lt; n; i++)
-    // {
-    //     printf(&quot;%d %d %d\n&quot;, a[i].l, a[i].r, a[i].id);
-    // }
-    //while (1)
-        ;
-    int ans = 0;
-    for (int i = 0; i &amp;lt; n; i++)
-    {
-        if (a[i].l == a[i + 1].l &amp;amp;&amp;amp; i + 1 != n - 1)
-        {
-            st.push(a[i]);
-            continue;
-        }
-        if (!st.empty() &amp;amp;&amp;amp; a[i].r == st.top().r)
-        {
-            st.pop();
-            ans++;
-        }
-        if (a[i].r != a[i + 1].l)
-        {
-            if (!st.empty())
-                st.pop();
-        }
-    }
-    printf(&quot;%d&quot;, ans + n + 1);
-    return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
 </content:encoded></item><item><title>[网络流24题] 餐巾</title><link>https://www.nekomio.com/posts/49/</link><guid isPermaLink="true">https://www.nekomio.com/posts/49/</guid><pubDate>Sun, 30 Jul 2017 15:16:05 GMT</pubDate><content:encoded>&lt;h3&gt;【问题描述】&lt;/h3&gt;
 &lt;p&gt;一个餐厅在相继的N天里，第i天需要Ri块餐巾(i=l，2，…，N)。餐厅可以从三种途径获得餐巾。&lt;/p&gt;
 &lt;ol&gt;
@@ -18021,6 +17930,83 @@ int main(int argc, char const *argv[])
             Min.add(i, i + n + c, INF, s);
     }
     printf(&quot;%d&quot;, Min.MinCost(S, T));
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>vijos 天神下凡</title><link>https://www.nekomio.com/posts/48/</link><guid isPermaLink="true">https://www.nekomio.com/posts/48/</guid><pubDate>Sun, 30 Jul 2017 15:16:05 GMT</pubDate><content:encoded>&lt;h3&gt;题目描述&lt;/h3&gt;
+&lt;p&gt;Czy找到宝藏获得屠龙宝刀和神秘秘籍！现在他要去找经常ntr他的Jmars报仇……&lt;/p&gt;
+&lt;p&gt;Czy学会了一招“堕天一击”，他对一个地点发动堕天一击，地面上就会留下一个很大的圆坑。圆坑的周围一圈能量太过庞大，因此无法通过。所以每次czy发动技能都会把地面分割。Jmars拥有好大好大的土地，几十眼都望不到头，所以可以假设土地的大小是无限大。现在czy对他发动了猛烈的攻击，他想知道在泽宇攻击之后他的土地被切成几份了?
+&amp;lt;!--more--&amp;gt;
+Czy毕竟很虚，因此圆心都在x坐标轴上。另外，保证所有圆两两之间不会相交。&lt;/p&gt;
+&lt;h3&gt;输入&lt;/h3&gt;
+&lt;p&gt;输入第一行为整数n，表示czy放了n次堕天一击。&lt;/p&gt;
+&lt;p&gt;接下来n行，每行两个整数x[i]，r[i]。表示在坐标（x[i] , 0）放了一次堕天一击，半径为r[i]。&lt;/p&gt;
+&lt;h3&gt;输出&lt;/h3&gt;
+&lt;p&gt;输出一行，表示地面被分割成几块。&lt;/p&gt;
+&lt;h3&gt;样例输入&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;4&lt;br /&gt;
+7 5&lt;br /&gt;
+-9 11&lt;br /&gt;
+11 9&lt;br /&gt;
+0 20&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;样例输出&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;6&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;题解&lt;/h3&gt;
+&lt;p&gt;那个栈扫一遍&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+#include &amp;lt;stack&amp;gt;
+#include &amp;lt;algorithm&amp;gt;
+using namespace std;
+struct data
+{
+    int l, r, id;
+    bool operator&amp;lt;(const data &amp;amp;a) const
+    {
+        return l == a.l ? r &amp;gt; a.r : l &amp;lt; a.l;
+    }
+} a[1000001];
+int main(int argc, char const *argv[])
+{
+    stack&amp;lt;data&amp;gt; st;
+    int n, s, r;
+    scanf(&quot;%d&quot;, &amp;amp;n);
+    for (int i = 0; i &amp;lt; n; i++)
+    {
+        scanf(&quot;%d%d&quot;, &amp;amp;s, &amp;amp;r);
+        a[i].l = s - r, a[i].id = i, a[i].r = s + r;
+    }
+    sort(a, a + n);
+    // for (int i = 0; i &amp;lt; n; i++)
+    // {
+    //     printf(&quot;%d %d %d\n&quot;, a[i].l, a[i].r, a[i].id);
+    // }
+    //while (1)
+        ;
+    int ans = 0;
+    for (int i = 0; i &amp;lt; n; i++)
+    {
+        if (a[i].l == a[i + 1].l &amp;amp;&amp;amp; i + 1 != n - 1)
+        {
+            st.push(a[i]);
+            continue;
+        }
+        if (!st.empty() &amp;amp;&amp;amp; a[i].r == st.top().r)
+        {
+            st.pop();
+            ans++;
+        }
+        if (a[i].r != a[i + 1].l)
+        {
+            if (!st.empty())
+                st.pop();
+        }
+    }
+    printf(&quot;%d&quot;, ans + n + 1);
     return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;
