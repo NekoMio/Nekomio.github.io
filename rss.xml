@@ -17796,6 +17796,83 @@ int main(int argc, char const *argv[])
     return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;
+</content:encoded></item><item><title>vijos 天神下凡</title><link>https://www.nekomio.com/posts/48/</link><guid isPermaLink="true">https://www.nekomio.com/posts/48/</guid><pubDate>Sun, 30 Jul 2017 15:16:05 GMT</pubDate><content:encoded>&lt;h3&gt;题目描述&lt;/h3&gt;
+&lt;p&gt;Czy找到宝藏获得屠龙宝刀和神秘秘籍！现在他要去找经常ntr他的Jmars报仇……&lt;/p&gt;
+&lt;p&gt;Czy学会了一招“堕天一击”，他对一个地点发动堕天一击，地面上就会留下一个很大的圆坑。圆坑的周围一圈能量太过庞大，因此无法通过。所以每次czy发动技能都会把地面分割。Jmars拥有好大好大的土地，几十眼都望不到头，所以可以假设土地的大小是无限大。现在czy对他发动了猛烈的攻击，他想知道在泽宇攻击之后他的土地被切成几份了?
+&amp;lt;!--more--&amp;gt;
+Czy毕竟很虚，因此圆心都在x坐标轴上。另外，保证所有圆两两之间不会相交。&lt;/p&gt;
+&lt;h3&gt;输入&lt;/h3&gt;
+&lt;p&gt;输入第一行为整数n，表示czy放了n次堕天一击。&lt;/p&gt;
+&lt;p&gt;接下来n行，每行两个整数x[i]，r[i]。表示在坐标（x[i] , 0）放了一次堕天一击，半径为r[i]。&lt;/p&gt;
+&lt;h3&gt;输出&lt;/h3&gt;
+&lt;p&gt;输出一行，表示地面被分割成几块。&lt;/p&gt;
+&lt;h3&gt;样例输入&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;4&lt;br /&gt;
+7 5&lt;br /&gt;
+-9 11&lt;br /&gt;
+11 9&lt;br /&gt;
+0 20&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;样例输出&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;6&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;题解&lt;/h3&gt;
+&lt;p&gt;那个栈扫一遍&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include &amp;lt;cstdio&amp;gt;
+#include &amp;lt;cstring&amp;gt;
+#include &amp;lt;stack&amp;gt;
+#include &amp;lt;algorithm&amp;gt;
+using namespace std;
+struct data
+{
+    int l, r, id;
+    bool operator&amp;lt;(const data &amp;amp;a) const
+    {
+        return l == a.l ? r &amp;gt; a.r : l &amp;lt; a.l;
+    }
+} a[1000001];
+int main(int argc, char const *argv[])
+{
+    stack&amp;lt;data&amp;gt; st;
+    int n, s, r;
+    scanf(&quot;%d&quot;, &amp;amp;n);
+    for (int i = 0; i &amp;lt; n; i++)
+    {
+        scanf(&quot;%d%d&quot;, &amp;amp;s, &amp;amp;r);
+        a[i].l = s - r, a[i].id = i, a[i].r = s + r;
+    }
+    sort(a, a + n);
+    // for (int i = 0; i &amp;lt; n; i++)
+    // {
+    //     printf(&quot;%d %d %d\n&quot;, a[i].l, a[i].r, a[i].id);
+    // }
+    //while (1)
+        ;
+    int ans = 0;
+    for (int i = 0; i &amp;lt; n; i++)
+    {
+        if (a[i].l == a[i + 1].l &amp;amp;&amp;amp; i + 1 != n - 1)
+        {
+            st.push(a[i]);
+            continue;
+        }
+        if (!st.empty() &amp;amp;&amp;amp; a[i].r == st.top().r)
+        {
+            st.pop();
+            ans++;
+        }
+        if (a[i].r != a[i + 1].l)
+        {
+            if (!st.empty())
+                st.pop();
+        }
+    }
+    printf(&quot;%d&quot;, ans + n + 1);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
 </content:encoded></item><item><title>[网络流24题] 餐巾</title><link>https://www.nekomio.com/posts/49/</link><guid isPermaLink="true">https://www.nekomio.com/posts/49/</guid><pubDate>Sun, 30 Jul 2017 15:16:05 GMT</pubDate><content:encoded>&lt;h3&gt;【问题描述】&lt;/h3&gt;
 &lt;p&gt;一个餐厅在相继的N天里，第i天需要Ri块餐巾(i=l，2，…，N)。餐厅可以从三种途径获得餐巾。&lt;/p&gt;
 &lt;ol&gt;
@@ -17930,83 +18007,6 @@ int main(int argc, char const *argv[])
             Min.add(i, i + n + c, INF, s);
     }
     printf(&quot;%d&quot;, Min.MinCost(S, T));
-    return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;
-</content:encoded></item><item><title>vijos 天神下凡</title><link>https://www.nekomio.com/posts/48/</link><guid isPermaLink="true">https://www.nekomio.com/posts/48/</guid><pubDate>Sun, 30 Jul 2017 15:16:05 GMT</pubDate><content:encoded>&lt;h3&gt;题目描述&lt;/h3&gt;
-&lt;p&gt;Czy找到宝藏获得屠龙宝刀和神秘秘籍！现在他要去找经常ntr他的Jmars报仇……&lt;/p&gt;
-&lt;p&gt;Czy学会了一招“堕天一击”，他对一个地点发动堕天一击，地面上就会留下一个很大的圆坑。圆坑的周围一圈能量太过庞大，因此无法通过。所以每次czy发动技能都会把地面分割。Jmars拥有好大好大的土地，几十眼都望不到头，所以可以假设土地的大小是无限大。现在czy对他发动了猛烈的攻击，他想知道在泽宇攻击之后他的土地被切成几份了?
-&amp;lt;!--more--&amp;gt;
-Czy毕竟很虚，因此圆心都在x坐标轴上。另外，保证所有圆两两之间不会相交。&lt;/p&gt;
-&lt;h3&gt;输入&lt;/h3&gt;
-&lt;p&gt;输入第一行为整数n，表示czy放了n次堕天一击。&lt;/p&gt;
-&lt;p&gt;接下来n行，每行两个整数x[i]，r[i]。表示在坐标（x[i] , 0）放了一次堕天一击，半径为r[i]。&lt;/p&gt;
-&lt;h3&gt;输出&lt;/h3&gt;
-&lt;p&gt;输出一行，表示地面被分割成几块。&lt;/p&gt;
-&lt;h3&gt;样例输入&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;4&lt;br /&gt;
-7 5&lt;br /&gt;
--9 11&lt;br /&gt;
-11 9&lt;br /&gt;
-0 20&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;样例输出&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;6&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3&gt;题解&lt;/h3&gt;
-&lt;p&gt;那个栈扫一遍&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;#include &amp;lt;cstdio&amp;gt;
-#include &amp;lt;cstring&amp;gt;
-#include &amp;lt;stack&amp;gt;
-#include &amp;lt;algorithm&amp;gt;
-using namespace std;
-struct data
-{
-    int l, r, id;
-    bool operator&amp;lt;(const data &amp;amp;a) const
-    {
-        return l == a.l ? r &amp;gt; a.r : l &amp;lt; a.l;
-    }
-} a[1000001];
-int main(int argc, char const *argv[])
-{
-    stack&amp;lt;data&amp;gt; st;
-    int n, s, r;
-    scanf(&quot;%d&quot;, &amp;amp;n);
-    for (int i = 0; i &amp;lt; n; i++)
-    {
-        scanf(&quot;%d%d&quot;, &amp;amp;s, &amp;amp;r);
-        a[i].l = s - r, a[i].id = i, a[i].r = s + r;
-    }
-    sort(a, a + n);
-    // for (int i = 0; i &amp;lt; n; i++)
-    // {
-    //     printf(&quot;%d %d %d\n&quot;, a[i].l, a[i].r, a[i].id);
-    // }
-    //while (1)
-        ;
-    int ans = 0;
-    for (int i = 0; i &amp;lt; n; i++)
-    {
-        if (a[i].l == a[i + 1].l &amp;amp;&amp;amp; i + 1 != n - 1)
-        {
-            st.push(a[i]);
-            continue;
-        }
-        if (!st.empty() &amp;amp;&amp;amp; a[i].r == st.top().r)
-        {
-            st.pop();
-            ans++;
-        }
-        if (a[i].r != a[i + 1].l)
-        {
-            if (!st.empty())
-                st.pop();
-        }
-    }
-    printf(&quot;%d&quot;, ans + n + 1);
     return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;
